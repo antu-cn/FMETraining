@@ -188,7 +188,7 @@
 <td style="border: 1px solid darkorange">
 <span style="font-family:serif; font-style:italic; font-size:larger">
 这是来自Interopolis市的人所说的文字。
-br>它使用了一个字体很棒的图标 （这不会显示在PDF中）
+<br>它使用了一个字体很棒的图标 （这不会显示在PDF中）
 <br>文本是serif字体，斜体。
 <br>它在一个橙色边框的表格里
 </span>
@@ -295,7 +295,7 @@ br>它使用了一个字体很棒的图标 （这不会显示在PDF中）
 通过完成本练习，您已学会如何：
 <br>
 <ul><li>这是一个成就列表</li>
-<li>它使用了一个字体很棒的图标 （这不会显示在PDF中）
+<li>它使用了一个字体很棒的图标（这不会显示在PDF中）<li>
 <li>文本是serif字体，斜体。<li>
 <li>它在一个橙色边框的表格里</li></ul>
 </span>

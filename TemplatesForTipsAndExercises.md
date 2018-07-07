@@ -317,7 +317,7 @@
 
 用于当使用Data Inspector背景地图的屏幕截图时。一定还要包含BR标签。
 
-<br><span style="font-style:italic;font-size:x-small">瓦片由 <a href="http://www.mapquest.com/">MapQuest提供</a></span> 
+<br><span style="font-style:italic;font-size:x-small">瓦片提供由 <a href="http://www.mapquest.com/">MapQuest</a></span> 
 
 <br><span style="font-style:italic;font-size:x-small">地图瓦片提供由<a href="http://stamen.com">Stamen Design</a>, 许可 <a href="http://creativecommons.org/licenses/by/3.0">CC-BY-3.0</a>. 数据提供由<a href="http://openstreetmap.org">OpenStreetMap</a>, 许可 <a href="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA</a>.
 

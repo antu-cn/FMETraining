@@ -1,82 +1,81 @@
-# What's New #
-This file documents major changes made to training materials in 2018
+# 新内容 #
+该文件记录了2018年培训材料的主要变化
 
 ---
 
 ## FMEData ##
-These changes are for the FMEData dataset that accompanies FME training
-- Updated Community Map Geodatabase with new URLs for libraries (also extended field size)
-- Updated libraries with more numeric information such as book count, circulation, user visits
-- Updated parks with more numeric information such as tree count and visitor count
-    + Data is randomly generated, not from an official source
-    + Removed excess attributes from parks (NSStreet, EWStreet)
-- Renamed Crime2011.csv to Crime.csv
-- Added instructor workspaces for advanced training
+这些更改适用于FME培训附带的FMEData数据集
+- 使用库的新URL更新了社区地图地理数据库（也包括扩展字段大小）
+- 使用更多数字信息更新了图书馆，例如图书计数，发行量，用户访问量
+- 使用更多数字信息更新了例如树木数和游客数量
+    + 数据是随机生成的，而不是官方来源
+    + 从公园中移除了多余的属性（NSStreet，EWStreet）
+- 将Crime2011.csv重命名为Crime.csv
+- 为高级培训添加了指导工作空间
 
 ---
 
-## Desktop Advanced ##
-These changes are for the FME Desktop Advanced Training Course.
+## Desktop高级 ##
+这些更改适用于FME Desktop高级培训课程。 
 
-### General ###
-- All screenshots now used Curved rather than Straight connections
-- Chapter reordering
-- New Review Desktop Basic exercise in the Course Introduction
-- Content updated for 2018.1
+### 通用 ###
+- 现在所有屏幕截图都使用了曲线而不是直线连接
+- 章节重新排序
+- 课程简介中的新Desktop基础练习回顾
+- 内容已更新至2018.1
 
-### Advanced Attribute Handling ###
-- Moved from Chapter 4 to Chapter 1
-- Updated screenshots to reflect changes to Function changes in Text and Arithmetic editors
-- Added a small paragraph about null values in key/attribute joins
-- Advanced exercise at the end of Exercise 4
-- A fix in 2018.1 resolves an issue with a bad display in Exercise 2c (screenshot: https://www.screencast.com/t/ZnYXiTX69cn)
-  - The issue appears to be just a display fault, and the exercise/workspace works correctly
+### 高级属性处理 ###
+- 从第4章移到第1章
+- 更新屏幕快照以反映在文本和算术编辑器中功能变化的不同
+- 在键/属性连接中添加了一个关于空值的小段落
+- 练习4结束时的高级练习
+- 2018.1中的修复解决了练习2c中显示错误的问题（屏幕截图：https：//www.screencast.com/t/ZnYXiTX69cn ）
+  - 该问题似乎只是一个显示错误，并且练习/工作空间正常工作
 
-### Advanced Workspace Design ###
-- Renamed from Performance to Advanced Workspace Design
-- Added section on Feature Caching 
-- Added section on bookmarks with an emphasis on collapsable bookmarks for performance
-- Condensed all entire performance section. 
-    + General tips for performance added
-    + Assessing Reader/Writer performance condensed into one section
-    + Dropped False Reader/Writer section 
-    + Focus on 64-bit for performance with minor notes on 32-bit
-    + Condensed Transformer Performance section into one section
-    + Condensed Reading/Writing databases into one section called Optimizing Databases
-    + Moved Server and Cloud Performance before Parallel Processing
-- Exercises 1-3 changed to reflect changes in performance, continuous scenario
-    + Batch reading GeoTIFFs, raster clipping, remove raster no data, writing out to GeoTIFF. 
-    + Exercise 1: Workspace design to introduce feature caching and bookmarks
-    + Exercise 2: Interpreting the log file and rejection codes
-    + Exercise 3: Raster handling and workspace optimization
-- Added bookmarks to Exercises 4-5 to keep consistent with chapter
-    + Exercise 4: Added tip about collapsing bookmarks and then deleting to remove all
-- Added batch processing section using the WorkspaceRunner and Batch Deploy
-- Removed "Dangling Readers" since they no longer seem to be a problem (FME detects/fixes)
+### 高级工作空间设计 ###
+- 从“性能”改名为“高级工作空间设计”
+- 添加了有关功能缓存的部分
+- 添加了有关书签的部分，重点放在可折叠的书签上以提高性能
+- 压缩了整个性能部分。 
+    + 添加了性能的通用技巧
+    + 评估读模块/写模块的表现压缩为一个部分
+    + 丢弃了错误的读模块/写模块部分
+    + 专注于64位性能，小注释于32位
+    + 压缩转换器性能部分为一个部分
+    + 将数据库简化读取/写入压缩到称为优化数据库的一个部分
+    + 把服务器和云性能移动到并行处理之前
+- 改变了练习1-3以反映性能和连续情景的变化
+    + 批量读取GeoTIFF，光栅剪切，删除无数据光栅，写出GeoTIFF。
+    + 练习1：工作空间设计来介绍要素缓存和书签
+    + 练习2：解释日志文件和拒绝代码
+    + 练习3：光栅处理和工作空间优化
+- 为练习4-5添加了书签以与章节保持一致
+    + 练习4：添加了技巧有关折叠书签，然后删除以删除所有书签
+- 添加了使用WorkspaceRunner和Batch Deploy来进行批处理的部分
+- 删除了“摇摆读模块”，因为它们似乎不再是问题（FME检测到并修复了）
 
-### Advanced Reading/Writing ###
-- Expanded connection type list for Web-Based Datasets
-- Changed example from Google Drive to AutoCAD A360 connection 
-- Condensed Generic Reader/Writer into one section (more of a server topic)
-- New Exercise 1: moved to after web-based datasets
-    + Introduces users to 3D and point clouds
-    + Connect to FME Server for file storage using the FMEServerResourceConnector
-- Exercise 2: create a .zip file as an output
-- Exercise 3-5: Update screenshots for bookmarks being added when generating a workspace
+### 高级读取/写入 ###
+- 基于Web的数据集的扩展连接类型列表
+- 将示例从Google云盘更改为AutoCAD A360连接
+- 将通用读模块/写模块压缩到一个部分中（更多的是服务器主题）
+- 新练习1：移动到基于Web的数据集之后
+    + 向用户介绍3D和点云
+    + 使用FMEServerResourceConnector连接到FME Server以进行文件存储
+- 练习2：创建一个.zip文件作为输出
+- 练习3-5：更新生成工作空间时添加书签的屏幕截图
 
-### User Parameters ###
-- Changed wording from Add Parameter to Create User Parameter
-- Updated screenshots to reflect new attributes in Parks.tab
-- Exercise 1: UserCompanyName parameter set in the ParameterFetcher, a new BuildNumber parameter added for FME_BUILD_NUM
-- Exercise 2: Advanced workspace updated to include the use of bookmarks
+### 用户参数 ###
+- 将添加参数的用词更改为创建用户参数
+- 更新了屏幕截图以反映Parks.tab中的新属性
+- 练习1：在ParameterFetcher中设置UserCompanyName参数，为FME_BUILD_NUM添加了新的BuildNumber参数
+- 练习2：更新了高级工作空间以包括书签的使用
 
-### Custom Transformers ###
-- Exercise 1-3: Screenshots and text now refer to the year when talking about each ExpressionEvaluator
-- Exercise 4: New tip on how to display transformer version
-- Exercise 5: Changed exercise to reflect 64-bit parallel processing
-- Exercise 6: New looping in a custom transformer exercise 
-
+### 自定义转换器 ###
+- 练习1-3：屏幕截图和文本现在指的是年份当讨论每个ExpressionEvaluator时
+- 练习4：关于如何显示转换器版本的新技巧
+- 练习5：更改练习以反映64位并行处理
+- 练习6：自定义转换器练习中的新循环
 -
 
-### Course Wrap Up ###
-- Updated screenshots of safe.com 
+### 课程总结 ###
+- 更新了safe.com的屏幕截图 

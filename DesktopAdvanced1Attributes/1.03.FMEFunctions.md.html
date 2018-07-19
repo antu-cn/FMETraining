@@ -1,0 +1,55 @@
+ 
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><h2><a id="user-content-fme-feature-functions" class="anchor" aria-hidden="true" href="https://github.com/domix2000/FMETraining/blob/Desktop-Advanced-2018/DesktopAdvanced1Attributes/1.03.FMEFunctions.md#fme-feature-functions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME要素函数</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文本和算术编辑器菜单中的另一个项目是FME要素函数：</font></font></p>
+<p><a target="_blank" href="https://github.com/domix2000/FMETraining/blob/Desktop-Advanced-2018/DesktopAdvanced1Attributes/Images/Img1.006.AttributeManagerFMEFunctions.png"><img src="./Images/Img1.006.AttributeManagerFMEFunctions.png" alt="" style="max-width:100%;"></a></p>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些功能可以触及FME核心功能的核心。</font><font style="vertical-align: inherit;">它们是构建转换器的基石; </font><font style="vertical-align: inherit;">可以将值返回给编辑器的基本功能。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例如，</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@ Area（）</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">函数返回当前要素的面（假设它是多边形）。</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@NumCoords（）</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">返回当前要素中的顶点数。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一些函数返回字符串，其他函数返回数值; </font><font style="vertical-align: inherit;">因此，可用的功能取决于是使用文本编辑器还是算术编辑器。</font><font style="vertical-align: inherit;">在上面的屏幕截图中，文本编辑器功能位于左侧，算术编辑器功能位于右侧。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME要素函数很有用，因为它们允许您直接在属性创建中构建处理，而不是使用单独的转换器。</font></font></p>
+<hr>
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Lynn Guistic教授说......
+</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+您可能也想知道为什么文本编辑器中有数学函数以及如何使用它们。
+</font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">好吧，有时你需要计算一个数值作为字符串的一部分。</font><font style="vertical-align: inherit;">如果是这样，您可以在文本编辑器中使用FME函数@Evaluate（）来执行数学计算。</font><font style="vertical-align: inherit;">此函数了解所有数值运算，这就是它们包含在文本编辑器对话框中的原因。
+
+</font></font></td>
+</tr>
+</tbody></table>
+<hr>
+<h2><a id="user-content-replacing-other-transformers" class="anchor" aria-hidden="true" href="https://github.com/domix2000/FMETraining/blob/Desktop-Advanced-2018/DesktopAdvanced1Attributes/1.03.FMEFunctions.md#replacing-other-transformers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">替换其他转换器</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">集成的文本和算术编辑器为工作空间创建提供了很大的好处。</font><font style="vertical-align: inherit;">它们允许属性创建功能直接在单个转换器中执行。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例如，AttributeManager文本编辑器可以用作StringConcatenator和ExpressionEvaluator转换器的直接替代。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AttributeManager还可以替换StringPadder和AttributeTrimmer转换器，尽管用户友好性稍差。</font><font style="vertical-align: inherit;">如果在编辑器中使用FME要素函数，则此转换器也可以在技术上替换转换器，例如AreaCalculator，LengthCalculator，VertexCounter，DateTimeStamper等等。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更换转换器通常是件好事。</font><font style="vertical-align: inherit;">当尽可能多的外围操作直接集成到单个转换器中时，工作空间更紧凑，定义更明确。</font><font style="vertical-align: inherit;">但是，由于AttributeManager可以执行许多活动之一，因此使用最佳实践并确保其具有正确的注释也很重要。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果没有正确注释AttributeManager，则无法通过查看Workbench画布确定它正在执行的操作！</font></font></p>
+<hr>
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Lynn Guistic教授说......
+</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+请注意，将功能合并到单个转换器中并不是为了提高性能。 
+</font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例如，在一个AttributeManager转换器内用二十个函数替换二十（20）个转换器 - 所有这些都执行相同的任务 - 不太可能使整个工作空间更快; </font><font style="vertical-align: inherit;">加上每个添加到其中的新函数，加上AttributeManager自然会变慢。
+
+</font></font></td>
+</tr>
+</tbody></table>
+</article>
+  </div>
+
+ </body></html>

@@ -1,27 +1,27 @@
 <!--This file duplicates a little of the content to follow, but is added here because the content of this file is used for the landing page on GitBook-->
 
-# Upgrading to FME Desktop 2018 Training Course #
+# 升级到FME Desktop 2018培训课程 #
 
-This is a training manual for users upgrading to the 2018 version of Safe Software’s FME Desktop application.
+这是用于升级到Safe Software的FME Desktop应用程序的2018版本的用户的培训手册。
 
 ![](./2018Upgrade0Introduction/Images/Img0.0.FMEAboutScreen.png)
 
-The training will introduce new concepts and terminology, and help students become familiar with methodology that has changed since the previous release. 
+培训将介绍新的概念和术语，并帮助学生熟悉自上次发布以来发生变化的方法。
 
 
-## Course Structure ##
+## 课程结构 ##
 
-The course is made up of various sections, including:
+该课程由不同的部分组成，包括：
 
-- A general overview of 2018
-- Authoring workflows with the Partial Run tools
-- Collapsible bookmarks and related functionality
-- Precision and tolerance in spatial transformation
-- Writing and styling Microsoft data formats
-- Using the new FeatureJoiner transformer
+- 2018的概述
+- 使用“部分运行”工具创作工作流程
+- 可折叠书签和相关功能
+- 空间变换的精度和容差
+- 写入和样式化Microsoft数据格式
+- 使用新的FeatureJoiner转换器
  
-## Current Status ##
+## 当前状态 ##
 
-The current status of this manual is: **COMPLETE**: this manual can be used for training.
+本手册的当前状态为：**完整**：本手册可用于培训。
 
-***NB:*** *Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement for further details.*
+***注意:*** *即使是完整的内容，Safe Software Inc.也不对本文档中的任何错误或其后果承担任何责任，并保留对本文档进行改进和更改的权利，恕不另行通知。有关详细信息，请参阅完整许可协议。*

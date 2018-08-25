@@ -164,12 +164,12 @@
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">厨师Bimm</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Flibble先生</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分析师女士</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Transformer大副</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Transformer副驾驶</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“统计-计算器”先生</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">E. Dict先生，（FME律师）</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Workbench博士</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Workbench医生</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Interop阿姨</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Intuitive姐姐</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Intuitive修女</font></font></li>
 </ul>
 <hr>
 

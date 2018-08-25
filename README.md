@@ -28,7 +28,7 @@
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第5章：完整内容和练习</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第6章：完整内容。</font><font style="vertical-align: inherit;">没有练习</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">幻灯片：完整</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FMEData：完整</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME数据：完整</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">课程大纲：完整</font></font></li>
 </ul>
 <p><em><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong></em> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">即使是已完整的内容，Safe Software Inc.也不对本文档中的任何错误或其后果承担任何责任，并保留对本文档进行改进和更改的权利，恕不另行通知。</font><font style="vertical-align: inherit;">有关详细信息，请参阅完整许可协议。</font></font></em></p>

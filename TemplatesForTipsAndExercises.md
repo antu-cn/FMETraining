@@ -204,12 +204,12 @@
 - 厨师Bimm
 - Flibble先生
 - 分析师女士
-- Transformer大副
+- Transformer副驾驶
 - “统计-计算器”先生
 - E. Dict先生，（FME律师）
-- Workbench博士
+- Workbench医生
 - Interop阿姨
-- Intuitive姐姐
+- Intuitive修女
 
 ---
 

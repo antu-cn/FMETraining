@@ -30,6 +30,6 @@
 	* [练习：犯罪分析项目](./2018Upgrade6FeatureJoiner/6.Exercise1.md)
 * [课程总结](./2018Upgrade7WrapUp/7.00.CourseWrapup.md)
 	* [产品信息和资源](./2018Upgrade7WrapUp/7.01.ProductInfo.md)
-	* [Community Information and Resources](./2018Upgrade7WrapUp/7.02.CommunityInfo.md)
-	* [社区信息和资源](./2018Upgrade7WrapUp/7.03.CourseFeedback.md)
+	* [社区信息和资源](./2018Upgrade7WrapUp/7.02.CommunityInfo.md)
+	* [反馈和证书](./2018Upgrade7WrapUp/7.03.CourseFeedback.md)
 	* [谢谢](./2018Upgrade7WrapUp/7.04.ThankYou.md)

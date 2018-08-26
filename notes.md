@@ -1,20 +1,18 @@
-# Notes
+# 说明
 
-## Updating Process
-- Edit chapters.xlsx to reflect desired book structure
-- Save as chapters.csv
-- Edit edits.json to reflect desired edits (replacement or add includes)
-- Run generateChapters.py in book directory
-
-## Manual Steps for Updating
-- Integration2LabDemonstration/2.26.IntegratedInspection.md has an added include (PlacingAnInspectorTransformer) that has to be updated manually from DesktopBasic2Transformation/2.11.DataInspectionFromWorkbench.md, as well as any images it links.
-- generateChapters.py will successfully only download needed external sections, but currently if they already exist editing will be messed up. Basically need to generate from scratch to work.
-
-## Improvements
-- Combine chapters.xlsx with edits.json?
-- Fix existing file issue with edits.py
-- Better documentation of scripts
-- Create functions in generateChapters.py
-- Allow selection of branch with download
-- Better handling of existing sections
-- Command line choices
+## 更新过程
+- 编辑chapters.xlsx以反映所需的书籍结构
+- 另存为chapters.csv
+- 编辑edits.json以反映所需的编辑（替换或添加包含）
+- 在book目录中运行generateChapters.py
+## 手动更新步骤
+- Integration2LabDemonstration / 2.26.IntegratedInspection.md有一个添加的include（PlacingAnInspectorTransformer），必须从DesktopBasic2Transformation / 2.11.DataInspectionFromWorkbench.md手动更新，以及它链接的任何图像。
+- generateChapters.py将成功只下载所需的外部部分，但目前如果它们已经存在，编辑将被搞砸。基本上需要从头开始生成工作。
+## 改进
+- 将chapters.xlsx与edits.json结合起来？
+- 使用edits.py修复现有文件问题
+- 更好的脚本文档
+- 在generateChapters.py中创建函数
+- 允许选择下载分支
+- 更好地处理现有部分
+- 命令行选择

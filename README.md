@@ -53,6 +53,6 @@
 </ul>
 <p><em><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：即使是已完成的内容，Safe Software Inc.也不对本文档中的任何错误或其后果承担任何责任，并保留对本文档进行改进和更改的权利，恕不另行通知。</font><font style="vertical-align: inherit;">有关</font><font style="vertical-align: inherit;">详细信息，</font><font style="vertical-align: inherit;">请参阅“ </font></font><a href="https://github.com/safesoftware/FMETraining/blob/FME-Desktop-Data-Integration-2018/.%5CIntegration0About%5C0.00.AboutThisDocument.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于本文档”中</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的完整许可协议</font><font style="vertical-align: inherit;">。</font></font></em></p>
 <h2><a id="user-content-thanks" class="anchor" aria-hidden="true" href="https://github.com/safesoftware/FMETraining/blob/FME-Desktop-Data-Integration-2018/README.md#thanks"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">谢谢</font></font></h2>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感谢FME用户Dave Laurier，Clair Ellul和Patrick Lougheed对本模块早期版本的反馈。</font></font></p>
+
 </article>
   </div>

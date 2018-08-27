@@ -61,7 +61,7 @@
 </li>
 </ul>
 </li>
-<li><a href="https://github.com/safesoftware/FMETraining/blob/FME-Desktop-Data-Integration-2018/Integration3LabExercises/3.00.LabExercises.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实验练习</font></font></a>
+<li><a href="https://github.com/safesoftware/FMETraining/blob/FME-Desktop-Data-Integration-2018/Integration3LabExercises/3.00.LabExercises.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实验室练习</font></font></a>
 <ul>
 <li><a href="https://github.com/safesoftware/FMETraining/blob/FME-Desktop-Data-Integration-2018/Integration3LabExercises/3.01.GettingStartedWithFMEDesktop.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME Desktop入门</font></font></a>
 <ul>

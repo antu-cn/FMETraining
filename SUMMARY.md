@@ -62,7 +62,7 @@
 </li>
 <li><a href="./DesktopBasic2Transformation/2.06.ContentTransformation.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容转换</font></font></a>
 <ul>
-<li><a href="./DesktopBasic2Transformation/2.07.TransformersInSeries.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变形金刚系列</font></font></a></li>
+<li><a href="./DesktopBasic2Transformation/2.07.TransformersInSeries.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换器系列</font></font></a></li>
 <li><a href="./DesktopBasic2Transformation/2.Exercise3.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：地面维护项目 - 计算统计数据</font></font></a></li>
 <li><a href="./DesktopBasic2Transformation/2.08.FeatureCounts.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要素计数显示</font></font></a></li>
 <li><a href="./DesktopBasic2Transformation/2.09.TransformersInParallel.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换器并行</font></font></a></li>

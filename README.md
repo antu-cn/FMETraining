@@ -1,44 +1,44 @@
 <!--This file duplicates a little of the content to follow, but is added here because the content of this file is used for the landing page on GitBook-->
 
-# FME Server Administration Training Manual #
+# FME Server管理培训手册 #
 
-This is the manual for the training course System Administration for FME Server.
+这是FME Server系统管理培训课程的手册。
 
 ![](./ServerAdmin0Introduction/Images/0.000.ServerHomeScreen.png)
 
-The training will assist you to install and administer an FME Server installation and its users.
+该培训将帮助您安装和管理FME Server安装及其用户。
 
-## Course Structure ##
+## 课程结构 ##
 
-The full course is made up of seven sections. These sections are:
+全部课程由七个部分组成。这些部分是：
 
-- Planning an FME Server Installation
-- FME Server Connectivity
-- FME Server Security
-- Scalability and Performance
-- FME Server Customization
-- Migration and Upgrades
-- Troubleshooting
+- 规划FME Server安装
+- FME Server连接
+- FME Server安全性
+- 可扩展性和性能
+- FME服务器自定义
+- 迁移和升级
+- 故障排除
 
-## Current Status ##
+## 当前状态 ##
 
-The current status of this manual is: **COMPLETE**. this manual can be used for training, subject to minor, last-minute fixes and creation of slides. 
+本手册的当前状态是：**完整**。本手册可用于培训，但需要经过细微的最后修复和创建幻灯片。 
 
-This manual applies to **FME2018.0**
+本手册适用于**FME2018.0**
 
-The status of each chapter is: 
+每章的状态是：
 
-- Chapter 0: Complete content. No exercises
-- Chapter 1: Complete content. No exercises
-- Chapter 2: Complete content. No exercises
-- Chapter 3: Complete content and exercises
-- Chapter 4: Complete content and exercises
-- Chapter 5: Complete content and exercises
-- Chapter 6: Complete content and exercises
-- Chapter 7: Complete content. No exercises
-- Chapter 8: Complete content. No exercises
-- Slides: Incomplete
-- FMEData: Complete
-- Course Outline: Incomplete
+- 第0章：完整内容。没有练习
+- 第1章：完整内容。没有练习
+- 第2章：完整内容。没有练习
+- 第3章：完整内容和练习
+- 第4章：完整内容和练习
+- 第5章：完整内容和练习
+- 第6章：完整内容和练习
+- 第7章：完整内容。没有练习
+- 第8章：完整内容。没有练习
+- 幻灯片：不完整
+- FMEData：完整
+- 课程大纲：不完整
 
-***NB:*** *Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement for further details.*
+***注意:*** *即使是已完成的内容，Safe Software Inc.也不对本文档中的任何错误或其后果承担任何责任，并保留对本文档进行改进和更改的权利，恕不另行通知。有关详细信息，请参阅完整许可协议。.*

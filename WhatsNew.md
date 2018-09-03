@@ -1,86 +1,84 @@
-# What's New #
-This file documents major changes made to training materials in 2018
+# 有什么新内容 #
+该文件记录了2018年培训材料的主要变化
 
 ---
 
 ## FMEData ##
-These changes are for the FMEData dataset that accompanies FME training
+这些更改适用于FME培训附带的FMEData数据集
 
 -
 
 ---
 
 
-## Server Administration ##
-These changes are for the FME Server Administration Training Course.
+## 服务器管理 ##
+这些更改适用于FME Server管理培训课程。
 
-### General ###
-- Updated FME Version Information
-
-
-### Chapter 1 - Installation ###
-- Updated Server Architecture Diagram
-- Updated Database and Web Connections Sections
-  - Added Tip for External Systems
-- Updated FME Version Information
-- Updated the Installation Types.
-- Added notes on 2018 Engine Only Updates
-- Removed reference to active-passive & active-active in favor for Fault Tolerant
-- Added FME Server Job Queue Component
-- Updated Planning for Fault Tolerance.
-  - Reworked Fault Tolerance
-  - Added Note for UDB and SMTP Publisher
-- Updated Chapter Review
+### 常规 ###
+- 更新了FME版本信息
 
 
-
-### Chapter 2 - Connectivity ###
-- Added Port for FME Server Queue Component
-- Tweaked FME Server version for CORS.
-- Updated Port Diagram
-
-
-### Chapter 3 - Security ###
-- Added Version Control and Workspace Viewer sections.
-- Updated Services Button image in Exercise 3.
-- Added 2018.0 tags to Doc URL links
-- Added information on installing FME Server and using a Domain Service account on new system.
-- Added note on using multiple domains containing common usernames.
-- Added note on IWA and SSO with web browsers related to automatic login.
-- Updated Command Windows steps for Exercise 3
+### 第1章 - 安装 ###
+- 更新了服务器架构图
+- 更新了数据库和Web连接部分
+  - 添加了外部系统提示
+- 更新了FME版本信息
+- 更新了安装类型。
+- 添加了有关2018 Engine Only Updates的说明
+- 删除了对主动-被动和主动-主动的引用，以支持容错
+- 添加了FME Server作业队列组件
+- 更新了容错规划
+  - 重新设计的容错
+  - 添加了UDB和SMTP Publisher的注释
+- 更新了章节回顾
 
 
-### Chapter 4 - Scalability###
-- Job Queues, removed job routing.
-- Added Job Priority Information
-- Added Priority migration from backups
-- Added information on reasons for distributed engines
-- Added note on post installation scripts 2018.0 vs 2018.1
-- Updated Images in Exercise 1 & 2.
-- Updated instructions in Exercise 2 for SQL Server
+
+### 第2章 - 连通性 ###
+- 为FME服务器队列组件添加了端口
+- 为CORS调整了FME Server版本。
+- 更新了端口图
 
 
-### Chapter 5 - Customization ###
-- Added Information for using Custom Python interpreter.
-- Added Mention of Web UI functionality to add Network Shares to Resources.
-- Updated Web Connections and no need to reauthorize once published to FME Server.
-- Updated Database Connections page.
-- Added Workspace Versioning Chapter.
-- Added Ex2 Versioning.
-- Added Encryption section.
-- Added Password Recovery section.
-
-### Chapter 6 - Migration ###
-- Updated ConfigFile Backup Information.
-- Included mention of no backup of Version Control information.
-- Added Job Queues.
-- Update Scheduled Backup to .fsconfig
-- Updated Upgrading FME Server section.
+### 第3章 - 安全性 ###
+- 添加了版本控制和工作空间查看器部分。
+- 练习3中的更新服务按钮图像。
+- 向Doc URL链接添加了2018.0标记
+- 添加了有关在新系统上安装FME Server和使用域服务帐户的信息。
+- 添加了有关使用包含常用用户名的多个域的说明。
+- 添加了与自动登录相关的Web浏览器的IWA和SSO注释。
+- 更新了练习3的命令窗口步骤
 
 
-### Chapter 7 - Troubleshooting ###
+### Chapter 4 - 可扩展性 ###
+- 作业队列，删除了作业路由。
+- 添加了作业优先级信息
+- 添加了备份的优先级迁移
+- 添加了有关分布式引擎原因的信息
+- 添加了有关安装后脚本2018.0与2018.1的说明
+- 更新了练习1和2中的图像。
+- 在练习2中更新了SQL Server的说明
+
+### 第5章 - 自定义 ###
+- 添加了使用自定义Python解释器的信息。
+- 添加了关于Web UI功能的说明，以将网络共享添加到资源。
+- 更新了Web连接，一旦发布到FME Server，就无需重新授权。
+- 更新了数据库连接页面
+- 添加了工作空间版本控制章节。
+- 添加了Ex2版本控制。
+- 添加了加密部分。
+- 添加密码恢复部分。
+
+### 第6章 - 迁移 ###
+- 更新了ConfigFile备份信息。
+- 包括提到了没有版本控制信息的备份。
+- 添加了作业队列。
+- 将计划备份更新为.fsconfig
+- 更新了升级FME Server部分。
+
+### 第7章 - 故障排除 ###
 -
 
 
-### Chapter 8 - Wrap Up###
+### 第8章 - 总结 ###
 -

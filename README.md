@@ -13,7 +13,7 @@
 全部课程由七个部分组成。这些部分是：
 
 - 规划FME Server安装
-- FME Server连接
+- FME Server连通性
 - FME Server安全性
 - 可扩展性和性能
 - FME服务器自定义

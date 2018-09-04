@@ -48,7 +48,7 @@
 <td style="border: 1px solid darkorange">
 <span style="font-family:serif; font-style:italic; font-size:larger">
 这是一个在其中有截图的技巧。
-<br><br><img src="./ServerAdmin1Installation/Images/1.004.ServerArchitectureDiagram.png">
+<br><br><img src="./FMESERVER_RESTAPI1Overview/Images/image1.1.2.REST.png">
 <br><br>注意使用br标签来创建间距。
 </span>
 </td>

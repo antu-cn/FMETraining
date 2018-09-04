@@ -1,68 +1,69 @@
 <!--This file duplicates a little of the content to follow, but is added here because the content of this file is used for the landing page on GitBook-->
 
-# FME Server REST API Training 2018 #
+# FME Server REST API培训2018 #
 
-This is the manual for the training course for Safe Software’s FME Server REST API.
+这是Safe Software的FME Server REST API培训课程的手册。
 
 ![](./Safe_RGB_transparent200.png)
 
-The FME Server REST API Training is a training course that teaches FME users how to master the FME Server REST API and build their own web applications to solve data challenges. The REST API allows a user to interact with the FME Server without the use of the FME Server Graphical User Interface. This enables the user to create web applications that allow a client access to the FME Server without ever having to log in or directly access the server. This course teaches users what the REST API is, how to use it, and how to build custom web applications that leverage the power of FME.
+FME Server REST API培训是一个培训课程，教授FME用户如何掌握FME Server REST API并构建自己的Web应用程序以解决数据挑战。REST API允许用户在不使用FME Server图形用户界面的情况下与FME Server进行交互。这使用户能够创建允许客户端访问FME服务器的Web应用程序，而无需登录或直接访问服务器。本课程向用户讲授REST API是什么，如何使用它，以及如何构建利用FME功能的自定义Web应用程序。
 
-## Course Structure ##
+## 课程结构 ##
 
-The full course is made up of two sections. These sections are:
+全部课程由两部分组成。这些部分是：
 
-- ***Interacting with the FME Server REST API***
+- ***与FME Server REST API交互***
 
  - Getting Started with the REST API
 
- - Using a REST Client Tool to Make Calls to the FME Server
+ - REST API入门
 
- - Interacting with Workspaces
+ - 使用REST客户端工具调用FME服务器
 
- - Web Services, Direct URLs, and the REST API
+ - 与工作空间交互
 
- - Server Administration Tasks
+ - Web服务，直接URL和REST API
 
- - Job Management
+ - 服务器管理任务
 
-- *** Developing with the FME Server REST API ***
+ - 工作管理
 
- - Best Practices when Building a Web Application
+- ***使用FME Server REST API进行开发***
 
- - Creating a Dynamically Populated Form
+ - 构建Web应用程序时的最佳实践
 
- - Data Distribution Using ArcGIS
+ - 创建动态填充的表单
 
- - Data Visualization Using ArcGIS
+ - 使用ArcGIS进行数据分发
 
- - Data Uploads and Downloads
+ - 使用ArcGIS进行数据可视化
 
- - Creating a Data Validation Application
+ - 数据上传和下载
 
- - Course Wrap Up  
+ - 创建数据验证应用程序
 
-## Current Status ##
+ - 课程总结
 
-The current status of this manual is: **Complete**: this manual can be used for training, subject to minor, last-minute fixes.
 
-This manual applies to **FME2018.0**
+## 当前状态 ##
 
-The status of each chapter is:
+本手册的当前状态为： **完整**: 本手册可用于培训，但需要经过细微的最后修复。
+本手册适用于**FME2018.0**
 
-- Chapter 0: Complete content. No exercises
-- Chapter 1: Complete content and exercises
-- Chapter 2: Complete content. No exercises
-- Chapter 3: Complete content and exercises
-- Chapter 4: Complete content and exercises
-- Chapter 5: Complete content and exercises
-- Chapter 6: Complete content and exercises
-- Chapter 7: Complete content and exercises
-- Chapter 8: Complete content and exercises
-- Chapter 9: Complete content and exercises
-- Chapter 10: Complete content no exercises
-- Slides: Complete
-- FMEData: Complete
-- Course Outline: Complete
+每章的状态是：
 
-***NB:*** *Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement for further details.*
+- 第0章：完整内容。没有练习
+- 第1章：完整的内容和练习
+- 第2章：完整内容。没有练习
+- 第3章：完整内容和练习
+- 第4章：完整内容和练习
+- 第5章：完整内容和练习
+- 第6章：完整内容和练习
+- 第7章：完整内容和练习
+- 第8章：完整内容和练习
+- 第9章：完整内容和练习
+- 第10章：完整内容不练习
+- 幻灯片：完整
+- FMEData：完整
+- 课程大纲：完整
+***注意:*** *即使是已完成的内容，Safe Software Inc.也不对本文档中的任何错误或其后果承担任何责任，并保留对本文档进行改进和更改的权利，恕不另行通知。有关详细信息，请参阅完整许可协议。*

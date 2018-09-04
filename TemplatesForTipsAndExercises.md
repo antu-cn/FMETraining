@@ -1,5 +1,5 @@
   <div id="readme" class="readme blob instapaper_body">
-    <article class="markdown-body entry-content" itemprop="text"><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">## NOTES ##此内容是一组用于提示，警告，新内容，某人所述和练习的模板。</font></font></p>
+    <article class="markdown-body entry-content" itemprop="text"><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">## 说明 ##此内容是一组用于提示，警告，新内容，某人所述和练习的模板。</font></font></p>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在“---”横向标尺和任何其他内容之间存在空行是至关重要的！</font></font></p>
 <h2><a id="user-content-templates" class="anchor" aria-hidden="true" href="https://github.com/safesoftware/FMETraining/blob/Desktop-Basic-2018/TemplatesForTipsAndExercises.md#templates"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></h2>
 <hr>

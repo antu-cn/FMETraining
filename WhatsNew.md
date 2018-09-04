@@ -87,7 +87,7 @@
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在手册中添加了用于演示内容的示例工作空间（请参阅FMEData2018 \ Workspaces \ InstructorUse）</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更新了手册中的屏幕截图和示例，以与新的示例工作空间保持一致</font></font></li>
 </ul>
-<h3><a id="user-content-best-practice" class="anchor" aria-hidden="true" href="https://github.com/safesoftware/FMETraining/blob/Desktop-Basic-2018/WhatsNew.md#best-practice"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最佳练习</font></font></h3>
+<h3><a id="user-content-best-practice" class="anchor" aria-hidden="true" href="https://github.com/safesoftware/FMETraining/blob/Desktop-Basic-2018/WhatsNew.md#best-practice"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最佳实践</font></font></h3>
 <ul>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正确编号的最佳练习文件为第5章</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将原型，测试等部分移至工作空间设计章节</font></font></li>

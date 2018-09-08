@@ -1,174 +1,134 @@
-<!--Exercise Section-->
-
-<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
-<tr>
-<td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 2</span>
-</td>
-<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
-<span style="color:white;font-size:x-large;font-weight: bold">Configuring FME Server for Active Directory (LDAP)</span>
-</td>
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text">
+<table>
+<tbody><tr>
+<td width="25%">
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+练习2
+</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+为活动目录配置FME Server（LDAP）
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
-<td style="border: 1px solid darkorange">N/A</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
-<td style="border: 1px solid darkorange">Connect FME Server to an existing Active Directory service</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体目标</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将FME Server连接到现有的活动目录服务</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
-<td style="border: 1px solid darkorange">Configuring Active Directory in FME Server, Importing Users and Groups</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server中配置活动目录，导入用户和组</font></font></td>
 </tr>
+</tbody></table>
+<hr>
 
-</table>
-
----
-<!--Person X Says Section-->
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">This exercise is for demonstration purposes only</span>
-</td>
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+此练习仅用于演示目的
+</font></font></td>
 </tr>
-</table>
+</tbody></table>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此实验需要Windows域控制器，并且可以从FME Server系统连接。</font><font style="vertical-align: inherit;">今天使用的培训环境无法访问域控制器。</font><font style="vertical-align: inherit;">以下步骤和视频将作为配置典型活动目录以与FME Server配合使用的指南。</font><font style="vertical-align: inherit;">它不包括特定活动目录可能需要的所有可能配置。</font></font></p>
+<hr>
 
-This lab requires an Windows domain controller to be present and available to connect to from the FME Server system.  The training environment being used today does not have access to a domain controller.  The following steps and video are presented as a guide for configuring the typical active directory to work with FME Server.  It does not cover all possible configurations that may be required for your particular active directory.
-
----
-
-
-<!--Person X Says Section-->
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says...</span>
-</td>
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Intuitive修女说......
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-Due to security requirements and restrictions it is not possible to complete this exercise.<br>
-Instead, please watch <a href="https://youtu.be/XzoCR-X5TKQ">this video demonstrating the exercise</a>.
-</span>
-</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+由于安全要求和限制，无法完成此练习。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+相反，请观看</font></font><a href="https://youtu.be/XzoCR-X5TKQ" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此视频演示练习</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+
+</font></font></td>
 </tr>
-</table>
+</tbody></table>
+<hr>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）连接到FME服务器</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过Windows“开始”菜单上的Web界面选项或直接在Web浏览器http：// &lt;your fmeserver host&gt;/ fmeserver中打开FME Server Web界面，然后使用管理员帐户登录。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击</font><font style="vertical-align: inherit;">左侧边栏上“管理”标题下的“ </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全性”</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后选择“ </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">活动目录”</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2）创建与活动目录的连接</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过创建新连接，您可以将组织的活动目录用户和组合并到FME Server安全配置中。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要开始使用，请选择“ </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新建”</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以打开“创建新服务器连接”页面。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入以下信息：</font></font></p>
+<ul>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">名称：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> FME 活动目录</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主机：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> dc.fme.com</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">端口：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 389</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索帐户名称：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> DC \ Administrator</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索帐户密码：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> dcAdmin2017</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“ </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确定”</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以保存新的活动目录连接。</font><font style="vertical-align: inherit;">您将返回到活动目录页面。</font><font style="vertical-align: inherit;">等待状态从黄色变为绿色，表示连接成功。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）导入用户</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在已建立连接，选择“ </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导入用户”</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图标以从活动目录连接添加用户。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在“浏览用户”页面上，键入</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mvector</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后按Enter键。</font><font style="vertical-align: inherit;">选择Miss Vector的用户，然后单击“ </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导入”</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web浏览器窗口右上角会显示一条通知，表明用户已成功导入。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：如果Miss Vector属于任何活动目录组，我们可以将其作为FME服务器角色导入 - 并且将自动导入所有成员用户。</font></font></p>
 
----
-
-<br>**1) Connect to FME Server**
-<br>Open the FME Server web interface, either through the web interface option on the Windows Start Menu or directly in your web browser http://**&lt;your fmeserver host&gt;**/fmeserver, and log in with an admin account.
-
-Click *Security*, under the Admin heading on the left sidebar, and then select **Active Directory**.
-
-
-<br>**2) Create Connection to Active Directory**
-<br>By creating a new connection, you can incorporate your organization’s Active Directory users and groups into your FME Server security configuration.
-
-To get started, select **New** to open the Create New Server Connection page.
-
-Enter the following information:
-
-- **Name:** FME Active Directory
-- **Host:** dc.fme.com
-- **Port:** 389
-- **Search Account Name:** DC\Administrator
-- **Search Account Password:** dcAdmin2017
-
-Click **OK** to save the new Active Directory connection. You will be returned to the Active Directory page. Wait for the Status to change from Yellow to Green, indicating that the connection is successful.
-
-
-<br>**3) Import Users**
-<br>Now that the connection is established, select the **Import Users** icon to add users from the Active Directory connection.
-
-On the Browse Users page, type in *mvector* and press Enter. Select Miss Vector's user and click **Import**.
-
-A notification will appear in the top right of the web browser window to indicate that the user was successfully imported.
-
-Note: If Miss Vector belonged to any Active Directory groups, we could have instead imported that as an FME Server Role – and all users that are a member of would be imported automatically.
-
-
-
-<!--Tip Section-->
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-info-circle fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">TIP: Import Error</span>
-</td>
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+提示：导入错误
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-When importing users from Active Directory you may encounter this message.  
-This is because a username of the same value already exists in the SYSTEM users.
-<br>
-<br><br><img src="./Images/3.215.Ex2.ImportUserError.png">
-<br><br>It is recommended that you remove the SYSTEM user account, and reimport the Active Directory user.  
-<br>This error can also occur if you are importing users from a second domain that contains
-<br>a same named user as the first domain. In this case it will be necessary to provide a
-<br>different username on this dialog to represent the user from the second domain.  
-<br><strong>NOTE</strong>: FME Server creates an aliase for the imported usernames and this is linked to the
-<br>user account in the Active Directory.
-</span>
-</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+从活动目录导入用户时，您可能会遇到此消息。</font><font style="vertical-align: inherit;">这是因为SYSTEM用户中已存在相同值的用户名。
+</font><font style="vertical-align: inherit;">建议您删除SYSTEM用户帐户，然后重新导入活动目录用户。  
+</font><font style="vertical-align: inherit;">如果要从包含</font><font style="vertical-align: inherit;">与第一个域相同的命名用户</font><font style="vertical-align: inherit;">的第二个域导入用户，也会发生此错误
+ </font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">在这种情况下，需要</font><font style="vertical-align: inherit;">在此对话框上</font><font style="vertical-align: inherit;">提供
+ </font><font style="vertical-align: inherit;">不同的用户名，以表示来自第二个域的用户。  
+</font><strong><font style="vertical-align: inherit;">注意</font></strong><font style="vertical-align: inherit;">：FME Server为导入的用户名创建别名，并将其链接到</font><font style="vertical-align: inherit;">活动目录中</font><font style="vertical-align: inherit;">的
+ </font><font style="vertical-align: inherit;">用户帐户。
+
+</font></font><br>
+<br><br><a target="_blank" rel="noopener noreferrer" href="./Images/3.215.Ex2.ImportUserError.png"><img src="./Images/3.215.Ex2.ImportUserError.png" style="max-width:100%;"></a>
+<br><br><font style="vertical-align: inherit;"></font><br><font style="vertical-align: inherit;"></font><br><font style="vertical-align: inherit;"></font><br><font style="vertical-align: inherit;"></font><br><strong><font style="vertical-align: inherit;"></font></strong><font style="vertical-align: inherit;"></font><br><font style="vertical-align: inherit;"></font></td>
 </tr>
-</table>
+</tbody></table>
+<hr>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）配置用户权限</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将活动目录用户导入FME Server后，必须配置权限。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server Web界面左侧栏的Admin标题下</font><font style="vertical-align: inherit;">选择Security&gt; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Users</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">单击</font><font style="vertical-align: inherit;">刚刚创建</font><font style="vertical-align: inherit;">的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Miss Vector</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户以打开“编辑用户”页面。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分配的安全角色</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的文本框区域，</font><font style="vertical-align: inherit;">然后选择</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fmeauthor</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">请注意现在已选中的fmeauthor Role的所有继承权限。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择</font><font style="vertical-align: inherit;">底部的“ </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确定</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ”以应用更改。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5）</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过以Miss Vector身份登录FME Server，</font><strong><font style="vertical-align: inherit;">测试新用户帐户</font></strong><font style="vertical-align: inherit;">测试导入和分配权限是否成功。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注销管理员帐户或打开新的私人浏览窗口，然后使用以下凭据登录：</font></font></p>
+<ul>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户名：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> mvector</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">密码：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> dcFME2017</font></font></li>
+</ul>
+<hr>
 
----
-
-
-<br>**4) Configure User Permissions**
-<br>After the Active Directory user is imported to FME Server, you must configure the permissions.
-
-Select Security &gt; **Users** under the Admin heading on the left sidebar of the FME Server web interface. Click on the **Miss Vector** user that was just created to open the Edit User page.
-
-Click in the text box area for **Assigned Security Roles** and select **fmeauthor**. Notice all the inherited permissions from the fmeauthor Role that are now selected.
-
-Select **OK** at the bottom to apply the changes.
-
-
-<br>**5) Test the New User Account**
-<br>Test that the import and assigning permissions was successful by logging into FME Server as Miss Vector.
-
-Either logout of the admin account or open a new private browsing window, and login using the credentials below:
-
-- **Username:** mvector
-- **Password:** dcFME2017
-
----
-
-<!--Exercise Congratulations Section-->
-
-<table style="border-spacing: 0px">
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+恭喜！
+</font></font></td>
+</tr>
 <tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-thumbs-o-up fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">CONGRATULATIONS!</span>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+通过完成本练习，您已学会如何：
+</font></font><br>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将FME Server连接到现有的活动目录配置</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从活动目录导入用户和组</font></font></li></ul>
+
 </td>
 </tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-By completing this exercise you have learned how to:
-<br>
-<ul><li>Connect FME Server to an existing Active Directory configuration</li>
-<li>Import Users and Groups from Active Directory</li></ul>
-</span>
-</td>
-</tr>
-</table>
+</tbody></table>
+</article>
+  </div>

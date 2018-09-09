@@ -1,4 +1,4 @@
-  <div id="readme" class="readme blob instapaper_body">
+    <div id="readme" class="readme blob instapaper_body">
     <article class="markdown-body entry-content" itemprop="text">
 <table>
 <tbody><tr>
@@ -59,13 +59,13 @@
 <p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）运行仪表板工作空间</font></font></strong>
 <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们首先需要启用仪表板，然后它们才会显示在仪表板页面上。</font><font style="vertical-align: inherit;">FME Server附带五个默认仪表板，通过运行工作空间触发。</font></font></p>
 <p><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在侧面菜单栏上单击“运行工作空间”。</font><font style="vertical-align: inherit;">在“运行工作空间”页面上，选择“仪表板”作为存储库。</font><font style="vertical-align: inherit;">然后选择JobHistoryStatisticsGathering.fmw作为工作空间。</font><font style="vertical-align: inherit;">在参数中将用户名和密码设置为</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">admin</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后单击“运行”：</font></font></p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/domix2000/FMETraining-1/blob/Server-Admin-2018/ServerAdmin5Customization/Images/5.301.RunJobHistoryDashboard.png"><img src="./FMETraining-1_Exercise1_仪表板_files/5.301.RunJobHistoryDashboard.png" alt="" style="max-width:100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/5.301.RunJobHistoryDashboard.png"><img src="./Images/5.301.RunJobHistoryDashboard.png" alt="" style="max-width:100%;"></a></p>
 <p><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作空间运行完毕后，返回“运行工作空间”页面，然后运行另一个仪表板。</font><font style="vertical-align: inherit;">在“运行工作空间”页面上，选择DailyTotalRunningTime.fmw，然后单击“运行”。</font></font></p>
 <p><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">再运行一个工作空间，以便我们查看一些数据。</font><font style="vertical-align: inherit;">在运行工作空间页面上，将Repository更改为Samples并选择austinApartments.fmw并单击运行。</font></font></p>
 <p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）查看仪表板</font></font></strong>
 <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在侧面菜单栏上单击仪表板。</font><font style="vertical-align: inherit;">这是仪表板页面，可以查看已运行的任何仪表板。</font></font></p>
 <p><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择DailyTotalRunningTime以查看仪表板。</font><font style="vertical-align: inherit;">由于我们只运行了一次austinApartments.fmw工作空间，我们的仪表板并没有告诉我们多少，但是超时仪表板成为服务器管理员的宝贵资源：</font></font></p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/domix2000/FMETraining-1/blob/Server-Admin-2018/ServerAdmin5Customization/Images/5.302.TotalRunTime.png"><img src="./FMETraining-1_Exercise1_仪表板_files/5.302.TotalRunTime.png" alt="" style="max-width:100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/5.302.TotalRunTime.png"><img src="./Images/5.302.TotalRunTime.png" alt="" style="max-width:100%;"></a></p>
 <hr>
 
 <table>
@@ -106,4 +106,3 @@
 </tbody></table>
 </article>
   </div>
-</html>

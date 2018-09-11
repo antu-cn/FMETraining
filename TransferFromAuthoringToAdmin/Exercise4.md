@@ -4,151 +4,110 @@
 
 <!--Exercise Section-->
 
-
-<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
-<tr>
-<td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 4</span>
-</td>
-<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
-<span style="color:white;font-size:x-large;font-weight: bold">Earthquake Processing</span>
-</td>
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text">
+<table>
+<tbody><tr>
+<td width="25%">
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+练习4
+</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+地震处理
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
-<td style="border: 1px solid darkorange">Earthquakes (GeoJSON)</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地震（GeoJSON）</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
-<td style="border: 1px solid darkorange">Create a workspace to read and process earthquake data and publish it to FME Server</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体的目标</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建工作空间以读取和处理地震数据并将其发布到FME Server</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
-<td style="border: 1px solid darkorange">Setting security options in FME Server</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server中设置安全性选项</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Start Workspace</td>
-<td style="border: 1px solid darkorange">N/A</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">End Workspace</td>
-<td style="border: 1px solid darkorange">N/A</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结束工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td>
 </tr>
+</tbody></table>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您是当地城市GIS部门的技术分析师。</font><font style="vertical-align: inherit;">您拥有使用FME Desktop的丰富经验，您的部门正在调查FME Server以评估其功能。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您已经创建了一个工作空间来读取提供的地震数据并将其发布到FME Server。</font><font style="vertical-align: inherit;">现在，您要确保其他用户有权运行它。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）连接到服务器</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过开始菜单上的Web用户界面选项或直接在Web浏览器中打开FME Server界面，然后登录。从菜单中选择“管理(Manage)”&gt;“管理(Administration)”&gt;“安全性(Security)”。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2）创建用户</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让我们为可能使用此工作空间的人创建一个新的用户帐户。</font><font style="vertical-align: inherit;">单击“用户”选项卡，然后单击“新建”按钮：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.60.Ex4.CreateNewUser.png"><img src="./Images/Img1.60.Ex4.CreateNewUser.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">出现提示时，使用以下参数创建新用户：</font></font></p>
+<ul>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户名：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> WebGuest</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全名：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Web Interface Account</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">角色：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> fmeguest</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">密码：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> WebGuest1</font></font></li>
+</ul>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）检查角色权限</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果该用户要访问Web界面，我们应该在安全设置中进行检查。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“角色策略”选项卡，然后选择要检查的fmeguest角色。</font><font style="vertical-align: inherit;">列表的最底部是FME Server Web用户界面的参数。</font><font style="vertical-align: inherit;">它将默认关闭。</font><font style="vertical-align: inherit;">这意味着此角色中的某个人无法通过Web界面访问工作空间。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们可以简单地打开该参数 - 但这会让每个访客用户都能够访问该界面，这可能不是一个好主意。</font><font style="vertical-align: inherit;">所以，让我们创建一个新角色。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）创建角色</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“角色”选项卡，然后选择fmeguest角色的复选框。</font><font style="vertical-align: inherit;">单击“复制”按钮以创建它的副本：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.62.Ex4.DuplicateGuestRole.png"><img src="./Images/Img1.62.Ex4.DuplicateGuestRole.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将此角色称为EmergencyPreparedness。</font><font style="vertical-align: inherit;">从此角色中删除guest帐户，然后单击“确定”以创建它。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5）设置角色权限</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在回到“角色策略”选项卡中，选择EmergencyPreparedness角色作为要检查的角色。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先检查管理存储库（Manage Repositories）选项。</font><font style="vertical-align: inherit;">这将让用户找到工作空间并运行它们。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">接下来，将Web界面访问的参数设置为“是”：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.61.Ex4.GuestWebInterfaceSetting.png"><img src="./Images/Img1.61.Ex4.GuestWebInterfaceSetting.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">同时向上滚动并检查Training存储库的设置。</font><font style="vertical-align: inherit;">此角色需要具有对此存储库的完全访问权限，如下所示：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.63.Ex4.TrainingRepSecurity.png"><img src="./Images/Img1.63.Ex4.TrainingRepSecurity.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“应用更改”按钮以保存所做的更改。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6）测试角色</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">退出Web界面（管理员&gt;注销），然后再次以新WebGuest帐户登录。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击菜单上的“运行”选项，然后运行地震工作空间。</font></font></p>
+<hr>
 
-</table>
-
----
-
-You're a technical analyst in the GIS department of your local city. You have plenty of experience using FME Desktop, and your department is now investigating FME Server to evaluate its capabilities.
-
-You've already created a workspace to read a feed of earthquake data and published it to FME Server. Now you want to make sure that other users have permission to run it. 
-
-
-<br>**1) Connect to Server**
-<br>Open the FME Server interface, either through the Web User Interface option on the start menu or directly in your web browser, and log in. Select Manage &gt; Administration &gt; Security from the menu.
-
-
-<br>**2) Create User**
-<br>Let’s create a new user account for a person who might make use of this workspace. Click on the Users tab and then on the New button:
-
-![](./Images/Img1.60.Ex4.CreateNewUser.png)
-
-When prompted, create a new user with the following parameters:
-
-- **User Name:** WebGuest
-- **Full Name:** Web Interface Account
-- **Roles:** fmeguest
-- **Password:** WebGuest1
-
-
-<br>**3) Check Role Permissions**
-<br>If this user is to have access to the web interface, we should check that in the security settings.
-
-Click on the Role Policies tab and then choose the fmeguest role as the one to examine. At the very bottom of the list is a parameter for FME Server Web User Interface. It will be turned off by default. This means someone in this role could not possibly access the workspace through the web interface.
-
-We could simply turn on that parameter - but then that would give every guest user the ability to access the interface, and this might not be a good idea. So, let's create a new role.
-
-
-<br>**4) Create Role**
-<br>Click the Role tab and select the checkbox for the fmeguest role. Click the Duplicate button to create a copy of it:
-
-![](./Images/Img1.62.Ex4.DuplicateGuestRole.png)
-
-Call this role EmergencyPreparedness. Remove the guest account from this role and click OK to create it.
-
-
-<br>**5) Set Role Permissions**
-<br>Now back in the Role Policies tab choose the EmergencyPreparedness role as the one to examine. 
-
-Firstly check the option for Manage Repositories. This will let the user find workspaces and run them.
-
-Next set the parameter for Web Interface access to yes:
-
-![](./Images/Img1.61.Ex4.GuestWebInterfaceSetting.png) 
-
-Also scroll up slightly and check the settings for the Training repository. This role needs to have full access to this repository, as shown:
-
-![](./Images/Img1.63.Ex4.TrainingRepSecurity.png)
-
-Click the Apply Changes button to save the changes you have made.
-
-
-<br>**6) Test Role**
-<br>Log out of the web interface (Admin &gt; Log Out) and then log in again as the new WebGuest account.
-
-Click the Run option on the menu and run the earthquake workspace. 
-
----
-
-<!--Person X Says Section-->
-
-<table style="border-spacing: 0px">
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+警察局长Webb-Mapp说......
+</font></font></td>
+</tr>
 <tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Police Chief Webb-Mapp says...</span>
-</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+如果在菜单上没有看到“运行”选项，则可能在步骤5中错过了设置Manage Repositories = Yes。
+
+</font></font></td>
 </tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-If you don't see a Run option on the menu, you probably missed setting Manage Repositories = Yes in step 5.
-</span>
-</td>
-</tr>
-</table>
-
----
-
-<!--Exercise Congratulations Section--> 
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-thumbs-o-up fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">CONGRATULATIONS</span>
-</td>
-</tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-By completing this exercise you have learned how to:
-<br>
-<ul><li>Create a new user and new role on an FME Server installation</li>
-<li>Set permissions on an FME Server role</li>
-<li>Test a newly created role/account to ensure it works correctly</li></ul>
-</span>
-</td>
-</tr>
-</table>
-
-
+</tbody></table>
+<hr>
  
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+恭喜
+</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+通过完成本练习，您已学会如何：
+</font></font><br>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server安装上创建新用户和新角色</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置FME Server角色的权限</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">测试新创建的角色/帐户以确保其正常工作</font></font></li></ul>
+
+</td>
+</tr>
+</tbody></table>
+</article>
+  </div>

@@ -60,8 +60,8 @@
 <li><a href="./ServerAdmin5Customization/Exercise1_Dashboards.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习1：配置仪表板</font></font></a></li>
 <li><a href="./ServerAdmin5Customization/5.02.32And64BitEnginesOnSameMachine.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">同一台机器上的32位和64位引擎</font></font></a></li>
 <li><a href="./ServerAdmin5Customization/5.03.ConfiguringCustomCoordinateSystemsGridTransformations.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置自定义坐标系/格网转换</font></font></a></li>
-<li><a href="./ServerAdmin5Customization/5.04.UsingPythonWithFMEServer.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将Python与FME Server一起使用</font></font></a></li>
-<li><a href="./ServerAdmin5Customization/5.05.UsingRWithFMEServer.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将R与FME Server一起使用</font></font></a></li>
+<li><a href="./ServerAdmin5Customization/5.04.UsingPythonWithFMEServer.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server中使用Python</font></font></a></li>
+<li><a href="./ServerAdmin5Customization/5.05.UsingRWithFMEServer.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server中使用R</font></font></a></li>
 <li><a href="./ServerAdmin5Customization/5.06.AddingSharedResources.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加共享资源</font></font></a></li>
 <li><a href="./ServerAdmin5Customization/5.07.DatabaseConnections.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据库连接</font></font></a></li>
 <li><a href="./ServerAdmin5Customization/5.08.WebConnections.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络连接</font></font></a></li>

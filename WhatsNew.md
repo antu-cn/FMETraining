@@ -1,29 +1,30 @@
-# What's New #
-This file documents major changes made to training materials in 2018
+# 新内容是什么 #
+该文件记录了2018年培训材料的主要变化
+
 
 ---
 
-## Server Authoring ##
+## 服务器编写 ##
 
-### General ###
+### 常规 ###
 -
 
 
-### Introduction to FME Server ###
-- Restructured old chapter 1 (Intro to Server) into two chapters (Intro to Server and Data Handling)
-- Incorporates part of old chapter 5 (Projects) which is now deleted
+### FME Server简介 ###
+- 将旧的第1章（服务器简介）重新分为两章（服务器和数据处理简介）
+- 合并旧第5章(项目)的一部分，现在已删除
 
-### Data Handling and FME Server ###
-- Restructured old chapter 1 (Intro to Server) into two chapters (Intro to Server and Data Handling)
-- Incorporates part of old chapter 5 (Projects) which is now deleted
+### 数据处理和FME Server ###
+- 将旧的第1章（服务器简介）重新分为两章（服务器和数据处理简介）
+- 合并旧第5章(项目)的一部分，现在已删除
 
-### Self-Serve with FME Server: Part1 ###
-- Reconfigured to move out parameter-related content into Part 2 (now called Advanced)
-- Incorporates part of old chapter 5 (Projects) which is now deleted
+### 使用FME Server自助服务：第1部分 ###
+- 重新配置为将参数相关内容移出到第2部分（现在称为高级）
+- 合并旧第5章(项目)的一部分，现在已删除
 
-### Real-Time with FME Server ###
-- Moved chapter between two self-serve chapters
+### FME Server的实时性 ###
+- 在两个自助服务章节之间移动了章节
 
-### Self-Serve with FME Server: Part2 ###
-- Reconfigured to move other services into Part 1 (now called Basic)
-- Moved chapter to final position in manual
+### 使用FME服务器自助服务：第2部分 ###
+- 重新配置将其他服务移动到第1部分（现在称为基础）
+- 将章节移到手册中的最终位置

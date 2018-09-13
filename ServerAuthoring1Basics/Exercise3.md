@@ -1,157 +1,107 @@
-<!--Exercise Section-->
-
-<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
-<tr>
-<td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 3</span>
-</td>
-<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
-<span style="color:white;font-size:x-large;font-weight: bold">Daily Database Updates: Sharing and Scheduling</span>
-</td>
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text">
+<table>
+<tbody><tr>
+<td width="25%">
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+练习1.3
+</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+每日数据库更新：共享和计划
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
-<td style="border: 1px solid darkorange">Firehalls (GML)<br>Neighborhoods (KML)</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">消防站Firehalls（GML）</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">街区Neighborhoods（KML）</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
-<td style="border: 1px solid darkorange">Create a workspace to read and process departmental data and publish it to FME Server</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体目标</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建工作空间以读取和处理部门数据并将其发布到FME Server</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
-<td style="border: 1px solid darkorange">Sharing and scheduling a translation in FME Server</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server中共享和调度转换</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Start Workspace</td>
-<td style="border: 1px solid darkorange">None</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">End Workspace</td>
-<td style="border: 1px solid darkorange">None</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结束工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无</font></font></td>
 </tr>
+</tbody></table>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您已经（在练习1和练习2中）创建了一个工作空间来执行此转换，将其发布到FME Server，并运行它以确认它是否有效。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为日常任务，您计划在下班后每天运行转换。</font><font style="vertical-align: inherit;">但是...如果你不在那里或早退，或其他人迟到，会发生什么。</font><font style="vertical-align: inherit;">谁会运行呢？</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先，您应该确保其他用户可以访问工作空间来运行它，但您也可以将其设置为以自动计划运行。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）连接到服务器</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">浏览到FME Server界面的登录页面，方法是通过开始菜单上的Web 界面选项启动它，或者如果您已经登录则注销。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这次，使用通用用户帐户登录，该帐户是任何FME Server安装上的默认帐户。</font><font style="vertical-align: inherit;">用户名是</font></font><em><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">user</font></font></strong></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，密码也是</font></font><em><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">user</font></font></strong></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">！</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您会注意到的第一件事是该帐户的菜单和功能受到更多限制：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.227.Ex3.UserMenu.png"><img src="./Images/Img1.227.Ex3.UserMenu.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实际上，如果您尝试运行一个工作空间，您会发现这个帐户能够访问的惟一存储库是sample存储库;不是现有工作空间所在的Training存储库:</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.228.Ex3.UserRepository.png"><img src="./Images/Img1.228.Ex3.UserRepository.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2）共享存储库</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注销用户帐户并以管理员身份（admin / admin）重新登录。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在，您拥有完整的菜单条目集，单击菜单上的“存储库”。</font><font style="vertical-align: inherit;">在存储库列表下，找到Training存储库。</font><font style="vertical-align: inherit;">单击右侧的“共享”图标：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.229.Ex3.ShareButton.png"><img src="./Images/Img1.229.Ex3.ShareButton.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在“共享选项”对话框中，选择fmeuser作为要共享的角色，并允许它们运行工作空间：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.230.Ex3.ShareDialog.png"><img src="./Images/Img1.230.Ex3.ShareDialog.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过选择</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fmeuser</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">角色（而不是单个</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">user</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">帐户），我们允许任何被标记为用户的人访问工作空间; </font><font style="vertical-align: inherit;">并且只允许它们运行，我们阻止它们下载并对我们的工作空间进行编辑。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）检查共享</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">退出管理员帐户并使用用户帐户（user/user）重新登录到FME Server。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这一次，您应该可以访问Training存储库。</font><font style="vertical-align: inherit;">单击“运行工作空间”，在“Training ”存储库中选择您的工作空间并运行它。</font><font style="vertical-align: inherit;">检查“已完成的作业”页面，当工作空间以用户身份运行时，您将看到该工作空间的一个条目。</font><font style="vertical-align: inherit;">检查“作业”页面，当工作空间以用户身份运行时，您将看到该工作空间的一个条目。</font><font style="vertical-align: inherit;">只有一个条目，因为用户没有查看任何其他用户作业所需的权限：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.231.Ex3.CompletedJobUser.png"><img src="./Images/Img1.231.Ex3.CompletedJobUser.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">再次注销并以管理员身份重新登录。</font><font style="vertical-align: inherit;">现在，在Jobs | Completed 窗口，您应该能够看到管理员的工作和用户的工作</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.232.Ex3.MultiUserJobsList.png"><img src="./Images/Img1.232.Ex3.MultiUserJobsList.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是因为管理员组确实有权查看所有作业。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）创建测试计划</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在我们允许其他用户按需运行工作空间，但我们也应该将转换设置为按计划运行。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先，为了确认调度确实有效，让我们设置一个测试计划。</font><font style="vertical-align: inherit;">单击菜单上的“计划”，然后在“计划”页面中，单击“新建”按钮以启动该过程。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置测试计划的名称，并通过在“类别”字段中键入“培训(Training)”将其添加到“培训(Training)”类别：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.233.Ex3.NewSchedule.png"><img src="./Images/Img1.233.Ex3.NewSchedule.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于时间设置，将计划设置为立即启动并每30秒运行一次。</font><font style="vertical-align: inherit;">取消选中Schedule Is Not Expire旁边的复选框，并将结束时间设置为未来后约30分钟（这样的话，如果我们忘记取消计划安排，它不会永远持续下去!）</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.234.Ex3.SetSchedule.png"><img src="./Images/Img1.234.Ex3.SetSchedule.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，时间以24小时格式给出，因此1:30表示AM，13：30表示PM。</font><font style="vertical-align: inherit;">同样重要的是要注意，此时间是运行连接到FME Server的Web浏览器的计算机的本地时间。</font><font style="vertical-align: inherit;">如果您的FME服务器位于与您正在访问FME Server的计算机不同时区的计算机上，请记住这一点。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在“工作空间设置”下，选择“Training库”，然后选择之前上载的工作空间（Basics-Ex1-Complete.fmw）：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.235.Ex3.NewScheduleWorkspace.png"><img src="./Images/Img1.235.Ex3.NewScheduleWorkspace.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们不需要为此工作空间更改任何用户参数，因此可以忽略任何用户参数。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在单击“确定”以添加新计划。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5）检查作业页面</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开“作业”页面。</font><font style="vertical-align: inherit;">将打开以前运行的作业列表。</font><font style="vertical-align: inherit;">您将发现(如果设置正确)将有一些作业正在以计划运行:</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.236.Ex3.NewScheduleJobs.png"><img src="./Images/Img1.236.Ex3.NewScheduleJobs.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，用户名设置为admin; </font><font style="vertical-align: inherit;">因为那是创建计划的用户，即用于运行作业的用户名。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6）创建实际计划</font></font></strong>
+<br><font style="vertical-align: inherit;">现在我们确信我们知道如何使用界面，让我们设置实际计划。</font><font style="vertical-align: inherit;">我们希望工作空间在一周中的每一天都运行。也应该没有结束日期。</font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">因此，请返回“计划”页面。</font><font style="vertical-align: inherit;">您现在可以：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击测试计划并将其编辑为所需的值</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除测试计划并创建具有所需值的新计划</font></font></li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.237.Ex3.ChangedSchedule.png"><img src="./Images/Img1.237.Ex3.ChangedSchedule.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此设置将在每天晚上8:00运行工作空间。</font><font style="vertical-align: inherit;">别忘了单击“确定”按钮！</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可能希望在此培训期间定期检查以确保工作空间按预期运行。</font></font></p>
+<hr>
 
-</table>
-
----
-
-You have already (in Exercises 1 and 2) created a workspace to carry out this translation, published it to FME Server, and run it to confirm it works.
-
-As a daily task, you plan to run the translation every day after work. However... what happens if you are not there, or leave early, or someone else stays late. Who will run it then?
-
-Firstly you should ensure other users have access to the workspace to run it, but you can also set it up to run on an automatic schedule.
-
-
-<br>**1) Connect to Server**
-<br>Browse to the log in page of the FME Server interface, either by starting it through the Web Interface option on the start menu or by logging out if you are already logged in.
-
-This time, log in using the generic user account that is a default account on any FME Server installation. The username is ***user*** and the password is ***user*** as well!
-
-The first thing you'll notice is that the menu and functionality is much more restricted for this account:
-
-![](./Images/Img1.224.Ex3.UserMenu.png)
-
-In fact, if you try to run a workspace you'll find that the only repository this account has access to is the Samples repository; not Training where the existing workspace resides.
-
-
-<br>**2) Share Repository**
-<br>Log out of the user account and log back in as an administrator (admin/admin).
-
-Now you have the full set of menu entries, click Repositories on the menu. Under the list of repositories locate the Training repository. Click the Share icon to the right:
-
-![](./Images/Img1.225.Ex3.ShareButton.png)
-
-In the Sharing Options dialog, select fmeuser as the role to share with, and allow them to run the workspace:
-
-![](./Images/Img1.226.Ex3.ShareDialog.png)
-
-By selecting the *fmeuser* role (rather than the single *user* account) we allow anyone who is tagged as a user to access the workspace; and by allowing them only the run capability, we prevent them downloading and making edits to our workspace.
-
-
-<br>**3) Check Sharing**
-<br>Log out of the administrator account and log back into FME Server with the user account (user/user).
-
-This time, you should have access to the Training repository. Click Run Workspace, select your workspace in the Training repository, and run it.  Check the Jobs | Completed page and you'll see one entry for the workspace, when it was run as the user. Check the Jobs page and you'll see one entry for the workspace, when it was run as the user. There is only one entry because the user does not have the privileges required to view any other users' jobs.
-
-Log out again and log back in as an administrator. Now, in the Jobs | Completed window, you should be able to see both the administrator's jobs and the user's jobs
-
-![](./Images/Img1.227.Ex3.MultiUserJobsList.png)
-
-That's because the administrator group does have permission to view all jobs.
-
-
-<br>**4) Create Test Schedule**
-<br>Now we've allowed other users to run the workspace on demand, but we should also set up the translation to run on a schedule.
-
-Firstly, just to confirm that scheduling does work, let's set up a test schedule. Click Schedules on the menu and, in the Schedules page, click the New button to start the process.
-
-Set a name of Test Schedule and add it to a Training category by typing Training into the Category field:
-
-![](./Images/Img1.228.Ex3.NewScheduleAndCategory.png)
-
-For the time settings, set the schedule to start immediately and run every 30 seconds. Uncheck the box beside Schedule Does Not Expire and set the end time to be approximately 30 minutes into the future (that way if we forget to cancel the schedule it won't carry on for ever!)
-
-![](./Images/Img1.229.Ex3.NewScheduleSetSchedule.png)
-
-Be aware that the times are given in 24-hour format, so 1:30 means AM and 13:30 means PM. It is also important to note that this time is the local time of the machine on which you are running the web browser that is connected to FME Server. Keep this in mind if your FME Server is on a machine in a different timezone from the machine where you are accessing FME Server.
-
-Under Workspace Settings, select the Training repository and within that the workspace previously uploaded (Basics-Ex1-Complete.fmw):
-
-![](./Images/Img1.230.Ex3.NewScheduleWorkspace.png)
-
-There are no user parameters we need to change for this workspace, so any can be ignored.
-
-Now click OK to add the new schedule.
-
-
-<br>**5) Examine Jobs Page**
-<br>Open the Jobs page. A list of previously run jobs will open. You will find (if it was set up correctly) that there will be jobs running to schedule:
-
-![](./Images/Img1.231.Ex3.NewScheduleJobs.png)
-
-Notice that the username is set to admin; since that is the user who created the schedule, that is the username under which the job will be run.
-
-
-<br>**6) Create Actual Schedule**
-<br>Now we are confident that we know how to use the interface, let's set up an actual schedule. We want the workspace to run, say, every day of the week. There should also be no end date.
-
-So, return to the Schedules page. You may now either:
-
-- Click on the Test schedule and edit it to the required values
-- Delete the test schedule and create a new one with the required values
-
-![](./Images/Img1.232.Ex3.UpdatedSchedule.png)
-
-This setup will run the workspace at 8:00pm every day. Don't forget to click the OK button!
-
-You may wish to check back periodically during this training to ensure the workspace runs as expected.
-
----
-
-<!--Exercise Congratulations Section-->
-
-<table style="border-spacing: 0px">
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+恭喜
+</font></font></td>
+</tr>
 <tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-thumbs-o-up fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">CONGRATULATIONS</span>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+通过完成本练习，您已学会如何：
+</font></font><br>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server中共享一个存储库，并进行测试，以确保它对正确的用户可用</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server中计划安排转换</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查作业历史记录以确保进行计划的转换</font></font></li></ul>
+
 </td>
 </tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-By completing this exercise you have learned how to:
-<br>
-<ul><li>Share a repository in FME Server and tested to ensure it is available to the right users</li>
-<li>Schedule a translation in FME Server</li>
-<li>Check the job history to ensure the scheduled translation took place</li></ul>
-</span>
-</td>
-</tr>
-</table>
+</tbody></table>
+</article>
+  </div>

@@ -33,7 +33,7 @@
 </tbody></table>
 <hr>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您已经（在练习1和练习2中）创建了一个工作空间来执行此转换，将其发布到FME Server，并运行它以确认它是否有效。</font></font></p>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为日常任务，您计划在下班后每天运行转换。</font><font style="vertical-align: inherit;">但是...如果你不在那里或早退，或其他人迟到，会发生什么。</font><font style="vertical-align: inherit;">谁会运行呢？</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为日常任务，您计划在下班后每天运行转换。</font><font style="vertical-align: inherit;">但是...如果你不在那里或早退，或其他人迟到，会发生什么。</font><font style="vertical-align: inherit;">谁会运行它呢到时？</font></font></p>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先，您应该确保其他用户可以访问工作空间来运行它，但您也可以将其设置为以自动计划运行。</font></font></p>
 <p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）连接到服务器</font></font></strong>
 <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">浏览到FME Server界面的登录页面，方法是通过开始菜单上的Web 界面选项启动它，或者如果您已经登录则注销。</font></font></p>

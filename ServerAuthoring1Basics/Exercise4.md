@@ -1,91 +1,107 @@
-<!--Exercise Section-->
-
-<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
-<tr>
-<td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 3</span>
-</td>
-<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
-<span style="color:white;font-size:x-large;font-weight: bold">Daily Database Updates: Adding to Version History</span>
-</td>
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text">
+<table>
+<tbody><tr>
+<td width="25%">
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+练习1.4
+</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+每日数据库更新：添加到版本历史记录
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
-<td style="border: 1px solid darkorange">Firehalls (GML)<br>Neighborhoods (KML)</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">消防站Firehalls（GML）</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">街区Neighborhoods（KML）</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
-<td style="border: 1px solid darkorange">Commit a copy of the workspace built in the previous exercises to Version History on FME Server.</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体目标</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将先前练习中构建的工作空间的副本提交到FME Server上的版本历史记录。</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
-<td style="border: 1px solid darkorange">Interacting with Version History tools</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与版本历史工具交互</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Start Workspace</td>
-<td style="border: 1px solid darkorange">None</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动工作区</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">End Workspace</td>
-<td style="border: 1px solid darkorange">None</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结束工作区</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无</font></font></td>
 </tr>
+</tbody></table>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您已经（在练习1,2和3中）创建了一个工作空间来执行此转换，将其发布到FME Server，运行它以确认它是否正常工作并安排它每天运行。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您现在想要“检查点”工作空间的这个工作版本，以确保如果将来对其进行任何编辑，您始终可以返回到此状态。</font></font></p>
+<hr>
 
-</table>
-
----
-
-You have already (in Exercises 1, 2, and 3) created a workspace to carry out this translation, published it to FME Server, run it to confirm it works, and scheduled it to run daily.
-
-You would now like to 'checkpoint' this working version of the workspace to ensure that you can always come back to this state if any edits are made to it in the future.
-
-<br>**1) Connect to Server**
-<br>Browse to the log in page of the FME Server interface, and log in using the administrator account (admin/admin).
-
-<br>**2) Turn on Version Control**
-<br>Version Control will be turned off by default, so you'll need to switch it on before you can use it. Click System Configuration > Features in the Admin part of the interface menu. Locate the Version Control settings on that page and simply toggle the switch to turn on Version Control.
-
-![](./Images/Img1.240.Ex4.VersionControlToggle.png)
-
-Don't worry about the other settings on that page for now, just leave them with the default values.
-
-<br>**3) Add Workspace to Version History**
-<br>As the database update workspace has already been published to FME Server, you can add it to the version history from the web interface. Go to the Repositories page and open the Training repository. Select the checkbox beside the workspace and click Commit.
-
-![](./Images/Img1.241.Ex4.CommitFromRepository.png)
-
-Add a meaningful commit comment for this version fo the workspace and click Commit to add it to the history.
-
-<br>**4) Check Version History**
-<br>Confirm that this new version has been added to your Version History. Go to the Repositories page and open the Training Repository.Select the checkbox beside the workspace and click the History button to see the information about the workspace version you just committed.
-
-![](./Images/Img1.242.Ex4.ViewHistory.png)
-
----
-
-<!--Exercise Congratulations Section-->
-
-<table style="border-spacing: 0px">
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+警告
+</font></font></td>
+</tr>
 <tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-thumbs-o-up fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">CONGRATULATIONS</span>
-</td>
-</tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-By completing this exercise you have learned how to:
-<br>
-<ul><li>Commit a new version of a workspace to Version History</li>
-<li>View the version history for a Repository</li>
-</span>
-</td>
+在工作场所中，您必须先让FME Server管理员启用版本控制，然后才能开始使用它。
+
+</font></font></td>
 </tr>
-</table>
+</tbody></table>
+<hr>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）连接到服务器</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">浏览到FME Server界面的登录页面，然后使用管理员帐户（admin / admin）登录。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2）打开版本控制</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本控制将默认关闭，因此您需要先打开它才能使用它。</font><font style="vertical-align: inherit;">单击侧面菜单上的“系统配置”以展开菜单，然后在界面菜单的“管理”部分中单击“常规”。</font><font style="vertical-align: inherit;">在“系统配置常规”页面上，找到“版本控制”设置以切换开关以打开“版本控制”，启用该功能时，开关将为绿色。</font></font></p>
+<hr>
+
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+2018.1新的变化
+</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+在FME Server 2018.1中，系统配置已压缩，并且可以在“系统配置”菜单的“常规”页面中找到“版本控制”。
+
+</font></font></td>
+</tr>
+</tbody></table>
+<hr>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.238.Ex4.VersionControl.png"><img src="./Images/Img1.238.Ex4.VersionControl.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不要担心该页面上的其他设置，现在，只需将它们保留为默认值即可。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）将工作空间添加到版本历史记录</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由于Basics-Ex1-Complete.fmw工作空间已发布到FME Server，您可以从Web界面将其添加到版本历史记录中。</font><font style="vertical-align: inherit;">转到“存储库”页面并打开“培训存储库”。</font><font style="vertical-align: inherit;">选中工作空间旁边的复选框，然后单击Commit提交。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.239.Ex4.CommitFromRepo.png"><img src="./Images/Img1.239.Ex4.CommitFromRepo.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为此版本的工作空间添加有意义的提交注释，然后单击“提交”将其添加到历史记录中。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）检查版本历史记录</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确认已将此新版本添加到版本历史记录中。</font><font style="vertical-align: inherit;">转到“存储库”页面并打开“培训存储库”。</font><font style="vertical-align: inherit;">选中工作空间旁边的复选框，然后单击“历史记录”按钮以查看有关您刚刚提交的工作空间版本的信息。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img1.240.Ex4.ViewHistory.png"><img src="./Images/Img1.240.Ex4.ViewHistory.png" alt="" style="max-width:100%;"></a></p>
+<hr>
+
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+恭喜
+</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+通过完成本练习，您已学会如何：
+</font></font><br>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将新版本的工作空间提交到版本历史记录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看存储库的版本历史记录</font></font></li>
+
+</ul></td>
+</tr>
+</tbody></table>
+</article>
+  </div>

@@ -7,7 +7,7 @@
 练习1.3
 </font></font></td>
 <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-每日数据库更新：共享和计划
+每日数据库更新：共享和调度
 </font></font></td>
 </tr>
 <tr>

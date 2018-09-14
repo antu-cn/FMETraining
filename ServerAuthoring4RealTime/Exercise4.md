@@ -7,7 +7,7 @@
 <tr>
 <td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
 <i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 4</span>
+<span style="color:white;font-size:x-large;font-weight: bold">Exercise 4.4</span>
 </td>
 <td style="border: 2px solid darkorange;background-color:darkorange;color:white">
 <span style="color:white;font-size:x-large;font-weight: bold">Building Updates Notification System</span>
@@ -43,32 +43,33 @@
 
 ---
 
-As a technical analyst in the GIS department you were involved in a recent project to set up a Directory Watch solution for users to automatically update the corporate database.
+As a technical analyst in the GIS department, you were involved in a recent assignment to set up a Directory Watch solution for users to automatically update the corporate database.
 
 Having learned that not all users are able to access the internal network where FME Server is hosted, you think that it should be possible to also set up a system that uses email-based automation to handle the same updates.
 
 ---
 
-<br>**1) Create Topic**
-<br>The first step is to create a Topic that will be triggered by the email. Log in to the FME Server web interface and navigate to the Notifications page.
+<br>**1) Create Resource Folder**
+The first step is to create another Resource folder where all the email attachments will be saved. Log into the FME Server web interface, navigate to Resources > Data, and then create a new folder called Emails.
 
-Click the Publications tab and then select New.
+<br>**2) Create Topic**
+<br>Next, Navigate to the Notifications page. Click the Publications tab and then select New.
 
-Enter "Email Receiver" as the Name. Then click in the text box under Topics to Publish To. Type in *ShapeIncomingEmail* and click on it to add. This will create a new Topic and assign it to this Publication.
+Enter "Email Receiver" as the Name. Then click on the text box under Topics to Publish To. Type in *ShapeIncomingEmail* and click on it to add. This will create a new Topic and assign it to this Publication.
 
-![](./Images/Img4.417.Ex4.CreateIncomingTopic.png)
+![](./Images/Img4.424.Ex4.CreateIncomingTopic.png)
 
 The new Publication can be created to use either the Email (SMTP) protocol or the Email (IMAP) protocol.
 
-SMTP is easier to set up but FME Server must reside on a server with a proper DNS record (all FME Cloud and Training machines will have this). IMAP is necessary when FME Server resides on an internal network.
+SMTP is easier to set up, but FME Server must reside on a server with a proper DNS record (all FME Cloud and Training machines will have this). IMAP is necessary when FME Server resides on an internal network.
 
 ---
 
 ***Email Protocol***
 
-To use the SMTP protocol select Email (SMTP) as the Publication Protocol. This will open the Email User Name parameter. Enter a name for receiving email, for example *fmeshapeprocessing*
+To use the SMTP protocol select Email (SMTP) as the Publication Protocol. This will open the Email User Name parameter. Enter a name for receiving email, for example: *fmeshapeprocessing*
 
-![](./Images/Img4.418.Ex4.CreateSMTPPublication.png)
+![](./Images/Img4.425.Ex4.CreateSMTPPublication.png)
 
 Clicking OK will create an email address *fmeshapeprocessing@&lt;hostname&gt;* - for example:
 
@@ -147,29 +148,29 @@ You will also need to check the settings in your email account to make sure IMAP
 </table>
 
 
-You may select any Resource folder for attachments to be saved to; but (if you have already completed exercise 1-3) don't choose the BuildingUpdates folder, else you'll cause the previous topics to be triggered by each email attachment!
+You may select any Resource folder for attachments to be saved to; but (if you have already completed exercise 1-3) don't choose the BuildingUpdates folder, or else you'll cause the previous topics to be triggered by each email attachment!
 
 
-<br>**2) Test Publication**
+<br>**3) Test Publication**
 <br>Now let's test the publication. In the Notifications page on FME Server, click the tab marked Topics. Set up Topic Monitoring to watch the topic *ShapeIncomingEmail*:
 
-![](./Images/Img4.419.Ex4.MonitorTopic.png)
+![](./Images/Img4.426.Ex4.MonitorTopic.png)
 
 Now send an email *with an attachment* to the address selected for the new publication. When the email is received by FME Server (SMTP), or FME Server fetches it (IMAP), the topic will be triggered with a message. (Remember that an IMAP publication only checks for an email every 60 seconds, so the result might not be immediate!)
 
-![](./Images/Img4.420.Ex4.MonitorTopicResult.png)
+![](./Images/Img4.427.Ex4.MonitorTopicResult.png)
 
 Recall that in the previous exercise you used the Logger Protocol and Logger transformers to record the JSON formatted notification message. The same information is displayed in the Topic Monitoring window. So copy the text from the Topic Monitoring window and paste it into a text editor for use later in this exercise.
 
-![](./Images/Img4.421.Ex4.JSONNotificationMessage.png)
+![](./Images/Img4.428.Ex4.JSONNotificationMessage.png)
 
 
-<br>**3) Update Workspace**
+<br>**4) Update Workspace**
 <br>You already have a created a workspace in FME Workbench to handle incoming notifications from Directory Watch. Let's modify the workflow so that it can work with both Publication protocols. Open the existing workspace C:\FMEData2018\Workspaces\ServerAuthoring\RealTime-Ex4-Begin.fmw in FME Workbench.
 
 Open the JSONFlattener parameters, and add *imap&#95;publisher&#95;attachment{0}* and *email&#95;publisher&#95;attachment{0}* under Attributes to Expose:
 
-![](./Images/Img4.422.Ex4.JSONFlattenerParameters.png)
+![](./Images/Img4.429.Ex4.JSONFlattenerParameters.png)
 
 You can see these are two of the available attributes that are returned by the Topic Message.
 
@@ -193,18 +194,18 @@ Adding both imap&#95;publisher&#95;attachment and email&#95;publisher&#95;attach
 </table>
 
 
-<br>**4) Add AttributeManager**
+<br>**5) Add AttributeManager**
 <br>The next step is to insert a transformer that will determine where the data is coming from (Directory Watch or an Email Publication) - this is a task where conditional statements are invaluable.
 
 Add an AttributeManager transformer in between the JSONFlattener and FeatureReader. Open the parameters and add *&#95;dataset* as a new Output Attribute.
 
 Select, from the drop-down menu, the option to set the attribute as a Conditional Value:
 
-![](./Images/Img4.423.Ex4.AttributeManagerParameters.png)
+![](./Images/Img4.430.Ex4.AttributeManagerParameters.png)
 
 Configure the Conditional Value as follows:
 
-![](./Images/Img4.424.Ex4.ConditionalDefinition.png)
+![](./Images/Img4.431.Ex4.ConditionalDefinition.png)
 
 <table style="border: 0px">
 
@@ -243,39 +244,43 @@ In other words:
 So *&#95;dataset* gets the location of the data to be processed, whether it comes from the directory watch notification, or an email notification of either type.
 
 
-<br>**5) Edit FeatureReader**
+<br>**6) Edit FeatureReader**
 <br>The final step is to change the Dataset parameter in the FeatureReader transformer. Instead of pointing to dirwatch&#95;publisher&#95;path, it should be changed to point at the new &#95;dataset attribute:
 
-![](./Images/Img4.425.Ex4.FeatureReaderParameters.png)
+![](./Images/Img4.432.Ex4.FeatureReaderParameters.png)
 
 The workflow should now look like this:
 
-![](./Images/Img4.426.Ex4.FinalWorkspace.png)
+![](./Images/Img4.433.Ex4.FinalWorkspace.png)
 
 
-<br>**6) Edit User Parameter**
+<br>**7) Edit User Parameter**
 <br>As with Exercise 3, specify the output dataset to be written into the FME Server Resources Folder.
 
 Locate the user parameter DestDataset&#95;SPATIALITE (under User Parameters &gt; Published Parameters in the Navigator window) and double-click it to open an editor dialog.
 
-In that dialog enter *$(FME&#95;SHAREDRESOURCE&#95;DATA)/Output/building&#95;footprints.sl3*
+In that dialog enter:
 
-![](./Images/Img4.431.Ex4.DestinationDatasetUserParameter.png)
+<pre>
+    $(FME&#95;SHAREDRESOURCE&#95;DATA)/Output/building&#95;footprints.sl3*
+</pre>
+
+![](./Images/Img4.434.Ex4.DestinationDatasetUserParameter.png)
 
 
-<br>**7) Publish Workspace**
+<br>**8) Publish Workspace**
 <br>Publish this workspace to FME Server, registering it under the Notification service. When the Notification service is selected, it is highlighted in red indicating its parameters need to be configured.
 
 Click the "Edit" button and set *ShapeIncomingEmail* for the "Subscribe to Topics" parameter. Set the "Parameter to Get Topic Message" as *Source Text File(s)*:
 
-![](./Images/Img4.427.Ex4.PublishWorkspaceNotificationService.png)
+![](./Images/Img4.435.Ex4.PublishWorkspaceNotificationService.png)
 
 
-<br>**8) Update Directory Watch Subscription (Optional)**
+<br>**9) Update Directory Watch Subscription (Optional)**
 <br>If you have completed Exercise 3, using the FME Server web interface you can set the "Process Building Updates" Subscription to point at this new workspace.
 
 
-<br>**9) Test Workspace**
+<br>**10) Test Workspace**
 <br>Test the workspace by sending an email to the Publication email address. Be sure to attach a zip file of the Shapefile datasets (.dbf, .prj, .shp, .shx) from C:\FMEData2018\Data\Engineering\BuildingFootprints to the email.
 
 You can verify if the workflow was successful by checking the Completed Jobs page and the timestamp of the SpatiaLite database in Resources &gt; Data &gt; Output in the FME Server web interface.
@@ -305,4 +310,4 @@ By completing this exercise you have learned how to:
 </span>
 </td>
 </tr>
-</table>   
+</table>

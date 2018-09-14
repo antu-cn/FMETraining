@@ -7,7 +7,7 @@
 <tr>
 <td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
 <i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 5</span>
+<span style="color:white;font-size:x-large;font-weight: bold">Exercise 4.5</span>
 </td>
 <td style="border: 2px solid darkorange;background-color:darkorange;color:white">
 <span style="color:white;font-size:x-large;font-weight: bold">Building Updates Notification System</span>
@@ -130,7 +130,7 @@ Most of the general settings (Email To, Email Template, etc.) will be set by the
 <tr>
 <td style="border: 1px solid darkorange">
 <span style="font-family:serif; font-style:italic; font-size:larger">
-Depending on your Gmail security settings, you may need to create an app-specific password to allow FME Server to log into the account. See this article if you are noticing errors connecting to your account: [IMAP Publication or Email Subscription is not Reading Emails from Gmail](https://knowledge.safe.com/articles/394/imap-publisher-not-reading-emails-from-gmail.html)
+Depending on your Gmail security settings, you may need to create an app-specific password to allow FME Server to log into the account. See this article if you are noticing errors connecting to your account: <a href="https://knowledge.safe.com/articles/394/imap-publisher-not-reading-emails-from-gmail.html">IMAP Publication or Email Subscription is not Reading Emails from Gmail</a>
 <br>Alternatively, if you do not have access to an email account, change the Protocol for this subscription to 'Logger' instead. This will add an entry into one of the FME Server logfiles when the BuildingUpdateEmail topic is triggered.
 </span>
 </td>
@@ -145,7 +145,7 @@ Depending on your Gmail security settings, you may need to create an app-specifi
 
 Add two new transformers - the [FMEServerEmailGenerator](https://hub.safe.com/transformers/fmeserveremailgenerator) (a custom transformer) and an FMEServerNotifier - as a separate stream of data, connected to the <Initiator\> Output Port of the FeatureReader:
 
-![](./Images/Img4.429.Ex5.WorkspaceWithNotifier.png)
+![](./Images/Img4.436.Ex5.WorkspaceWithNotifier.png)
 
 ***NB:*** *It's important to connect these two transformers to the &lt;Initiator&gt; port of the FeatureReader, where only one feature will emerge. If you connect them to the &lt;Generic&gt; output port then you will get an email for every feature in the Shapefile dataset!*
 
@@ -188,17 +188,17 @@ Each of the keywords that have values set(such as email_to, email_subject, and s
 
 Set FME Server Connection parameters, pick the Topic created earlier (BuildingUpdateEmail), and for the Content select the attribute *text&#95;line&#95;data* (this attribute is created by the FMEServerEmailGenerator):
 
-![](./Images/Img4.430.Ex5.FMEServerNotifierParameters.png)
+![](./Images/Img4.437.Ex5.FMEServerNotifierParameters.png)
 
 
 <br>**6) Publish Workspace**
 <br>Save and publish the workspace.
 
-If the workspace name is different to that used in the Exercise 4 workspace, an update will need to be made as follows.
+You can either update the published workspace or rename it.
 
-Navigate to the FME Workspace Subscriptions page. Notice that a Subscription will have been automatically created when registering the workspace with the Notification Service in the previous exercise. For example, if the workspace was called RealTime4, the Subscription name will be something like admin.Training.RealTime4:
+In FME Server, navigate to the FME Workspace Subscriptions page. Notice that a Subscription will have been automatically created when registering the workspace with the Notification Service in the previous exercise. For example, if the workspace was called RealTime-Ex4, the Subscription name will be something like admin.Training.RealTime-Ex44:
 
-![](./Images/Img4.432.Ex5.RescueEsmerelda.png)
+![](./Images/Img4.438.Ex5.FindingSubscription.png)
 
 Click on this notification to change its parameters, and set/ensure that the Workspace parameter is pointing to the workspace just published.
 
@@ -231,4 +231,4 @@ By completing this exercise you have learned how to:
 </span>
 </td>
 </tr>
-</table>   
+</table>

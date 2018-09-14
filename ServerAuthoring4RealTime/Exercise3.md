@@ -7,7 +7,7 @@
 <tr>
 <td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
 <i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 3</span>
+<span style="color:white;font-size:x-large;font-weight: bold">Exercise 4.3</span>
 </td>
 <td style="border: 2px solid darkorange;background-color:darkorange;color:white">
 <span style="color:white;font-size:x-large;font-weight: bold">Building Updates Notification System</span>
@@ -70,9 +70,9 @@ This exercise continues where Exercise 2 left off. You must have completed Exerc
 ---
 
 <br>**1) Create Workspace**
-<br>Start FME Workbench and begin with an empty workspace. 
+<br>Start FME Workbench and begin with an empty workspace.
 
-Select Readers &gt; Add Reader from the menubar. When prompted set the parameters as follows: 
+Select Readers &gt; Add Reader from the menubar. When prompted set the parameters as follows:
 
 <table style="border: 0px">
 
@@ -93,7 +93,7 @@ Select Readers &gt; Add Reader from the menubar. When prompted set the parameter
 
 </table>
 
-It doesn't matter what text file we use as the source right now; setting the source dataset in this step is only to satisfy the text file reader requirements. At run time, the source dataset will be replaced by the content of the incoming message.
+It doesn't matter what text file we use as the source right now; setting the source dataset in this step is only to satisfy the text file reader requirements. At runtime, the source dataset will be replaced by the content of the incoming message.
 
 
 <br>**2) Add JSONFlattener**
@@ -126,33 +126,33 @@ Instead of using Text Reader &gt; JSONFlattener we could have used the JSON Read
 ---
 
 <br>**3) Publish to FME Server**
-<br>Publish the workspace to FME Server, registering it under the Job Submitter service. 
+<br>Publish the workspace to FME Server, registering it under the Job Submitter service.
 
 
 <br>**4) Update Subscription**
-<br>Now log in to the FME Server web interface and navigate to the Notifications page. 
+<br>Now log in to the FME Server web interface and navigate to the Notifications page.
 
 Click on the Subscriptions tab and select the existing "Process Building Updates" Subscription to edit it.
 
-Change the specified workspace, from the one created in Exercise 2, to the one uploaded in the previous step. 
+Change the specified workspace, from the one created in Exercise 2, to the one uploaded in the previous step.
 
 The change of workspace will cause a Source Text File parameter to appear. Here just select the checkbox to the right for *Get Value from Topic Message*.
 
-![](./Images/Img4.410.Ex3.ValueFromTopicMessage.png)
+![](./Images/Img4.412.Ex3.ValueFromTopicMessage.png)
 
 Click OK to update the Subscription.
 
 
 <br>**5) Test Topic**
-<br>Once more (as in exercises 1 and 2) locate the source Shapefile datasets in C:\FMEData2018\Data\Engineering\BuildingFootprints and create a compressed (zip) file from a set of Shapefiles (.dbf, .prj, .shp, .shx).
+<br>Once more (as in exercises 1 and 2) locate the update003.shp source Shapefile datasets in C:\FMEData2018\Data\Engineering\BuildingFootprints and create a compressed (zip) file from the set of Shapefiles (.dbf, .prj, .shp, .shx).
 
 Be sure to give the zip file a different name to any used previously.
 
-Copy the zip file into the Resources folder data\BuildingUpdates. You can do this through the file system (by copying the file to C:\ProgramData\Safe Software\FME Server\resources\data\BuildingUpdates) or by using the FME Server web interface. 
+Copy the zip file into the Resources folder data\BuildingUpdates. You can do this through the file system (by copying the file to C:\ProgramData\Safe Software\FME Server\resources\data\BuildingUpdates) or by using the FME Server web interface.
 
 
 <br>**6) Check Results**
-<br>Open the Jobs page in the web interface. The completed jobs list should include the workspace you updated in the subscription. View or download the log file and look for the logged feature. You should find it has an attribute containing JSON, and a number of attributes extracted from the JSON. 
+<br>Open the Jobs page in the web interface. The completed jobs list should include the workspace you updated in the subscription. View or download the log file and look for the logged feature. You should find it has an attribute containing JSON and a number of attributes extracted from the JSON.
 
 <table>
 <tr><td>dirwatch_publisher_action</td><td>CREATE</td></tr>
@@ -160,7 +160,9 @@ Copy the zip file into the Resources folder data\BuildingUpdates. You can do thi
 <tr><td>dirwatch_publisher_path</td><td>C:\ProgramData\Safe Software\FME Server\resources\data\BuildingUpdates\update002.zip</td></tr>
 </table>
 
-So now we know what the data looks like and can process it accordingly. 
+![](./Images/Img4.413.Ex3.DirectoryWatchResults.png)
+
+So now we know what the data looks like and can process it accordingly.
 
 ---
 
@@ -187,13 +189,15 @@ You may recognize these attributes from the Topic Monitoring exercise - indeed y
 
 
 <br>**7) Edit JSONFlattener Transformer**
-<br>Back in FME Workbench inspect the JSONFlattener transformer parameters once more. Under Attribute to Expose add the attribute *dirwatch&#95;publisher&#95;path* by clicking the browse button and then manually typing its name.
+<br>Back in FME Workbench inspect the JSONFlattener transformer parameters once more. Under Attribute to Expose add the attribute *dirwatch&#95;publisher&#95;path* by clicking the browse button and then manually typing it in:
+
+![](./Images/Img4.414.Ex3.DirWatchPubPath.png)
 
 
 <br>**8) Add FeatureReader Transformer**
 <br>Now remove the Logger transformers and add a FeatureReader transformer to the output of the JSONFlattener:
 
-![](./Images/Img4.411.Ex3.FeatureReaderInWorkspace.png)
+![](./Images/Img4.415.Ex3.FeatureReaderInWorkspace.png)
 
 This is a transformer that will let us read the contents of the dataset into the workflow mid-translation. Inspect the transformer's parameters and set the following values:
 
@@ -205,15 +209,13 @@ This is a transformer that will let us read the contents of the dataset into the
 
 Select to have a Single Output Port:
 
-![](./Images/Img4.412.Ex3.FeatureReaderParameters.png)
-
-You may receive a warning message, but it can be safely ignored.
+![](./Images/Img4.416.Ex3.FeatureReaderParameters.png)
 
 
 <br>**9) Add Writer**
 <br>Having read the data from a Shapefile, we can now add it to the corporate database.
 
-Select Writers &gt; Add Writer from the menubar. When prompted set the parameters as follows: 
+Select Writers &gt; Add Writer from the menubar. When prompted set the parameters as follows:
 
 <table style="border: 0px">
 
@@ -241,43 +243,50 @@ Select Writers &gt; Add Writer from the menubar. When prompted set the parameter
 
 In the new feature type that is created, change the Table Name parameter to *building_footprints*:
 
-![](./Images/Img4.413.Ex3.FeatureTypeName.png)
+![](./Images/Img4.417.Ex3.FeatureTypeName.png)
 
 Ensure that the Table Handling is set to "Create if Needed". Click OK to close the dialog and then connect the new feature type to the FeatureReader transformer's &lt;Generic&gt; output port.
 
-![](./Images/Img4.414.Ex3.FinalWorkspace.png)
+![](./Images/Img4.418.Ex3.FinalWorkspace.png)
+
+<br>**10) Inspect Data**
+After adding the writer, click on the building_footprints feature type to bring up the popup menu. Then click the Inspect button to open the dataset in the FME Data Inspector. There is already data in the building_footprints.sl3 dataset, but we should take note of what the data looks like so we will know where it has changed once we update the dataset with the new data. The area within the red box will be where the new data will be added:
+
+![](./Images/Img4.419.Ex3.SpatialLiteData.png)
 
 
 <br>**10) Republish Workspace**
-<br>Publish the workspace back to FME Server. If you have the same FME Workbench session open from the start of this exercise, you can use the Republish option on the toolbar or under the File menu.
+<br>Back in FME Workbench, publish the workspace back to FME Server. If you have the same FME Workbench session open from the start of this exercise, you can use the Republish option on the toolbar or under the File menu.
 
-![](./Images/Img4.428.Ex3.RepublishWorkspace.png)
+![](./Images/Img4.420.Ex3.RepublishWorkspace.png)
 
 
 <br>**11) Add Dataset to FME Server**
-<br>Since the purpose of this notification system is to *update* our database – let's make sure that it is accessible in FME Server. To do this, we will upload the *building_footprints.sl3* SpatiaLite database to FME Server's shared resources. 
+<br>Since the purpose of this notification system is to *update* our database – let's make sure that it is accessible in FME Server. To do this, we will upload the *building_footprints.sl3* SpatiaLite database to FME Server's shared resources.
 
 Use the FME Server web interface to create a new folder **Output** in **Resources &gt; Data** and upload the file located at C:\FMEData2018\Data\Engineering\BuildingFootprints\building_footprints.sl3
 
-![](./Images/Img4.500.Ex3.UploadDatabase.png)
+![](./Images/Img4.421.Ex3.UploadDatabase.png)
 
 
 <br>**12) Edit Subscription**
 <br>Navigate to the Notifications page and open the Process Building Updates Subscription for editing. The parameters should now include one for the output database. Use the browse button to locate the database uploaded in the previous step:
 
-![](./Images/Img4.415.Ex3.OutputDatabaseSelection.png)
+![](./Images/Img4.422.Ex3.OutputDatabaseSelection.png)
 
 Click OK to save the changes.
 
 
 <br>**13) Test Solution**
-<br>Now test the solution by putting more zipped Shapefile data into the Directory Watch folder. You will find that each dataset put into the folder is added to the SpatiaLite database:
+<br>Now test the solution by putting update001.zip, update002.zip or update003.zip into the BuildingUpdates folder. If these files already exist, delete them first, and then re-add them. You will find that each dataset put into the folder is added to the SpatiaLite database.
 
-![](./Images/Img4.416.Ex3.ViewOutputInDataInspector.png)
+Check the Completed Jobs page to confirm that the workspace was run. Then in the FME Data Inspector, add a new dataset, and browse to the C:\ProgramData\Safe Software\FMEServer\resources\data\Output\ folder and add the building_footprints.sl3 dataset. Depending on which update file you added, you should see one of the three buildings added to the dataset:
+
+![](./Images/Img4.423.Ex3.ViewOutputInDataInspector.png)
 
 ---
 
-<!--Exercise Congratulations Section--> 
+<!--Exercise Congratulations Section-->
 
 <table style="border-spacing: 0px">
 <tr>
@@ -297,4 +306,4 @@ By completing this exercise you have learned how to:
 </span>
 </td>
 </tr>
-</table>   
+</table>

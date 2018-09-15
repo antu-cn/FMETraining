@@ -1,194 +1,140 @@
-<!--Instructor Notes-->
-
-<!--Exercise Section-->
-
-
-<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
-<tr>
-<td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 4.1</span>
-</td>
-<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
-<span style="color:white;font-size:x-large;font-weight: bold">Building Updates Notification System</span>
-</td>
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text">
+<table>
+<tbody><tr>
+<td width="25%">
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+练习4.1
+</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+建筑物更新通知系统
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
-<td style="border: 1px solid darkorange">Building footprints (Esri Shapefile)</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑物足迹（Esri Shapefile）</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
-<td style="border: 1px solid darkorange">Trigger notification for new files</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体目标</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">触发新文件的通知</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
-<td style="border: 1px solid darkorange">Notification topics and Directory Watch publications</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通知主题和目录监视发布</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Start Workspace</td>
-<td style="border: 1px solid darkorange">N/A</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">End Workspace</td>
-<td style="border: 1px solid darkorange">N/A</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结束工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td>
 </tr>
+</tbody></table>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为GIS部门的技术分析师，您希望开始在FME Server中尝试通知。</font><font style="vertical-align: inherit;">目录监视协议似乎是一个很好的起点，您已经在考虑一个共享文件夹，用户可以在其中放置Shapefile数据集以添加或更新公司数据库。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）创建资源文件夹</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一步是创建一个资源文件夹来复制数据。</font><font style="vertical-align: inherit;">打开FME Server Web界面并导航到“资源”页面。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">浏览到Data文件夹并创建一个名为BuildingUpdates的新子文件夹：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.400.Ex1.NewDataFolder.png"><img src="./Images/Img4.400.Ex1.NewDataFolder.png" alt="" style="max-width:100%;"></a></p>
+<hr>
 
-</table>
-
----
-
-As a technical analyst in the GIS department, you want to start experimenting with notifications in FME Server. The Directory Watch protocol seems like a good place to start, and you already were thinking about a shared folder where users place Shapefile datasets for adding to, or updating, the corporate database. 
-
-
-<br>**1) Create Resources Folder**
-<br>The first step is to create a Resources folder to copy the data to. Open the FME Server web interface and navigate to the Resources page.
-
-Browse to the Data folder and create a new subfolder called BuildingUpdates:
-
-![](./Images/Img4.400.Ex1.NewDataFolder.png)
-
----
-
-<!--Person X Says Section-->
-
-<table style="border-spacing: 0px">
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Vector小姐说......
+</font></font></td>
+</tr>
 <tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Miss Vector says...</span>
-</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+本练习使用FME Server资源文件夹，但FME Server中中也有本地支持来监视Amazon S3 bucket、Dropbox和FTP中的新资源。
+</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用此处描述的相同概念，您可以使用这些协议之一而不是目录监视。
+</font></font></td>
 </tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-This exercise utilizes the FME Server Resource folders, but there is also native support in FME Server to watch for new resources in Amazon S3 Buckets, Dropbox, and FTP.
-<br>Using the same concepts described here, you could use one of these protocols instead of Directory Watch.
-</td>
-</tr>
-</table>
-
----
-
-<br>**2) Create Publication**
-<br>Now to create a publication and topic that will be triggered by a new file. Navigate to the Notifications page, click the Publications tab, and then click the New button.
-
-Enter "Incoming Building Footprints" as the new publication's name. 
-
-Next, click on the text box beside Topics to Publish To. Type in ShapeIncomingFile and click on the entry with that name that appears in the drop-down list. This will create a new topic and assign it to this publication. 
-
-![](./Images/Img4.401.Ex1.NewPublicationDialog.png)
-
-
-<br>**3) Set Publication Protocol**
-<br>Now select Directory Watch from the drop-down list as the protocol for this publication. In the dialog that appears click the browse button for the Directory to Watch parameter and select the newly created resources folder:
-
-![](./Images/Img4.402.Ex1.DirectoryToWatch.png)
-
-Back in the publication definition, for the Filter parameter remove the MODIFY and DELETE actions. All we want to monitor are new files arriving, not old ones being removed:
-
-![](./Images/Img4.403.Ex1.DirectoryWatchFilters.png)
-
-Change the Poll Interval to 1 Minute and click OK to create the new publication. Then in the top right corner, click on the Validate button to validate the publication. This ensures that the publication was set up correctly:
-
-![](./Images/Img4.404.Ex1.CompletedDirectoryWatch.png)
-
-
-<br>**4) Monitor Topic**
-<br>Click on the Topic Monitoring tab on the Notifications page. Start typing ShapeIncomingFile into the Select a Topic search bar, then select it. If the topic doesn't appear, it means it wasn't made with the publication. You can create the topic here, but you will need to go back to the Incoming Building Footprints publication and add the topic. 
-
-Once the topic is added, topic monitoring will begin automatically, and a memo will appear at the bottom stating that Monitoring has been started and the time when it was started. To start or pause monitoring, click the play or pause button at the top. 
-
-![](./Images/Img4.405.Ex1.DirectoryWatchTopicMonitoring.png)
-
----
-
-<!--Tip Section--> 
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-info-circle fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">TIP</span>
-</td>
-</tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-When monitoring topics, the Topic Monitoring tab needs to stay open. If you are navigating away from this page, but would like to keep monitoring topics, open a new tab with FME Server and continue working. 
-</span>
-</td>
-</tr>
-</table>
-
----
-
-<br>**5) Test Topic**
-<br>Now let's test the topic. Locate the source Shapefile datasets in C:\FMEData2018\Data\Engineering\BuildingFootprints. Select a set of files (.dbf, .prj, .shp, .shx) for one dataset and create a compressed zip file out of them (right-click &gt; Send to &gt; Compressed (zipped) folder).
-
-Now upload the zip file into the newly created Resources folder. There are two ways to do this.
-
-You can use the file system (by copying the file to C:\ProgramData\Safe Software\FME Server\resources\data\BuildingUpdates) or use the FME Server web interface. If you use the web interface, open a new window or tab, so we can continue to monitor the ShapeIncomingFile topic.
-
-![](./Images/Img4.406.Ex1.DirectoryWatchDataInFolder.png)
-
-Check back in the Topic Monitoring window, and you will see that the topic has been triggered by the new file:
-
-![](./Images/Img4.407.Ex1.DirectoryWatchTopicMonitoringTriggered.png)
-
----
-
-<!--Person X Says Section-->
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Miss Vector says...</span>
-</td>
-</tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-Remember, the Publication is set up to check the folder only once per minute - so if the Topic Monitoring doesn't immediately show a result, don't panic! Be patient and it will appear shortly.
-</td>
-</tr>
-</table>
-
----
-
-Now we know how the Directory Watch notification works! We will see in subsequent exercises how to process this information.
+</tbody></table>
+<hr>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2）创建发布</font></font></strong>
+<br><font style="vertical-align: inherit;">现在创建一个将由新文件触发的发布和主题。</font><font style="vertical-align: inherit;">导航到“通知”页面，单击“发布”选项卡，然后单击“新建”按钮。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入“Incoming Building Footprints”作为新发布的名称。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">接下来，单击要发布到的主题旁边的文本框。</font><font style="vertical-align: inherit;">键入ShapeIncomingFile，然后单击下拉列表中显示的具有该名称的条目。</font><font style="vertical-align: inherit;">这将创建一个新主题并将其分配给此发布。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.401.Ex1.NewPublicationDialog.png"><img src="./Images/Img4.401.Ex1.NewPublicationDialog.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）设置发布协议</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在从下拉列表中选择目录监视作为此发布的协议。</font><font style="vertical-align: inherit;">在出现的对话框中，单击“要监视的目录”参数的“浏览”按钮，然后选择新创建的资源文件夹：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.402.Ex1.DirectoryToWatch.png"><img src="./Images/Img4.402.Ex1.DirectoryToWatch.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回到发布定义中，对于Filter参数，删除MODIFY和DELETE操作。</font><font style="vertical-align: inherit;">我们要监视的是新文件到达，而不是旧文件被删除：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.403.Ex1.DirectoryWatchFilters.png"><img src="./Images/Img4.403.Ex1.DirectoryWatchFilters.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将轮询间隔更改为1分钟，然后单击确定以创建新发布。</font><font style="vertical-align: inherit;">然后在右上角，单击“验证”按钮以验证发布。</font><font style="vertical-align: inherit;">这可确保正确设置发布：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.404.Ex1.CompletedDirectoryWatch.png"><img src="./Images/Img4.404.Ex1.CompletedDirectoryWatch.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）监控主题</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“通知”页面上的“主题监控”选项卡。</font><font style="vertical-align: inherit;">开始在Select a Topic搜索栏中键入ShapeIncomingFile，然后选择它。</font><font style="vertical-align: inherit;">如果未出现该主题，则表示它不是使用该发布制作的。</font><font style="vertical-align: inherit;">您可以在此处创建主题，但您需要返回“Incoming Building Footprints”发布并添加主题。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加主题后，主题监控将自动开始，底部将显示一份备忘录，说明已启动监控及其启动时间。</font><font style="vertical-align: inherit;">要开始或暂停监控，请单击顶部的播放或暂停按钮。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.405.Ex1.DirectoryWatchTopicMonitoring.png"><img src="./Images/Img4.405.Ex1.DirectoryWatchTopicMonitoring.png" alt="" style="max-width:100%;"></a></p>
+<hr>
  
----
-
-<!--Exercise Congratulations Section--> 
-
-<table style="border-spacing: 0px">
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+技巧
+</font></font></td>
+</tr>
 <tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-thumbs-o-up fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">CONGRATULATIONS</span>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+监控主题时，“主题监控”选项卡需要保持打开状态。</font><font style="vertical-align: inherit;">如果您要离开此页面，但希望继续监控主题，请使用FME Server打开新选项卡并继续工作。 
+
+</font></font></td>
+</tr>
+</tbody></table>
+<hr>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5）测试主题</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在让我们测试一下这个主题。</font><font style="vertical-align: inherit;">在C：\ FMEData2018 \ Data \ Engineering \ BuildingFootprints中找到源Shapefile数据集。</font><font style="vertical-align: inherit;">为一个数据集选择一组文件（.dbf，.prj，.shp，.shx）并从中创建压缩的zip文件（右键单击&gt;发送到&gt;压缩（压缩）文件夹）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在将zip文件上传到新创建的资源文件夹中。</font><font style="vertical-align: inherit;">有两种方法可以做到这一点。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用文件系统（通过将文件复制到C：\ ProgramData \ Safe Software \ FME Server \ resources \ data \ BuildingUpdates）或使用FME Server Web界面。</font><font style="vertical-align: inherit;">如果您使用Web界面，请打开一个新窗口或选项卡，以便我们继续监视ShapeIncomingFile主题。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.406.Ex1.DirectoryWatchDataInFolder.png"><img src="./Images/Img4.406.Ex1.DirectoryWatchDataInFolder.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在“主题监控”窗口中进行检查，您将看到新文件已触发该主题：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.407.Ex1.DirectoryWatchTopicMonitoringTriggered.png"><img src="./Images/Img4.407.Ex1.DirectoryWatchTopicMonitoringTriggered.png" alt="" style="max-width:100%;"></a></p>
+<hr>
+
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Vector小姐说......
+</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+请记住，发布设置为每分钟只检查一次文件夹 - 因此，如果主题监控没有立即显示结果，请不要惊慌！</font><font style="vertical-align: inherit;">要有耐心，很快就会出现。
+</font></font></td>
+</tr>
+</tbody></table>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在我们知道目录监视通知如何工作！</font><font style="vertical-align: inherit;">我们将在后续练习中看到如何处理这些信息。</font></font></p>
+<hr>
+ 
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+恭喜
+</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+通过完成本练习，您已学会如何：
+</font></font><br>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个新的发布</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建新主题作为创建发布过程的一部分</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用目录监视来触发主题和通知</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用主题监控测试发布和主题</font></font></li></ul>
+
 </td>
 </tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-By completing this exercise you have learned how to:
-<br>
-<ul><li>Create a new Publication</li>
-<li>Create a new Topic as part of the Create Publication process</li>
-<li>Use Directory Watch to trigger Topics and Notifications</li>
-<li>Test a Publication and Topic using Topic Monitoring</li></ul>
-</span>
-</td>
-</tr>
-</table>   
+</tbody></table>   
+</article>
+  </div>

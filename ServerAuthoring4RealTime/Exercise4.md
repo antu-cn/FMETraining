@@ -1,313 +1,217 @@
-<!--Instructor Notes-->
-
-<!--Exercise Section-->
-
-
-<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
-<tr>
-<td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 4.4</span>
-</td>
-<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
-<span style="color:white;font-size:x-large;font-weight: bold">Building Updates Notification System</span>
-</td>
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text">
+<table>
+<tbody><tr>
+<td width="25%">
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+练习4.4
+</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+建筑更新通知系统
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
-<td style="border: 1px solid darkorange">Building footprints (Esri Shapefile)</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑足迹（Esri Shapefile）</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
-<td style="border: 1px solid darkorange">Provide email-driven notifications for updates</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体目标</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为更新提供电子邮件驱动的通知</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
-<td style="border: 1px solid darkorange">Email publications and Notification service</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件发布和通知服务</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Start Workspace</td>
-<td style="border: 1px solid darkorange">C:\FMEData2018\Workspaces\ServerAuthoring\RealTime-Ex4-Begin.fmw</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C:\FMEData2018\Workspaces\ServerAuthoring\RealTime-Ex4-Begin.fmw
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">End Workspace</td>
-<td style="border: 1px solid darkorange">C:\FMEData2018\Workspaces\ServerAuthoring\RealTime-Ex4-Complete.fmw</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结束工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C:\FMEData2018\Workspaces\ServerAuthoring\RealTime-Ex4-Complete.fmw
+</font></font></td>
 </tr>
-
-</table>
-
----
-
-As a technical analyst in the GIS department, you were involved in a recent assignment to set up a Directory Watch solution for users to automatically update the corporate database.
-
-Having learned that not all users are able to access the internal network where FME Server is hosted, you think that it should be possible to also set up a system that uses email-based automation to handle the same updates.
-
----
-
-<br>**1) Create Resource Folder**
-The first step is to create another Resource folder where all the email attachments will be saved. Log into the FME Server web interface, navigate to Resources > Data, and then create a new folder called Emails.
-
-<br>**2) Create Topic**
-<br>Next, Navigate to the Notifications page. Click the Publications tab and then select New.
-
-Enter "Email Receiver" as the Name. Then click on the text box under Topics to Publish To. Type in *ShapeIncomingEmail* and click on it to add. This will create a new Topic and assign it to this Publication.
-
-![](./Images/Img4.424.Ex4.CreateIncomingTopic.png)
-
-The new Publication can be created to use either the Email (SMTP) protocol or the Email (IMAP) protocol.
-
-SMTP is easier to set up, but FME Server must reside on a server with a proper DNS record (all FME Cloud and Training machines will have this). IMAP is necessary when FME Server resides on an internal network.
-
----
-
-***Email Protocol***
-
-To use the SMTP protocol select Email (SMTP) as the Publication Protocol. This will open the Email User Name parameter. Enter a name for receiving email, for example: *fmeshapeprocessing*
-
-![](./Images/Img4.425.Ex4.CreateSMTPPublication.png)
-
-Clicking OK will create an email address *fmeshapeprocessing@&lt;hostname&gt;* - for example:
+</tbody></table>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为GIS部门的技术分析师，您参与了最近的任务，即为用户设置目录监视解决方案，以自动更新企业数据库。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解到并非所有用户都能够访问托管FME Server的内部网络，您认为应该可以设置使用基于电子邮件的自动化来处理相同更新的系统。</font></font></p>
+<hr>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）创建资源文件夹</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+第一步是创建另一个资源文件夹，其中将保存所有电子邮件附件。</font><font style="vertical-align: inherit;">登录FME Server Web界面，导航到Resources&gt; Data，然后创建一个名为Emails的新文件夹。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2）创建主题</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">接下来，导航到通知页面。</font><font style="vertical-align: inherit;">单击“发布”选项卡，然后选择“新建”。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入“Email Receiver”作为名称。</font><font style="vertical-align: inherit;">然后单击“要发布到的主题”下的文本框。</font><font style="vertical-align: inherit;">输入</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ShapeIncomingEmail</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并单击它以添加。</font><font style="vertical-align: inherit;">这将创建一个新的主题并将其分配给此发布。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.424.Ex4.CreateIncomingTopic.png"><img src="./Images/Img4.424.Ex4.CreateIncomingTopic.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以创建新的发布以使用电子邮件（SMTP）协议或电子邮件（IMAP）协议。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SMTP更容易设置，但FME Server必须驻留在具有正确DNS记录的服务器上（所有FME 云和培训计算机都将具有此功能）。</font><font style="vertical-align: inherit;">当FME Server驻留在内部网络上时，IMAP是必需的。</font></font></p>
+<hr>
+<p><em><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件协议</font></font></strong></em></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要使用SMTP协议，请选择电子邮件（SMTP）作为发布协议。</font><font style="vertical-align: inherit;">这将打开“电子邮件用户名”参数。</font><font style="vertical-align: inherit;">输入接收电子邮件的名称，例如：</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fmeshapeprocessing</font></font></em></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.425.Ex4.CreateSMTPPublication.png"><img src="./Images/Img4.425.Ex4.CreateSMTPPublication.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“确定”将创建一个电子邮件地址</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fmeshapeprocessing @ &lt;hostname&gt;</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 例如：</font></font></p>
+<table>
+<tbody><tr><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主机</font></font></th><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例电子邮件地址</font></font></th></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME云</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fmeshapeprocessing@myfmeserver.fmecloud.com</font></font></td></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">亚马逊AWS</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fmeshapeprocessing@ec1-23-456-789-012.compute-1.amazonaws.com</font></font></td></tr>
+</tbody></table>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在发送到该地址的所有电子邮件都将触发ShapeIncomingEmail主题。</font></font></p>
+<hr>
+<p><em><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IMAP协议</font></font></strong></em></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要使用IMAP协议，请选择电子邮件（IMAP）作为发布协议。</font><font style="vertical-align: inherit;">这将打开许多其他参数。</font><font style="vertical-align: inherit;">根据您的电子邮件帐户输入。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果有用，Gmail，Outlook和Yahoo!的服务器信息 </font><font style="vertical-align: inherit;">如下面所述：</font></font></p>
+<table>
+<tbody><tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IMAP服务器主机</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">imap.gmail.com</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">imap-mail.outlook.com</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">imap.mail.yahoo.com</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务器端口</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">993</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">993</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">993</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">连接安全</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SSL / TLS</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SSL / TLS</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SSL / TLS</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">验证SSL证书</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是</font></font></td>
+</tr>
+</tbody></table>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还需要检查电子邮件帐户中的设置，以确保IMAP已打开。</font><font style="vertical-align: inherit;">无论电子邮件提供商如何，您都应该按如下方式设置这些参数：</font></font></p>
+<table>
+<tbody><tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">值</font></font></th>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">轮询间隔</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1分钟</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件获取</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅限新电子邮件</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载附件</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您选择的资源文件夹</font></font></td>
+</tr>
+</tbody></table>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以选择要保存的附件的任何资源文件夹; </font><font style="vertical-align: inherit;">但是（如果您已经完成了练习1-3）请不要选择BuildingUpdates文件夹，否则您将导致每个电子邮件附件触发前面的主题！</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）测试发布</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在让我们测试发布。</font><font style="vertical-align: inherit;">在FME Server的“通知”页面中，单击标记为“主题”的选项卡。</font><font style="vertical-align: inherit;">设置主题监控以观察</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ShapeIncomingEmail</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font><font style="vertical-align: inherit;">：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.426.Ex4.MonitorTopic.png"><img src="./Images/Img4.426.Ex4.MonitorTopic.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在发送一封电子邮件</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，其中附件</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为为新发布选择的地址。</font><font style="vertical-align: inherit;">当FME Server（SMTP）收到电子邮件或FME Server收到该邮件（IMAP）时，将通过消息触发该主题。</font><font style="vertical-align: inherit;">（请记住，IMAP发布仅每60秒检查一次电子邮件，因此结果可能不会立即生效！）</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.427.Ex4.MonitorTopicResult.png"><img src="./Images/Img4.427.Ex4.MonitorTopicResult.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回想一下，在上一个练习中，您使用Logger Protocol和Logger转换器来记录JSON格式的通知消息。</font><font style="vertical-align: inherit;">“主题监控”窗口中显示相同的信息。</font><font style="vertical-align: inherit;">因此，请复制“主题监控”窗口中的文本并将其粘贴到文本编辑器中，以便稍后在本练习中使用。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.428.Ex4.JSONNotificationMessage.png"><img src="./Images/Img4.428.Ex4.JSONNotificationMessage.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）更新工作空间</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您已经在FME Workbench中创建了一个工作空间来处理来自目录监视的传入通知。</font><font style="vertical-align: inherit;">让我们修改工作流程，以便它可以使用两种发布协议。</font><font style="vertical-align: inherit;">在FME Workbench中打开现有工作空间C：\ FMEData2018 \ Workspaces \ ServerAuthoring \ RealTime-Ex4-Begin.fmw。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开JSONFlattener参数，并</font><font style="vertical-align: inherit;">在Attributes to Expose下</font><font style="vertical-align: inherit;">添加</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">imap_publisher_attachment {0}</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">email_publisher_attachment {0}</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.429.Ex4.JSONFlattenerParameters.png"><img src="./Images/Img4.429.Ex4.JSONFlattenerParameters.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以看到这些是主题消息返回的两个可用属性。</font></font></p>
 
 <table>
-<tr><th>Host</th><th>Example Email Address</th></tr>
-<tr><td>FME Cloud</td><td>fmeshapeprocessing@myfmeserver.fmecloud.com</td></tr>
-<tr><td>Amazon AWS</td><td>fmeshapeprocessing@ec1-23-456-789-012.compute-1.amazonaws.com</td></tr>
-</table>
-
-Now all emails sent to that address will trigger the ShapeIncomingEmail topic.
-
----
-
-***IMAP Protocol***
-
-To use the IMAP protocol select Email (IMAP) as the Publication Protocol. This will open a number of other parameters. Enter them according to your email account.
-
-In case it is of use, the server information for Gmail, Outlook, and Yahoo! are as follows:
-
-<table style="border: 0px">
-
-<tr>
-<td style="font-weight: bold">IMAP Server Host</td>
-<td style="">imap.gmail.com</td>
-<td style="">imap-mail.outlook.com</td>
-<td style="">imap.mail.yahoo.com</td>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+分析师女士说......
+</font></font></td>
 </tr>
-
 <tr>
-<td style="font-weight: bold">Server Port</td>
-<td style="">993</td>
-<td style="">993</td>
-<td style="">993</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+添加imap_publisher_attachment和email_publisher_attachment会修改此工作空间，以便它可以同时使用电子邮件（SMTP）和电子邮件（IMAP）发布！
+
+</font></font></td>
 </tr>
-
-<tr>
-<td style="font-weight: bold">Connection Security</td>
-<td style="">SSL/TLS</td>
-<td style="">SSL/TLS</td>
-<td style="">SSL/TLS</td>
+</tbody></table>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5）添加AttributeManager</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下一步是插入一个转换器，用于确定数据的来源（目录监视或电子邮件发布） - 这是条件语句非常宝贵的任务。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在JSONFlattener和FeatureReader之间添加AttributeManager转换器。</font><font style="vertical-align: inherit;">打开参数并添加</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">_dataset</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为新的输出属性。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从下拉菜单中选择将属性设置为条件值的选项：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.430.Ex4.AttributeManagerParameters.png"><img src="./Images/Img4.430.Ex4.AttributeManagerParameters.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置条件值如下：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.431.Ex4.ConditionalDefinition.png"><img src="./Images/Img4.431.Ex4.ConditionalDefinition.png" alt="" style="max-width:100%;"></a></p>
+<table>
+<tbody><tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">测试</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将_dataset设置为</font></font></th>
 </tr>
-
 <tr>
-<td style="font-weight: bold">Verify SSL Certificates</td>
-<td style="">Yes</td>
-<td style="">Yes</td>
-<td style="">Yes</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dirwatch_publisher_path</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性有一个值</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dirwatch_publisher_path</font></font></td>
 </tr>
-
-</table>
-
-You will also need to check the settings in your email account to make sure IMAP is turned on. Regardless of the email provider, you should set these parameters as follows:
-
-<table style="border: 0px">
-
 <tr>
-<th style="font-weight: bold">Parameter</th>
-<th style="">Value</th>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">email_publisher_attachment {0}</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性有一个值</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">email_publisher_attachment {0}</font></font></td>
 </tr>
-
 <tr>
-<td style="font-weight: bold">Poll Interval</td>
-<td style="">1 Minute</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">imap_publisher_attachment {0}</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性有一个值</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">imap_publisher_attachment {0}</font></font></td>
 </tr>
+</tbody></table>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">换一种说法：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dirwatch_publisher_path</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有值，则将该值复制到</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">_dataset</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性中。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">否则，如果</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">email_publisher_attachment {0}</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有值，则将该值复制到</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">_dataset</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性中。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">否则，如果</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">imap_publisher_attachment {0}</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有值，则将该值复制到</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">_dataset</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性中。</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">因此</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">_dataset</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取要处理的数据的位置，无论是来自目录监视通知还是任何类型的电子邮件通知。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6）编辑FeatureReader</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后一步是更改FeatureReader转换器中的数据集参数。</font><font style="vertical-align: inherit;">应该将其更改为指向新的_dataset属性，而不是指向dirwatch_publisher_path：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.432.Ex4.FeatureReaderParameters.png"><img src="./Images/Img4.432.Ex4.FeatureReaderParameters.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作流现在应该如下所示：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.433.Ex4.FinalWorkspace.png"><img src="./Images/Img4.433.Ex4.FinalWorkspace.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7）编辑用户参数</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与练习3一样，指定要写入FME Server资源文件夹的输出数据集。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到用户参数DestDataset_SPATIALITE（在“导航”窗口中的“用户参数”&gt;“已发布参数”下），然后双击它以打开编辑器对话框。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在该对话框中输入：</font></font></p>
+<pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">    $（FME_SHAREDRESOURCE_DATA）/Output/building_footprints.sl3*
+</font></font></pre>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.434.Ex4.DestinationDatasetUserParameter.png"><img src="./Images/Img4.434.Ex4.DestinationDatasetUserParameter.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8）发布工作空间</font></font></strong>
+<br><font style="vertical-align: inherit;">将此工作空间发布到FME Server，在通知服务下注册它。</font><font style="vertical-align: inherit;">选择通知服务后，它将以红色突出显示，表示需要配置其参数。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“编辑”按钮并</font><font style="vertical-align: inherit;">将“订阅主题”参数</font><font style="vertical-align: inherit;">设置为</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ShapeIncomingEmail</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">将“获取主题消息的参数”设置为</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Source Text File(s)源文本文件</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img4.435.Ex4.PublishWorkspaceNotificationService.png"><img src="./Images/Img4.435.Ex4.PublishWorkspaceNotificationService.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9）更新目录监视订阅（可选）</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您已完成练习3，使用FME Server Web界面，您可以将“处理建筑更新”订阅设置为指向此新工作空间。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10）测试工作空间</font></font></strong>
+<br><font style="vertical-align: inherit;">通过向发布电子邮件地址发送电子邮件来测试工作空间。</font><font style="vertical-align: inherit;">请务必将C：\ FMEData2018 \ Data \ Engineering \ BuildingFootprints中的Shapefile数据集（.dbf，.prj，.shp，.shx）的zip文件附加到电子邮件中。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过在FME Server Web界面的Resources&gt; Data&gt; Output中选中Completed Jobs页面和SpatiaLite数据库的时间戳来验证工作流是否成功。</font></font></p>
+<hr>
 
-<tr>
-<td style="font-weight: bold">Emails to Fetch</td>
-<td style="">New Emails Only</td>
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+恭喜
+</font></font></td>
 </tr>
-
 <tr>
-<td style="font-weight: bold">Download Attachments To</td>
-<td style="">A Resource folder of your choice</td>
-</tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 
-</table>
+通过完成本练习，您已学会如何：
+</font></font><br>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建电子邮件发布</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在发布过程中创建新的FME工作空间订阅</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用传入的电子邮件触发主题/通知</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置工作空间以处理多种发布类型的触发器</font></font></li></ul>
 
-
-You may select any Resource folder for attachments to be saved to; but (if you have already completed exercise 1-3) don't choose the BuildingUpdates folder, or else you'll cause the previous topics to be triggered by each email attachment!
-
-
-<br>**3) Test Publication**
-<br>Now let's test the publication. In the Notifications page on FME Server, click the tab marked Topics. Set up Topic Monitoring to watch the topic *ShapeIncomingEmail*:
-
-![](./Images/Img4.426.Ex4.MonitorTopic.png)
-
-Now send an email *with an attachment* to the address selected for the new publication. When the email is received by FME Server (SMTP), or FME Server fetches it (IMAP), the topic will be triggered with a message. (Remember that an IMAP publication only checks for an email every 60 seconds, so the result might not be immediate!)
-
-![](./Images/Img4.427.Ex4.MonitorTopicResult.png)
-
-Recall that in the previous exercise you used the Logger Protocol and Logger transformers to record the JSON formatted notification message. The same information is displayed in the Topic Monitoring window. So copy the text from the Topic Monitoring window and paste it into a text editor for use later in this exercise.
-
-![](./Images/Img4.428.Ex4.JSONNotificationMessage.png)
-
-
-<br>**4) Update Workspace**
-<br>You already have a created a workspace in FME Workbench to handle incoming notifications from Directory Watch. Let's modify the workflow so that it can work with both Publication protocols. Open the existing workspace C:\FMEData2018\Workspaces\ServerAuthoring\RealTime-Ex4-Begin.fmw in FME Workbench.
-
-Open the JSONFlattener parameters, and add *imap&#95;publisher&#95;attachment{0}* and *email&#95;publisher&#95;attachment{0}* under Attributes to Expose:
-
-![](./Images/Img4.429.Ex4.JSONFlattenerParameters.png)
-
-You can see these are two of the available attributes that are returned by the Topic Message.
-
-<!--Person X Says Section-->
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Ms Analyst says...</span>
 </td>
 </tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-Adding both imap&#95;publisher&#95;attachment and email&#95;publisher&#95;attachment modifies this workspace so that it can work with both Email (SMTP) and Email (IMAP) Publications!
-</span>
-</td>
-</tr>
-</table>
-
-
-<br>**5) Add AttributeManager**
-<br>The next step is to insert a transformer that will determine where the data is coming from (Directory Watch or an Email Publication) - this is a task where conditional statements are invaluable.
-
-Add an AttributeManager transformer in between the JSONFlattener and FeatureReader. Open the parameters and add *&#95;dataset* as a new Output Attribute.
-
-Select, from the drop-down menu, the option to set the attribute as a Conditional Value:
-
-![](./Images/Img4.430.Ex4.AttributeManagerParameters.png)
-
-Configure the Conditional Value as follows:
-
-![](./Images/Img4.431.Ex4.ConditionalDefinition.png)
-
-<table style="border: 0px">
-
-<tr>
-<th style="">Attribute</th>
-<th style="">Test</th>
-<th style="">Set &#95;dataset To</th>
-</tr>
-
-<tr>
-<td style="">dirwatch&#95;publisher&#95;path</td>
-<td style="">Attribute has a value</td>
-<td style="">dirwatch&#95;publisher&#95;path</td>
-</tr>
-
-<tr>
-<td style="">email&#95;publisher&#95;attachment{0}</td>
-<td style="">Attribute has a value</td>
-<td style="">email&#95;publisher&#95;attachment{0}</td>
-</tr>
-
-<tr>
-<td style="">imap&#95;publisher&#95;attachment{0}</td>
-<td style="">Attribute has a value</td>
-<td style="">imap&#95;publisher&#95;attachment{0}</td>
-</tr>
-
-</table>
-
-In other words:
-
-- If *dirwatch&#95;publisher&#95;path* has a value, then copy that value into the *&#95;dataset* attribute.
-- Else, if *email&#95;publisher&#95;attachment{0}* has a value, then copy that value into the *&#95;dataset* attribute.
-- Else, if *imap&#95;publisher&#95;attachment{0}* has a value, then copy that value into the *&#95;dataset* attribute.
-
-So *&#95;dataset* gets the location of the data to be processed, whether it comes from the directory watch notification, or an email notification of either type.
-
-
-<br>**6) Edit FeatureReader**
-<br>The final step is to change the Dataset parameter in the FeatureReader transformer. Instead of pointing to dirwatch&#95;publisher&#95;path, it should be changed to point at the new &#95;dataset attribute:
-
-![](./Images/Img4.432.Ex4.FeatureReaderParameters.png)
-
-The workflow should now look like this:
-
-![](./Images/Img4.433.Ex4.FinalWorkspace.png)
-
-
-<br>**7) Edit User Parameter**
-<br>As with Exercise 3, specify the output dataset to be written into the FME Server Resources Folder.
-
-Locate the user parameter DestDataset&#95;SPATIALITE (under User Parameters &gt; Published Parameters in the Navigator window) and double-click it to open an editor dialog.
-
-In that dialog enter:
-
-<pre>
-    $(FME&#95;SHAREDRESOURCE&#95;DATA)/Output/building&#95;footprints.sl3*
-</pre>
-
-![](./Images/Img4.434.Ex4.DestinationDatasetUserParameter.png)
-
-
-<br>**8) Publish Workspace**
-<br>Publish this workspace to FME Server, registering it under the Notification service. When the Notification service is selected, it is highlighted in red indicating its parameters need to be configured.
-
-Click the "Edit" button and set *ShapeIncomingEmail* for the "Subscribe to Topics" parameter. Set the "Parameter to Get Topic Message" as *Source Text File(s)*:
-
-![](./Images/Img4.435.Ex4.PublishWorkspaceNotificationService.png)
-
-
-<br>**9) Update Directory Watch Subscription (Optional)**
-<br>If you have completed Exercise 3, using the FME Server web interface you can set the "Process Building Updates" Subscription to point at this new workspace.
-
-
-<br>**10) Test Workspace**
-<br>Test the workspace by sending an email to the Publication email address. Be sure to attach a zip file of the Shapefile datasets (.dbf, .prj, .shp, .shx) from C:\FMEData2018\Data\Engineering\BuildingFootprints to the email.
-
-You can verify if the workflow was successful by checking the Completed Jobs page and the timestamp of the SpatiaLite database in Resources &gt; Data &gt; Output in the FME Server web interface.
-
-
----
-
-<!--Exercise Congratulations Section-->
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-thumbs-o-up fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">CONGRATULATIONS</span>
-</td>
-</tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-By completing this exercise you have learned how to:
-<br>
-<ul><li>Create an Email Publication</li>
-<li>Create a new FME Workspace Subscription as part of the Publishing process</li>
-<li>Use incoming email to trigger Topics/Notifications</li>
-<li>Configure a workspace to handle triggers by multiple Publication types</li></ul>
-</span>
-</td>
-</tr>
-</table>
+</tbody></table>
+</article>
+  </div>

@@ -141,7 +141,7 @@
 <p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.223.Ex3.DeselectFilesToUp.png"><img src="./Images/Img5.223.Ex3.DeselectFilesToUp.png" alt="" style="max-width:100%;"></a></p>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果文件不可访问，那么你必须全部上传 - 但至少最终用户永远不必。</font></font></p>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其次，请记住确保数据下载服务使用“Output [GENERIC]”写模块。</font></font></p>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server Web界面中，运行工作空间，花点时间欣赏一组新的、更干净的可用参数集:</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server Web界面中，运行工作空间，花点时间来欣赏一组新的、更干净的可用参数集:</font></font></p>
 <p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.224.Ex3.AwesomeLookingPublishedParameters.png"><img src="./Images/Img5.224.Ex3.AwesomeLookingPublishedParameters.png" alt="" style="max-width:100%;"></a></p>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在训练环境之外，我们可能希望将栅格瓦片分组，但我们现在可以按原样使用它。</font></font></p>
 <hr>

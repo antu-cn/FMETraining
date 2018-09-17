@@ -12,9 +12,7 @@ FME Server REST API培训是一个培训课程，教授FME用户如何掌握FME 
 
 全部课程由两部分组成。这些部分是：
 
-- ***与FME Server REST API交互***
-
- - Getting Started with the REST API
+ - 与FME Server REST API交互
 
  - REST API入门
 
@@ -28,7 +26,7 @@ FME Server REST API培训是一个培训课程，教授FME用户如何掌握FME 
 
  - 工作管理
 
-- ***使用FME Server REST API进行开发***
+ - 使用FME Server REST API进行开发
 
  - 构建Web应用程序时的最佳实践
 
@@ -63,7 +61,7 @@ FME Server REST API培训是一个培训课程，教授FME用户如何掌握FME 
 - 第7章：完整内容和练习
 - 第8章：完整内容和练习
 - 第9章：完整内容和练习
-- 第10章：完整内容没有练习
+- 第10章：完整内容。没有练习
 - 幻灯片：完整
 - FMEData：完整
 - 课程大纲：完整

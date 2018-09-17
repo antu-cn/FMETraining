@@ -1,244 +1,171 @@
-<!--Instructor Notes-->
-
-<!--Exercise Section-->
-
-
-<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
-<tr>
-<td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 3</span>
-</td>
-<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
-<span style="color:white;font-size:x-large;font-weight: bold">Data Download System: Layer Selection</span>
-</td>
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text">
+<table>
+<tbody><tr>
+<td width="25%">
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+练习3
+</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+数据下载系统：层选择
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
-<td style="border: 1px solid darkorange">Orthophoto images (GeoTIFF)</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正射影像（GeoTIFF）</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
-<td style="border: 1px solid darkorange">Create an FME Server Data Download system for orthophotos</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体的目标</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为正射影像创建FME服务器数据下载系统</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
-<td style="border: 1px solid darkorange">Adding vector data. Handling layer selection in Data Download</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加矢量数据。</font><font style="vertical-align: inherit;">处理数据下载中的层选择</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Start Workspace</td>
-<td style="border: 1px solid darkorange">C:\FMEData2018\Workspaces\ServerAuthoring\SelfServe2-Ex3-Begin.fmw</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C:\FMEData2018\Workspaces\ServerAuthoring\SelfServe2-Ex3-Begin.fmw
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">End Workspace</td>
-<td style="border: 1px solid darkorange">C:\FMEData2018\Workspaces\ServerAuthoring\SelfServe2-Ex3-Complete.fmw</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结束工作空间</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C:\FMEData2018\Workspaces\ServerAuthoring\SelfServe2-Ex3-Complete.fmw
+</font></font></td>
 </tr>
-
-</table>
-
----
-
-As a technical analyst in the GIS department of a city, you have just commenced an initiative to allow other departments to download orthophoto data, rather than having to ask you to create it for them. Not only will their requests be processed quicker, but you will also spend less time on that task.
-
-So far you have created a simple workspace to translate orthophotos to JPEG format. To this you have added published parameters for transformation, format, and coordinate system. The workspace was published to a Data Download service on FME Server.
-
-One of the frequent requests you get when you translate orthophoto data is to add vector data as an overlay on the raster. This is very simple in FME with the VectorOnRasterOverlayer transformer. However, to deploy this on FME Server means you need to give the end-users control over which vector layers are included.
-
-
-<br>**1) Open Workspace**
-<br>Open the workspace from exercise 2, or the begin workspace listed above. You can see that it consists of a reader, two writers, and two transformers, plus some published parameters.
-
-To add - for example - road features to the raster output first requires a reader for those road features, so that is the first step...
-
-
-<br>**2) Add Reader**
-<br>Select Readers &gt; Add Reader and use the following setup:
-
-<table style="border: 0px">
-
+</tbody></table>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为一个城市GIS部门的技术分析师，您刚开始采取措施允许其他部门下载正射影像数据，而不是要求您为他们创建正射影像数据。</font><font style="vertical-align: inherit;">他们的请求不仅会得到更快的处理，而且您还可以花更少的时间完成这项任务。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">到目前为止，您已经创建了一个简单的工作空间来将正射影像转换为JPEG格式。</font><font style="vertical-align: inherit;">为此，您已添加已发布的转换，格式和坐标系参数。</font><font style="vertical-align: inherit;">工作空间已发布到FME Server上的数据下载服务。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换正射影像数据时经常遇到的一个要求是在是在栅格上添加矢量数据作为叠加。。</font><font style="vertical-align: inherit;">这在使用VectorOnRasterOverlayer转换器的FME中非常简单。</font><font style="vertical-align: inherit;">但是，要在FME Server上部署它，意味着您需要让最终用户控制包含哪些矢量层。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）打开工作空间</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从练习2或上面列出的开始工作空间打开工作空间。</font><font style="vertical-align: inherit;">您可以看到它包含一个读模块，两个写模块和两个转换器，以及一些已发布的参数。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要添加 - 例如 - 道路要素到栅格输出首先需要读模块来获取这些道路要素，这是第一步......</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2）添加读模块</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择读模块&gt;添加读模块并使用以下设置：</font></font></p>
+<table>
+<tbody><tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读模块格式</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BBentley MicroStation Design (V8)</font></font></td>
+</tr>
 <tr>
-<td style="font-weight: bold">Reader Format</td>
-<td style="">Bentley MicroStation Design (V8)</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读模块数据集</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C:\FMEData2018\Data\Transportation\RoadsDGN.dgn
+</font></font></td>
 </tr>
-
 <tr>
-<td style="font-weight: bold">Reader Dataset</td>
-<td style="">C:\FMEData2018\Data\Transportation\RoadsDGN.dgn</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读模块参数</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分组元素依据：级别名称</font></font></td>
 </tr>
-
 <tr>
-<td style="font-weight: bold">Reader Parameters</td>
-<td style="">Group Elements By: Level Names</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作流程选项</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单一合并要素类型</font></font></td>
 </tr>
-
-<tr>
-<td style="font-weight: bold">Workflow Options</td>
-<td style="">Single Merged Feature Type</td>
-</tr>
-
-</table>
-
-We'll use the Single Merged Feature Type option here because there are multiple source layers and yet - because they are being overlaid onto the raster as a group - we don't really need to have them divided in any way.
-
-
-<br>**3) Add VectorOnRasterOverlayer Transformer**
-<br>Add a VectorOnRasterOverlayer transformer. Connect the DGN feature type to the Vector input port, and the output of the RasterMosaicker transformer to the Raster input port:
-
-![](./Images/Img5.214.Ex3.VOROTransformer.png)
-
-You can check the parameters for this transformer but, for now at least, we'll leave them as they are.
-
-
-<br>**4) Create User Parameter**
-<br>Now that we have some source data we can create a parameter to control which layers in that data should be read.
-
-In the Navigator window find the DGN Reader's parameters, expand the Features to Read section, and locate the parameter called Feature Types to Read. You will see that it is already published - a result of us using the Single Merged Feature Type:
-
-![](./Images/Img5.215.Ex3.FTTRParameter.png)
-
-Right-click on the parameter and choose Edit User Parameter Definition. This will bring up a dialog that looks like this:
-
-![](./Images/Img5.216.Ex3.FTTRParameterDialog.png)
-
----
-
-<!--Person X Says Section-->
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Spatial F.M.E., E.T.L. says...</span>
-</td>
-</tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-The Feature Types to Read parameter tells FME which layers to read from the source. When you use a Single Merged Feature Type (or manually set a merge filter) it is published automatically. It also is set to update automatically.
-<br><br>This means when the end-user is prompted to select feature types, FME will automatically scan the source dataset for the list. This is particularly useful for databases, where the table list will often change. However, for this workspace we're going to assume a fixed list of feature types.
-</span>
-</td>
-</tr>
-</table>
-
----
-
-<br>**5) Edit User Parameter**
-<br>In the Modify Feature Types List dialog, check the box that is labeled Fixed List, and also the box that is labeled Use Alternate Display Name.
-
-Click List &gt; Add From Current Dataset and - when prompted - select all of the feature types in this dataset. Click OK, and the dialog will now look like this:
-
-![](./Images/Img5.217.Ex3.FTTRParameterDialogEdit1.png)
-
-What we could do is create a display name for each road type and close the dialog. The end-user will then be able to select any of the individual layers. However, for this project, I think we should give them a simpler choice, and we will do that by grouping the layers.
-
-So, under the Display Name, enter values to match as follows:
+</tbody></table>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们将在这里使用单一合并要素类型选项，因为有多个源层，但是 - 因为它们作为一个组叠加在栅格上 - 我们实际上不需要以任何方式划分它们。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）添加VectorOnRasterOverlayer Transformer</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加VectorOnRasterOverlayer转换器。</font><font style="vertical-align: inherit;">将DGN要素类型连接到Vector输入端口，将RasterMosaicker转换器的输出连接到Raster输入端口：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.214.Ex3.VOROTransformer.png"><img src="./Images/Img5.214.Ex3.VOROTransformer.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以检查此转换器的参数，但至少现在，我们将保留原样。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）创建用户参数</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">既然我们有一些源数据，我们可以创建一个参数来控制应该读取该数据中的哪些层。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在“导航”窗口中，找到DGN 读模块的参数，展开“要读取的要素”部分，然后找到名为“要读取的要素类型”的参数。</font><font style="vertical-align: inherit;">您将看到它已经发布 - 我们使用单一合并要素类型的结果：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.215.Ex3.FTTRParameter.png"><img src="./Images/Img5.215.Ex3.FTTRParameter.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">右键单击该参数，然后选择“编辑用户参数定义”。</font><font style="vertical-align: inherit;">这将打开一个如下所示的对话框：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.216.Ex3.FTTRParameterDialog.png"><img src="./Images/Img5.216.Ex3.FTTRParameterDialog.png" alt="" style="max-width:100%;"></a></p>
+<hr>
 
 <table>
-<tr><th>Display Name</th><th>Feature Type</th></tr>
-<tr><td>Primary Roads</td><td>Arterial</td></tr>
-<tr><td>Primary Roads</td><td>Collector</td></tr>
-<tr><td>Other Roads</td><td>NonCity</td></tr>
-<tr><td>Other Roads</td><td>Private</td></tr>
-<tr><td>Secondary Roads</td><td>Residential</td></tr>
-<tr><td>Secondary Roads</td><td>Secondary</td></tr>
-<tr><td>Other Roads</td><td>Other</td></tr>
-</table>
-
-The list will look like this:
-
-![](./Images/Img5.218.Ex3.FTTRParameterDialogEdit2.png)
-
-What this will do is give the user a choice of three options: Primary Roads, Secondary Roads, Other Roads. Whichever they choose will return all of the source layers for that choice.
-
-One final task. In the lower part of the dialog, change the prompt to something like "Vector Roads to Overlay":
-
-![](./Images/Img5.219.Ex3.FTTRParameterDialogEdit3.png)
-
-It's just a small thing but will help with the end user experience.
-
-<br>**6) Save and Run Workspace**
-<br>Save the workspace and then run it in FME Workbench to test it. You should be able to select any of the three types of roads or even none of them.
-
-Check that the output includes whatever roads you selected.
-
-
-<br>**7) Clean User Parameters**
-<br>If your workspace is like mine, there are a number of extra published parameters we don't really need right now. Plus the order of parameters is not good. Let's take this opportunity to clean it up.
-
-Locate and delete the following published parameters:
-
-- SourceDataset_GEOTIFF
-- SourceDataset_DGNV8
-- DestDataset_JPEG
-- DestDataset_GENERIC
-
-Finally, let's change the order of parameters. You can do this by dragging one above the other in the Navigator window. So do this and put the parameters in the order that seems best to you:
-
-![](./Images/Img5.220.Ex3.SortedParameters.png)
-
-
-<br>**8) Raster User Parameters**
-<br>Now let's do something with the source raster. We want the user to be able to select the files to read, without having to upload them. Locate the reader in the Navigator window and double-click the Source GeoTIFF File(s) parameter. When prompted, select all of the GeoTIFF files in the Orthophotos folder.
-
-![](./Images/Img5.221.Ex3.MultipleSourceDatasets.png)
-
-This would normally mean that all files would get read into the translation, but the Feature Types to Read parameter will let the user choose which ones to read. We do, however, need to make some edits.
-
-Open the definition of the GeoTIFF Feature Types to Read parameter. Click the option for a Fixed List. To list all of the available tiles select List &gt; Add From Current Dataset and select all the files.
-
-Finally, change the prompt to something sensible like "Raster Tiles to Read."
-
-![](./Images/Img5.222.Ex3.RasterFTTRParam.png)
-
-Now enable Run With Prompt by going to Run > Run with Prompt. Then rerun the workspace to check on our improved parameters dialog.
-
-<br>**9) Publish to FME Server**
-<br>Save the workspace and publish it to FME Server. There are two things to note.
-
-Firstly, because we removed the Source Dataset parameters, FME will suggest we upload the data. If your data is on the same computer as FME Server (or on a path otherwise accessible to the Server), then you don't need to do this and can uncheck that box:
-
-![](./Images/Img5.223.Ex3.DeselectFilesToUpload.png)
-
-If the files aren't accessible, then you will have to upload them all - but at least the end user will never have to.
-
-Secondly, remember to make sure the Data Download service is using the "Output [GENERIC]" writer.
-
-In the FME Server web interface, run the workspace, taking time to admire the new, cleaner set of parameters that are available:
-
-![](./Images/Img5.224.Ex3.AwesomeLookingPublishedParameters.png)
-
-Outside of a training environment, we might want to order the raster tiles into groups, but we'll live with it as-is for now.
-
----
-
-<!--Exercise Congratulations Section-->
-
-<table style="border-spacing: 0px">
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+空间FME教授，ETL说......
+</font></font></td>
+</tr>
 <tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-thumbs-o-up fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">CONGRATULATIONS</span>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+要读取的要素类型参数告诉FME从源读取哪些层。</font><font style="vertical-align: inherit;">使用单一合并要素类型（或手动设置合并过滤器）时，它会自动发布。</font><font style="vertical-align: inherit;">它也设置为自动更新。
+</font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这意味着当提示最终用户选择要素类型时，FME将自动扫描源数据集以获取列表。</font><font style="vertical-align: inherit;">这对于数据库特别有用，其中表列表（table list）通常会发生变化。</font><font style="vertical-align: inherit;">但是，对于此工作空间，我们将假设一个固定的要素类型列表。
+
+</font></font></td>
+</tr>
+</tbody></table>
+<hr>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5）编辑用户参数</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在“修改要素类型列表”对话框中，选中标记为“固定列表（Fixed List）”的复选框，以及标记为“使用备用显示名称”的复选框。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击列表&gt;从当前数据集添加，并在 - 提示时 - 选择此数据集中的所有要素类型。</font><font style="vertical-align: inherit;">单击OK，对话框现在如下所示：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.217.Ex3.FTTRParameterDialogEdit1.png"><img src="./Images/Img5.217.Ex3.FTTRParameterDialogEdit1.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们可以做的是为每种道路类型创建一个显示名称并关闭对话框。</font><font style="vertical-align: inherit;">然后，最终用户将能够选择任何单个层。</font><font style="vertical-align: inherit;">但是，对于这个项目，我认为我们应该给他们一个更简单的选择，我们将通过对层进行分组来实现。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">因此，在“显示名称”下，输入要匹配的值，如下所示：</font></font></p>
+<table>
+<tbody><tr><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">显示名称</font></font></th><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要素类型</font></font></th></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要道路</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arterial</font></font></td></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要道路</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Collector</font></font></td></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他道路</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NonCity</font></font></td></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他道路</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Private</font></font></td></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">二级公路</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Residential</font></font></td></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">二级公路</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Secondary</font></font></td></tr>
+<tr><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他道路</font></font></td><td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Other</font></font></td></tr>
+</tbody></table>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该列表将如下所示：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.218.Ex3.FTTRParameterDialogEdit2.png"><img src="./Images/Img5.218.Ex3.FTTRParameterDialogEdit2.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这样做可以让用户选择三种选择：主要道路，次要道路，其他道路。</font><font style="vertical-align: inherit;">无论他们选择哪种，都会返回该选择的所有源层。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后一项任务。</font><font style="vertical-align: inherit;">在对话框的下半部分，将提示更改为“Vector Roads to Overlay”：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.219.Ex3.FTTRParameterDialogEdit3.png"><img src="./Images/Img5.219.Ex3.FTTRParameterDialogEdit3.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这只是一件小事，但有助于最终用户体验。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6）保存并运行工作空间</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保存工作空间，然后在FME Workbench中运行它以进行测试。</font><font style="vertical-align: inherit;">您应该能够选择三种类型的道路中的任何一种，甚至一种也不能。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查输出是否包括您选择的任何道路。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7）清理用户参数</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您的工作空间和我的一样，有很多额外的发布的参数我们现在并不需要。</font><font style="vertical-align: inherit;">加上参数的顺序不好。</font><font style="vertical-align: inherit;">让我们借此机会清理它。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到并删除以下已发布的参数：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SourceDataset_GEOTIFF</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SourceDataset_DGNV8</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DestDataset_JPEG</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DestDataset_GENERIC</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后，让我们改变参数的顺序。</font><font style="vertical-align: inherit;">您可以通过在“导航”窗口中将一个拖到另一个上面来执行此操作。</font><font style="vertical-align: inherit;">那么这样做吧并并把参数按最适合您的顺序排列：：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.220.Ex3.SortedParameters.png"><img src="./Images/Img5.220.Ex3.SortedParameters.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8）栅格用户参数</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在让我们对源栅格做一些事情。</font><font style="vertical-align: inherit;">我们希望用户能够选择要读取的文件，而无需上传它们。</font><font style="vertical-align: inherit;">在导航窗口中找到读模块，然后双击Source GeoTIFF File（s）参数。</font><font style="vertical-align: inherit;">出现提示时，选择Orthophotos文件夹中的所有GeoTIFF文件。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.221.Ex3.MultipleSourceDatasets.png"><img src="./Images/Img5.221.Ex3.MultipleSourceDatasets.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这通常意味着所有文件都会被读入转换当中，但是“要读取的要素类型”参数将让用户选择要读取的文件。</font><font style="vertical-align: inherit;">然而，我们需要进行一些编辑。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开要读取的GeoTIFF要素类型参数的定义。</font><font style="vertical-align: inherit;">单击固定列表选项。</font><font style="vertical-align: inherit;">要列出所有可用瓦片，请选择“列表”&gt;“从当前数据集添加”，然后选择所有文件。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后，将提示更改为像“Raster Tiles to Read”这样的合理内容。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.222.Ex3.RasterFTTRParam.png"><img src="./Images/Img5.222.Ex3.RasterFTTRParam.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在，通过转到Run&gt; Run with Prompt启用“使用提示运行”。</font><font style="vertical-align: inherit;">然后重新运行工作空间以检查我们改进的参数对话框。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9）发布到FME服务器</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保存工作空间并将其发布到FME Server。</font><font style="vertical-align: inherit;">有两点需要注意。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先，因为我们删除了源数据集参数，FME会建议我们上传数据。</font><font style="vertical-align: inherit;">如果您的数据与FME Server在同一台计算机上（或在服务器可访问的路径上），则您无需执行此操作并取消选中该框：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.223.Ex3.DeselectFilesToUp.png"><img src="./Images/Img5.223.Ex3.DeselectFilesToUp.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果文件不可访问，那么你必须全部上传 - 但至少最终用户永远不必。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其次，请记住确保数据下载服务使用“Output [GENERIC]”写模块。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Server Web界面中，运行工作空间，花点时间欣赏一组新的、更干净的可用参数集:</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img5.224.Ex3.AwesomeLookingPublishedParameters.png"><img src="./Images/Img5.224.Ex3.AwesomeLookingPublishedParameters.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在训练环境之外，我们可能希望将栅格瓦片分组，但我们现在可以按原样使用它。</font></font></p>
+<hr>
+
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+恭喜
+</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+通过完成本练习，您已学会如何：
+</font></font><br>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将矢量数据添加到栅格上</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在自动模式下使用“要读取的要素类型”参数</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑“要读取的要素类型”参数以创建手动列表</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑“要读取的要素类型”参数以创建分组的手动列表</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">清理不必要的用户参数并更改显示顺序</font></font></li></ul>
+
 </td>
 </tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-By completing this exercise you have learned how to:
-<br>
-<ul><li>Add vector data onto raster</li>
-<li>Use the Feature Types to Read parameter in automatic mode</li>
-<li>Edit the Feature Types to Read parameter to create a manual list</li>
-<li>Edit the Feature Types to Read parameter to create a grouped manual list</li>
-<li>Clean up unnecessary user parameters and change the display order</li></ul>
-</span>
-</td>
-</tr>
-</table>
+</tbody></table>
+</article>
+  </div>

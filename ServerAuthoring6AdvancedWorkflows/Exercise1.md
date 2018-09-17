@@ -1,180 +1,120 @@
-<!--Instructor Notes-->
-
-<!--Exercise Section-->
-
-
-<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
-<tr>
-<td width=25% style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold">Exercise 6.1</span>
-</td>
-<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
-<span style="color:white;font-size:x-large;font-weight: bold">Best Practice Workspace Analysis Project</span>
-</td>
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text">
+<table>
+<tbody><tr>
+<td width="25%">
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+练习6.1
+</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+最佳实践工作空间分析项目
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
-<td style="border: 1px solid darkorange">Workspace Files</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作空间文件文件</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
-<td style="border: 1px solid darkorange">Import an FME Server Project</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总体目标</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导入FME Server项目</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
-<td style="border: 1px solid darkorange">FME Server Projects</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME Server项目</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">Start Workspace</td>
-<td style="border: 1px solid darkorange">N/A</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动工作空间文件</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange; font-weight: bold">End Workspace</td>
-<td style="border: 1px solid darkorange">N/A</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结束工作空间文件</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td>
 </tr>
+</tbody></table>
+<hr>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最佳实践是FME工作空间的基本概念。</font><font style="vertical-align: inherit;">为了鼓励同事执行最佳实践，您希望安装一个允许分析工作空间的项目。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1）浏览到项目</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开FME Server Web界面并使用具有管理员权限的帐户登录。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在主菜单上选择Projects以浏览到Projects页面：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.200.Ex1.ProjectsMenu.png"><img src="./Images/Img6.200.Ex1.ProjectsMenu.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2）导入项目</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“导入”按钮以打开“导入”页面：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.201.Ex1.ImportButton.png"><img src="./Images/Img6.201.Ex1.ImportButton.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在“配置导入”部分下，确保将“导入自”设置为“上传”。</font><font style="vertical-align: inherit;">然后在配置参数后，单击“导入”按钮：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.202.Ex1.ImportConfig.png"><img src="./Images/Img6.202.Ex1.ImportConfig.png" alt="" style="max-width:100%;"></a></p>
+<p><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">覆盖现有项</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不太重要，因为项目应该还不存在对于需要覆盖的项来说。</font><font style="vertical-align: inherit;">同样，</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">暂停通知系统</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并不重要，因为项目中的通知不太可能立即触发（它们用于处理传入的电子邮件）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击Upload File按钮并浏览到Code Smells Workshop并选择BestPracticeAnalysis.fsproject：</font></font></p>
+<pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C：\ FMEData2018 \资源\ CodeSmellsWorkshop \ BestPracticeAnalysis.fsproject
+</font></font></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目将很快导入：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.203.Ex1.ImportComplete.png"><img src="./Images/Img6.203.Ex1.ImportComplete.png" alt="" style="max-width:100%;"></a></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3）检查日志</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击“查看详细信息”按钮以检查“项目导入”日志。</font><font style="vertical-align: inherit;">成功导入将如下所示：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.204.Ex1.ImportSummary.png"><img src="./Images/Img6.204.Ex1.ImportSummary.png" alt="" style="max-width:100%;"></a></p>
+<hr>
 
-</table>
-
----
-
-Best Practice is a fundamental concept for FME workspaces. To encourage colleagues to carry out best practices you wish to install a project that allows workspaces to be analyzed.
-
-
-<br>**1) Browse To Projects**
-<br>Open the FME Server web interface and log in with an account that has administrator privileges.
-
-Select Projects on the main menu to browse to the Projects page:
-
-![](./Images/Img6.200.Ex1.ProjectsMenu.png)
-
-
-<br>**2) Import Project**
-<br>Click on the Import button to open the Import page:
-
-![](./Images/Img6.201.Ex1.ImportButton.png)
-
-Under the Configure Import section, be sure to set the Import From to Upload. Then once the parameters are configured, click the Import button:
-
-![](./Images/Img6.202.Ex1.ImportConfig.png)
-
-*Overwrite Existing Items* is less critical because the project should not yet exist for items to need overwriting. Similarly, *Pause Notifications System* is not important because it's very unlikely the notifications in the project will be triggered immediately (they are for handling incoming emails).
-
-Click the Upload File button and browse to the Code Smells Workshop and select the BestPracticeAnalysis.fsproject:
-
-<pre>
-C:\FMEData2018\Resources\CodeSmellsWorkshop\BestPracticeAnalysis.fsproject
-</pre>
-
-The project will quickly be imported:
-
-![](./Images/Img6.203.Ex1.ImportComplete.png)  
-
-
-<br>**3) Check Log**
-<br>Click the View Details button to examine the Project Import log. A successful import will look something like this:
-
-![](./Images/Img6.204.Ex1.ImportSummary.png)
-
----
-
-<!--Tip Section-->
-
-<table style="border-spacing: 0px">
-<tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-info-circle fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">TIP</span>
-</td>
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+技巧
+</font></font></td>
 </tr>
-
 <tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-The history page under projects will show a full history of all projects that have been imported to the system.
-</span>
-</td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+项目下的历史页面将显示已导入系统的所有项目的完整历史记录。
+
+</font></font></td>
 </tr>
-</table>
+</tbody></table>
+<hr>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4）检查组件</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在让我们检查一些应该导入的组件。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">再次单击菜单上的“项目”，然后选择最近导入的项目。</font><font style="vertical-align: inherit;">您现在应该看到导入内容的列表：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.205.Ex1.ProjectContents.png"><img src="./Images/Img6.205.Ex1.ProjectContents.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用菜单选项检查“存储库”，“通知”和“资源”页面，以确保导入的组件确实存在。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5）测试项目</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在让我们发送一封电子邮件到您的FME Server来测试项目。</font><font style="vertical-align: inherit;">此处假设您使用的是具有公共名称，域或地址的服务器。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于Safe的培训计算机上的FME Server，公共IP地址显示在桌面的右上角：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.206.Ex1.ServerIPAddress.png"><img src="./Images/Img6.206.Ex1.ServerIPAddress.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件地址为BestPractice @ xxxx，其中xxxx是IP地址：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.207.Ex1.EmailTest.png"><img src="./Images/Img6.207.Ex1.EmailTest.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置主题行并附加工作空间文件文件。</font><font style="vertical-align: inherit;">单击“发送”按钮。</font><font style="vertical-align: inherit;">作为回应（可能需要一两分钟），您将收到有关该工作空间文件中使用的最佳实践的电子邮件报告：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.208.Ex1.BPReport.png"><img src="./Images/Img6.208.Ex1.BPReport.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这表明项目已导入并正确设置。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6）清理项目</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目中不需要的一部分是用户帐户。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">因此，返回项目内容，选择marki User，然后将其删除。</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.209.Ex1.RemoveAccount.png"><img src="./Images/Img6.209.Ex1.RemoveAccount.png" alt="" style="max-width:100%;"></a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将从项目中删除该帐户，但由于该项目已导入，因此该帐户也将存在于该计算机上。</font><font style="vertical-align: inherit;">因此，也可以转到Security&gt; Users页面并删除该用户。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发送另一封电子邮件以确认项目仍在运行。</font></font></p>
+<p><br><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7）导出项目</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在项目已经更新，将其导出，以便可以在其他地方以适当的形式导入。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为此，请浏览到“项目”页面，选择项目（使用左侧的复选框），然后单击“导出”按钮。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在打开的对话框中，您可以选择是将项目文件保存到下载还是资源文件夹。</font><font style="vertical-align: inherit;">完成后，将显示以下消息：</font></font></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./Images/Img6.210.Ex1.ProjectExported.png"><img src="./Images/Img6.210.Ex1.ProjectExported.png" alt="" style="max-width:100%;"></a></p>
+<hr>
 
----
-
-<br>**4) Check Components**
-<br>Now let's check for some of the components that should have been imported.
-
-Click Projects on the menu again, and select the recently imported project. You should now see a list of the imported contents:
-
-![](./Images/Img6.205.Ex1.ProjectContents.png)
-
-Use the menu options to check the Repository, Notifications, and Resources pages to ensure that the imported components do exist.
-
-
-<br>**5) Test Project**
-<br>Now let's send an email to your FME Server to test the project. This assumes that you are using a server that has a public name, domain, or address.
-
-For FME Server on one of Safe's training computers, the public IP address is shown on the top-right of the desktop:
-
-![](./Images/Img6.206.Ex1.ServerIPAddress.png)
-
-The email address will be BestPractice@xxxx, where xxxx is the IP address:
-
-![](./Images/Img6.207.Ex1.EmailTest.png)
-
-Set a subject line and attach a workspace file. Click the Send button. In response (it may take a minute or two) you will receive an email report about the best practices used in that workspace:
-
-![](./Images/Img6.208.Ex1.BPReport.png)
-
-This demonstrates that the project has been imported and set up correctly.
-
-
-<br>**6) Clean Up Project**
-<br>One part of the project that is not needed is a user account.
-
-So, return to the project contents, select the marki User, and remove it.
-
-![](./Images/Img6.209.Ex1.RemoveAccount.png)
-
-This will remove the account from the project, but since the project has already been imported, the account will also exist on the machine. So also go to the Security > Users page and remove that user.
-
-Send another email to confirm that the project is still working.
-
-
-<br>**7) Export Project**
-<br>Now the project has been updated, export it so that it can be imported in its proper form elsewhere.
-
-To do so, browse to the Projects page, select the project (using the checkbox on the left), and click the Export button.
-
-In the dialog that opens you can choose whether to save the project file to a download or a resources folder. Once complete the following message will appear:
-
-![](./Images/Img6.210.Ex1.ProjectExported.png)
-
----
-
-<!--Exercise Congratulations Section-->
-
-<table style="border-spacing: 0px">
+<table>
+<tbody><tr>
+<td>
+<i></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+恭喜
+</font></font></td>
+</tr>
 <tr>
-<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
-<i class="fa fa-thumbs-o-up fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">CONGRATULATIONS</span>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+通过完成本练习，您已学会如何：
+</font></font><br>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导入项目</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查项目历史记录并确认已成功导入项目</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑项目的内容</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导出项目</font></font></li></ul>
+
 </td>
 </tr>
-
-<tr>
-<td style="border: 1px solid darkorange">
-<span style="font-family:serif; font-style:italic; font-size:larger">
-By completing this exercise you have learned how to:
-<br>
-<ul><li>Import a Project</li>
-<li>Check the Project History and confirm a Project was successfully imported</li>
-<li>Edit a Project's contents</li>
-<li>Export a Project</li></ul>
-</span>
-</td>
-</tr>
-</table>   
+</tbody></table>   
+</article>
+  </div>

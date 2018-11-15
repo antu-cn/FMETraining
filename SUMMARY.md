@@ -1,7 +1,7 @@
   <div id="readme" class="readme blob instapaper_body">
     <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-summary" class="anchor" aria-hidden="true" href="https://github.com/safesoftware/FMETraining/blob/Desktop-Basic-2018/SUMMARY.md#summary"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概要</font></font></h1>
 <ul>
-<li><a href="./DesktopBasic0Introduction/0.00.CourseIntroduction.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于本文件</font></font></a>
+<li><a href="./DesktopBasic0Introduction/0.00.CourseIntroduction.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于本文档</font></font></a>
 <ul>
 <li><a href="./DesktopBasic0Introduction/0.01.CourseOverview.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">课程大纲</font></font></a></li>
 <li><a href="./DesktopBasic0Introduction/0.02.CourseResources.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">课程资源</font></font></a></li>

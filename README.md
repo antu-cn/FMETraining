@@ -1,6 +1,6 @@
 # 简介
 
-这是Safe Software FME Desktop应用程序入门级培训课程的手册。
+这是Safe Software FME Desktop应用程序入门培训课程的手册。
 
 [![](.gitbook/assets/img0.0.fmeaboutscreen.png)](https://github.com/safesoftware/FMETraining/blob/Desktop-Basic-2018/DesktopBasic0Introduction/Images/Img0.0.FMEAboutScreen.png)
 

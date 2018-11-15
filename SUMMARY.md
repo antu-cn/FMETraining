@@ -1,216 +1,124 @@
-  <div id="readme" class="readme blob instapaper_body">
-    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-summary" class="anchor" aria-hidden="true" href="https://github.com/safesoftware/FMETraining/blob/Desktop-Basic-2018/SUMMARY.md#summary"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概要</font></font></h1>
-<ul>
-<li><a href="./DesktopBasic0Introduction/0.00.CourseIntroduction.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于本文档</font></font></a>
-<ul>
-<li><a href="./DesktopBasic0Introduction/0.01.CourseOverview.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">课程大纲</font></font></a></li>
-<li><a href="./DesktopBasic0Introduction/0.02.CourseResources.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">课程资源</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic1Basics/1.00.DataTranslationBasics.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据转换基础知识</font></font></a>
-<ul>
-<li><a href="./DesktopBasic1Basics/1.01.WhatIsFME.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">什么是FME？</font></font></a>
-<ul>
-<li><a href="./DesktopBasic1Basics/1.Exercise1.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：探索FME</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.02.FMEDesktopComponents.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME Desktop组件</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic1Basics/1.03.IntroductionToWorkbench.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME Workbench简介</font></font></a>
-<ul>
-<li><a href="./DesktopBasic1Basics/1.04.WindowControl.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Workbench中的窗口控件</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.05.CreatingATranslation.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建转换</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.06.TheNewWorkspace.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新工作空间</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.07.RunningTheWorkspace.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行工作空间</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.Exercise2.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：基本工作空间创建</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic1Basics/1.14.ReaderParameters.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读模块参数</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.15.WriterParameters.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">写模块参数</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.08.WhatIsDataInspection.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据检查</font></font></a>
-<ul>
-<li><a href="./DesktopBasic1Basics/1.09.IntroductionToDataInspector.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FME Data Inspector简介</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.10.ViewingData.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在FME Data Inspector中查看数据</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.11.QueryingData.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查询FMEData Inspector中的数据</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.Exercise3.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：基本数据检查</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.12.DataInspectorDisplayControl.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Data Inspector显示控件</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.13.BackgroundMaps.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Data Inspector中的背景地图</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic1Basics/1.Exercise4.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：FME Data Inspector</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.16.ModuleReview.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块复习</font></font></a>
-<ul>
-<li><a href="./DesktopBasic1Basics/1.17.QuestionAnswers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q + A答案</font></font></a></li>
-<li><a href="./DesktopBasic1Basics/1.Exercise5.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：旅游局项目</font></font></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="./DesktopBasic2Transformation/2.00.DataTransformation.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据转换</font></font></a>
-<ul>
-<li><a href="./DesktopBasic2Transformation/2.01.WhatIsDataTransformation.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">什么是数据转换</font></font></a>
-<ul>
-<li><a href="./DesktopBasic2Transformation/2.02.StructuralTransformation.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结构转换</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.03.SchemaEditing.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模式编辑</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.04.SchemaMapping.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模式映射</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.Exercise1.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：地面维护项目 - 模式编辑</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic2Transformation/2.05.TransformationWithTransformers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用转换器进行转换</font></font></a>
-<ul>
-<li><a href="./DesktopBasic2Transformation/2.Exercise2.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：地面维护项目 - 结构转型</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic2Transformation/2.06.ContentTransformation.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容转换</font></font></a>
-<ul>
-<li><a href="./DesktopBasic2Transformation/2.07.TransformersInSeries.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换器系列</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.Exercise3.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：地面维护项目 - 计算统计数据</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.08.FeatureCounts.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要素计数显示</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.09.TransformersInParallel.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换器并行</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.Exercise4.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：地面维护项目 - 标签功能</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic2Transformation/2.10.GroupByProcessing.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分组处理</font></font></a>
-<ul>
-<li><a href="./DesktopBasic2Transformation/2.Exercise5.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：地面维护项目 - 街区平均值</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic2Transformation/2.11.DataInspectionFromWorkbench.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Workbench的数据检查</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.12.CoordinateSystemTransformation.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">坐标系转换</font></font></a>
-<ul>
-<li><a href="./DesktopBasic2Transformation/2.Exercise6.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：地面维护项目 - 数据重投影</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic2Transformation/2.13.ModuleReview.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块复习</font></font></a>
-<ul>
-<li><a href="./DesktopBasic2Transformation/2.14.QuestionAnswers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q + A答案</font></font></a></li>
-<li><a href="./DesktopBasic2Transformation/2.Exercise7.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：投票分析项目</font></font></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.00.WorkspaceDesign.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作空间设计</font></font></a>
-<ul>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.01.Prototyping.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作空间原型</font></font></a>
-<ul>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.02.IncrementalDev.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">增量发展</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.03.RejectedPorts.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">被拒绝的端口</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.Exercise1.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：住宅垃圾收集区</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.04.ReadingWriting.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读取和写入工作流程</font></font></a>
-<ul>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.05.WorkspaceComponents.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要组件</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.06.AddReadersWriters.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多个读模块和写模块</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.07.FeatureReadersWriters.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FeatureReader和FeatureWriter</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.08.NoReadersWriters.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用集成转换器进行读取/写入</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.Exercise2.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：住宅垃圾收集区</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.09.WorkspaceTesting.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作空间测试技术</font></font></a>
-<ul>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.10.IntegratedInspection.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">综合检查</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.11.PartialRuns.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分运行</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.Exercise3.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：住宅垃圾收集区</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.12.ModuleReview.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块复习</font></font></a></li>
-<li><a href="./DesktopBasic3WorkspaceDesign/3.13.QuestionAnswers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q + A答案</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic4Transformers/4.00.PracticalTransformerUse.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实用转换器使用</font></font></a>
-<ul>
-<li><a href="./DesktopBasic4Transformers/4.01.LocatingTransformers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到转换器</font></font></a>
-<ul>
-<li><a href="./DesktopBasic4Transformers/4.02.TransformerGallery.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换器库</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.03.TransformerSearching.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换器搜索</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.04.MostValuableTransformers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最有价值的转换器</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.Exercise1.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：转换器选择练习</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic4Transformers/4.05.ManagingAttributes.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理属性</font></font></a>
-<ul>
-<li><a href="./DesktopBasic4Transformers/4.06.CreatingAttributes.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建和设置属性</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.07.ConstructingAttributes.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构造属性</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.08.ParameterConstruction.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建转换器参数</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.09.RenamingAttributes.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重命名和复制属性</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.10.BulkAttributeRenamer.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">批量属性重命名</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.11.RemovingAttributes.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除属性</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.Exercise2.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：地址开放数据项目</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic4Transformers/4.12.ConditionalFiltering.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">条件过滤</font></font></a>
-<ul>
-<li><a href="./DesktopBasic4Transformers/4.13.TesterTestFilter.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tester和TestFilter</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.14.FilterTransformers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他主要滤波器转换器</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.Exercise3.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：噪音控制法律项目</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic4Transformers/4.15.DataJoins.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据连接</font></font></a>
-<ul>
-<li><a href="./DesktopBasic4Transformers/4.16.AttributeJoinTransformers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于键的连接转换器</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.17.SpatialJoinTransformers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于空间的连接转换器</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.Exercise4.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：犯罪映射数据请求</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic4Transformers/4.18.ModuleReview.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块复习</font></font></a>
-<ul>
-<li><a href="./DesktopBasic4Transformers/4.19.Ex1Answers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习1答案</font></font></a></li>
-<li><a href="./DesktopBasic4Transformers/4.20.QuestionAnswers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q + A答案</font></font></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="./DesktopBasic5BestPractice/5.00.BestPractice.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最佳实践</font></font></a>
-<ul>
-<li><a href="./DesktopBasic5BestPractice/5.01.Style.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">样式</font></font></a>
-<ul>
-<li><a href="./DesktopBasic5BestPractice/5.02.AnnotatingWorkspaces.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注释工作空间</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.03.Bookmarks.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">书签</font></font></a>
-<ul>
-<li><a href="./DesktopBasic5BestPractice/5.04.BookmarksForDesign.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">书签用来设计</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.05.BookmarksForAccess.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">书签用来访问</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.06.BookmarksForEditing.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">书签用来编辑</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.07.BookmarksForPerformance.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">书签用于性能</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic5BestPractice/5.08.ObjectLayout.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对象布局</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.09.ConnectionStyles.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">连接样式</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.Exercise1.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：FME风格指南</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic5BestPractice/5.10.Methodology.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法伦</font></font></a>
-<ul>
-<li><a href="./DesktopBasic5BestPractice/5.11.MaintenanceMethodology.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维护方法</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.12.PerformanceMethodology.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">性能方法</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.Exercise2.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：设计模式</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic5BestPractice/5.13.Debugging.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">调试</font></font></a>
-<ul>
-<li><a href="./DesktopBasic5BestPractice/5.14.Logging.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">记录</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.15.InspectingOutput.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查输出</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.16.FeatureCounts.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要素计数</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.17.KeyStageInspection.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查关键阶段</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.Exercise3.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：调试工作空间</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.18.FeatureDebugging.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要素调试</font></font></a></li>
-</ul>
-</li>
-<li><a href="./DesktopBasic5BestPractice/5.19.ModuleReview.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块复习</font></font></a>
-<ul>
-<li><a href="./DesktopBasic5BestPractice/5.20.QuestionAnswers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q + A答案</font></font></a></li>
-<li><a href="./DesktopBasic5BestPractice/5.Exercise4.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：最短路线黑客马拉松</font></font></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="./DesktopBasic6WrapUp/6.00.CourseWrapup.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">课程总结</font></font></a>
-<ul>
-<li><a href="./DesktopBasic6WrapUp/6.01.ProductInfo.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">产品信息和资源</font></font></a></li>
-<li><a href="./DesktopBasic6WrapUp/6.02.CommunityInfo.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区信息和资源</font></font></a></li>
-<li><a href="./DesktopBasic6WrapUp/6.03.CourseFeedback.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反馈和证书</font></font></a></li>
-<li><a href="./DesktopBasic6WrapUp/6.04.ThankYou.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">谢谢</font></font></a></li>
-</ul>
-</li>
-</ul>
-</article>
-  </div>
+# Table of contents
+
+* [简介](README.md)
+* [关于本文档](0.00.courseintroduction/README.md)
+  * [课程大纲](0.00.courseintroduction/0.01.courseoverview.md)
+  * [课程资源](0.00.courseintroduction/0.02.courseresources.md)
+* [数据转换基础知识](1.00.datatranslationbasics/README.md)
+  * [什么是FME？](1.00.datatranslationbasics/1.01.whatisfme/README.md)
+    * [练习：探索FME](1.00.datatranslationbasics/1.01.whatisfme/1.exercise1.md)
+    * [FME Desktop组件](1.00.datatranslationbasics/1.01.whatisfme/1.02.fmedesktopcomponents.md)
+  * [FME Workbench简介](1.00.datatranslationbasics/1.03.introductiontoworkbench/README.md)
+    * [Workbench中的窗口控件](1.00.datatranslationbasics/1.03.introductiontoworkbench/1.04.windowcontrol.md)
+    * [创建转换](1.00.datatranslationbasics/1.03.introductiontoworkbench/1.05.creatingatranslation.md)
+    * [新工作空间](1.00.datatranslationbasics/1.03.introductiontoworkbench/1.06.thenewworkspace.md)
+    * [运行工作空间](1.00.datatranslationbasics/1.03.introductiontoworkbench/1.07.runningtheworkspace.md)
+    * [练习：基本工作空间创建](1.00.datatranslationbasics/1.03.introductiontoworkbench/1.exercise2.md)
+  * [读模块参数](1.00.datatranslationbasics/1.14.readerparameters.md)
+  * [写模块参数](1.00.datatranslationbasics/1.15.writerparameters.md)
+  * [数据检查](1.00.datatranslationbasics/1.08.whatisdatainspection/README.md)
+    * [FME Data Inspector简介](1.00.datatranslationbasics/1.08.whatisdatainspection/1.09.introductiontodatainspector.md)
+    * [在FME Data Inspector中查看数据](1.00.datatranslationbasics/1.08.whatisdatainspection/1.10.viewingdata.md)
+    * [查询FMEData Inspector中的数据](1.00.datatranslationbasics/1.08.whatisdatainspection/1.11.queryingdata.md)
+    * [练习：基本数据检查](1.00.datatranslationbasics/1.08.whatisdatainspection/1.exercise3.md)
+    * [Data Inspector显示控件](1.00.datatranslationbasics/1.08.whatisdatainspection/1.12.datainspectordisplaycontrol.md)
+    * [Data Inspector中的背景地图](1.00.datatranslationbasics/1.08.whatisdatainspection/1.13.backgroundmaps.md)
+  * [练习：FME Data Inspector](1.00.datatranslationbasics/1.exercise4.md)
+  * [模块复习](1.00.datatranslationbasics/1.16.modulereview/README.md)
+    * [Q + A答案](1.00.datatranslationbasics/1.16.modulereview/1.17.questionanswers.md)
+    * [练习：旅游局项目](1.00.datatranslationbasics/1.16.modulereview/1.exercise5.md)
+* [数据转换](2.00.datatransformation/README.md)
+  * [什么是数据转换](2.00.datatransformation/2.01.whatisdatatransformation/README.md)
+    * [结构转换](2.00.datatransformation/2.01.whatisdatatransformation/2.02.structuraltransformation.md)
+    * [模式编辑](2.00.datatransformation/2.01.whatisdatatransformation/2.03.schemaediting.md)
+    * [模式映射](2.00.datatransformation/2.01.whatisdatatransformation/2.04.schemamapping.md)
+    * [练习：地面维护项目 - 模式编辑](2.00.datatransformation/2.01.whatisdatatransformation/2.exercise1.md)
+  * [用转换器进行转换](2.00.datatransformation/2.05.transformationwithtransformers/README.md)
+    * [练习：地面维护项目 - 结构转型](2.00.datatransformation/2.05.transformationwithtransformers/2.exercise2.md)
+  * [内容转换](2.00.datatransformation/2.06.contenttransformation/README.md)
+    * [转换器系列](2.00.datatransformation/2.06.contenttransformation/2.07.transformersinseries.md)
+    * [练习：地面维护项目 - 计算统计数据](2.00.datatransformation/2.06.contenttransformation/2.exercise3.md)
+    * [要素计数显示](2.00.datatransformation/2.06.contenttransformation/2.08.featurecounts.md)
+    * [转换器并行](2.00.datatransformation/2.06.contenttransformation/2.09.transformersinparallel.md)
+    * [练习：地面维护项目 - 标签功能](2.00.datatransformation/2.06.contenttransformation/2.exercise4.md)
+  * [分组处理](2.00.datatransformation/2.10.groupbyprocessing/README.md)
+    * [练习：地面维护项目 - 街区平均值](2.00.datatransformation/2.10.groupbyprocessing/2.exercise5.md)
+  * [Workbench的数据检查](2.00.datatransformation/2.11.datainspectionfromworkbench.md)
+  * [坐标系转换](2.00.datatransformation/2.12.coordinatesystemtransformation/README.md)
+    * [练习：地面维护项目 - 数据重投影](2.00.datatransformation/2.12.coordinatesystemtransformation/2.exercise6.md)
+  * [模块复习](2.00.datatransformation/2.13.modulereview/README.md)
+    * [Q + A答案](2.00.datatransformation/2.13.modulereview/2.14.questionanswers.md)
+    * [练习：投票分析项目](2.00.datatransformation/2.13.modulereview/2.exercise7.md)
+* [工作空间设计](3.00.workspacedesign/README.md)
+  * [工作空间原型](3.00.workspacedesign/3.01.prototyping/README.md)
+    * [增量发展](3.00.workspacedesign/3.01.prototyping/3.02.incrementaldev.md)
+    * [被拒绝的端口](3.00.workspacedesign/3.01.prototyping/3.03.rejectedports.md)
+    * [练习：住宅垃圾收集区](3.00.workspacedesign/3.01.prototyping/3.exercise1.md)
+  * [读取和写入工作流程](3.00.workspacedesign/3.04.readingwriting/README.md)
+    * [主要组件](3.00.workspacedesign/3.04.readingwriting/3.05.workspacecomponents.md)
+    * [多个读模块和写模块](3.00.workspacedesign/3.04.readingwriting/3.06.addreaderswriters.md)
+    * [FeatureReader和FeatureWriter](3.00.workspacedesign/3.04.readingwriting/3.07.featurereaderswriters.md)
+    * [使用集成转换器进行读取/写入](3.00.workspacedesign/3.04.readingwriting/3.08.noreaderswriters.md)
+    * [练习：住宅垃圾收集区](3.00.workspacedesign/3.04.readingwriting/3.exercise2.md)
+  * [工作空间测试技术](3.00.workspacedesign/3.09.workspacetesting/README.md)
+    * [综合检查](3.00.workspacedesign/3.09.workspacetesting/3.10.integratedinspection.md)
+    * [部分运行](3.00.workspacedesign/3.09.workspacetesting/3.11.partialruns.md)
+    * [练习：住宅垃圾收集区](3.00.workspacedesign/3.09.workspacetesting/3.exercise3.md)
+  * [模块复习](3.00.workspacedesign/3.12.modulereview.md)
+  * [Q + A答案](3.00.workspacedesign/q-+ada-an.md)
+* [实用转换器使用](4.00.practicaltransformeruse/README.md)
+  * [找到转换器](4.00.practicaltransformeruse/4.01.locatingtransformers/README.md)
+    * [转换器库](4.00.practicaltransformeruse/4.01.locatingtransformers/4.02.transformergallery.md)
+    * [转换器搜索](4.00.practicaltransformeruse/4.01.locatingtransformers/4.03.transformersearching.md)
+    * [最有价值的转换器](4.00.practicaltransformeruse/4.01.locatingtransformers/4.04.mostvaluabletransformers.md)
+    * [练习：转换器选择练习](4.00.practicaltransformeruse/4.01.locatingtransformers/4.exercise1.md)
+  * [管理属性](4.00.practicaltransformeruse/4.05.managingattributes/README.md)
+    * [创建和设置属性](4.00.practicaltransformeruse/4.05.managingattributes/4.06.creatingattributes.md)
+    * [构造属性](4.00.practicaltransformeruse/4.05.managingattributes/4.07.constructingattributes.md)
+    * [构建转换器参数](4.00.practicaltransformeruse/4.05.managingattributes/4.08.parameterconstruction.md)
+    * [重命名和复制属性](4.00.practicaltransformeruse/4.05.managingattributes/4.09.renamingattributes.md)
+    * [批量属性重命名](4.00.practicaltransformeruse/4.05.managingattributes/4.10.bulkattributerenamer.md)
+    * [删除属性](4.00.practicaltransformeruse/4.05.managingattributes/4.11.removingattributes.md)
+    * [练习：地址开放数据项目](4.00.practicaltransformeruse/4.05.managingattributes/4.exercise2.md)
+  * [条件过滤](4.00.practicaltransformeruse/4.12.conditionalfiltering/README.md)
+    * [Tester和TestFilter](4.00.practicaltransformeruse/4.12.conditionalfiltering/4.13.testertestfilter.md)
+    * [其他主要滤波器转换器](4.00.practicaltransformeruse/4.12.conditionalfiltering/4.14.filtertransformers.md)
+    * [练习：噪音控制法律项目](4.00.practicaltransformeruse/4.12.conditionalfiltering/4.exercise3.md)
+  * [数据连接](4.00.practicaltransformeruse/4.15.datajoins/README.md)
+    * [基于键的连接转换器](4.00.practicaltransformeruse/4.15.datajoins/4.16.attributejointransformers.md)
+    * [基于空间的连接转换器](4.00.practicaltransformeruse/4.15.datajoins/4.17.spatialjointransformers.md)
+    * [练习：犯罪映射数据请求](4.00.practicaltransformeruse/4.15.datajoins/4.exercise4.md)
+  * [模块复习](4.00.practicaltransformeruse/4.18.modulereview/README.md)
+    * [练习1答案](4.00.practicaltransformeruse/4.18.modulereview/4.19.ex1answers.md)
+    * [Q + A答案](4.00.practicaltransformeruse/4.18.modulereview/4.20.questionanswers.md)
+* [最佳实践](5.00.bestpractice/README.md)
+  * [样式](5.00.bestpractice/5.01.style/README.md)
+    * [注释工作空间](5.00.bestpractice/5.01.style/5.02.annotatingworkspaces.md)
+    * [书签](5.00.bestpractice/5.01.style/5.03.bookmarks/README.md)
+      * [书签用来设计](5.00.bestpractice/5.01.style/5.03.bookmarks/5.04.bookmarksfordesign.md)
+      * [书签用来访问](5.00.bestpractice/5.01.style/5.03.bookmarks/5.05.bookmarksforaccess.md)
+      * [书签用来编辑](5.00.bestpractice/5.01.style/5.03.bookmarks/5.06.bookmarksforediting.md)
+      * [书签用于性能](5.00.bestpractice/5.01.style/5.03.bookmarks/5.07.bookmarksforperformance.md)
+    * [对象布局](5.00.bestpractice/5.01.style/5.08.objectlayout.md)
+    * [连接样式](5.00.bestpractice/5.01.style/5.09.connectionstyles.md)
+    * [练习：FME风格指南](5.00.bestpractice/5.01.style/5.exercise1.md)
+  * [方法伦](5.00.bestpractice/5.10.methodology/README.md)
+    * [维护方法](5.00.bestpractice/5.10.methodology/5.11.maintenancemethodology.md)
+    * [性能方法](5.00.bestpractice/5.10.methodology/5.12.performancemethodology.md)
+    * [练习：设计模式](5.00.bestpractice/5.10.methodology/5.exercise2.md)
+  * [调试](5.00.bestpractice/5.13.debugging/README.md)
+    * [记录](5.00.bestpractice/5.13.debugging/5.14.logging.md)
+    * [检查输出](5.00.bestpractice/5.13.debugging/5.15.inspectingoutput.md)
+    * [要素计数](5.00.bestpractice/5.13.debugging/5.16.featurecounts.md)
+    * [检查关键阶段](5.00.bestpractice/5.13.debugging/5.17.keystageinspection.md)
+    * [练习：调试工作空间](5.00.bestpractice/5.13.debugging/5.exercise3.md)
+    * [要素调试](5.00.bestpractice/5.13.debugging/5.18.featuredebugging.md)
+  * [模块复习](5.00.bestpractice/5.19.modulereview/README.md)
+    * [Q + A答案](5.00.bestpractice/5.19.modulereview/5.20.questionanswers.md)
+    * [练习：最短路线黑客马拉松](5.00.bestpractice/5.19.modulereview/5.exercise4.md)
+* [课程总结](6.00.coursewrapup/README.md)
+  * [产品信息和资源](6.00.coursewrapup/6.01.productinfo.md)
+  * [社区信息和资源](6.00.coursewrapup/6.02.communityinfo.md)
+  * [反馈和证书](6.00.coursewrapup/6.03.coursefeedback.md)
+  * [谢谢](6.00.coursewrapup/6.04.thankyou.md)
+

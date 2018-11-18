@@ -87,16 +87,16 @@
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.09.DynamicTranslations.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态转换</font></font></a></li>
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.10.CreatingDynamicTranslations.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建动态转换</font></font></a></li>
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.Exercise3.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：动态社区地图转换</font></font></a></li>
-<li><a href="./DesktopAdvanced3AdvancedR+W/3.11.DynamicSchemaHandling.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态架构处理</font></font></a>
+<li><a href="./DesktopAdvanced3AdvancedR+W/3.11.DynamicSchemaHandling.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态模式处理</font></font></a>
 <ul>
-<li><a href="./DesktopAdvanced3AdvancedR+W/3.13.DynamicSchemaSources.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态架构源</font></font></a></li>
+<li><a href="./DesktopAdvanced3AdvancedR+W/3.13.DynamicSchemaSources.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态模式源</font></font></a></li>
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.14.DynamicAttributeHandling.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态属性</font></font></a></li>
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.12.DynamicFeatureTypeHandling.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态要素类</font></font></a></li>
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.15.DynamicGeometryHandling.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态几何对象</font></font></a></li>
 </ul>
 </li>
-<li><a href="./DesktopAdvanced3AdvancedR+W/3.Exercise4.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：动态社区地图翻译（模式处理）</font></font></a></li>
-<li><a href="./DesktopAdvanced3AdvancedR+W/3.16.AdvancedDynamicSchemas.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">备用动态架构源</font></font></a></li>
+<li><a href="./DesktopAdvanced3AdvancedR+W/3.Exercise4.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：动态社区地图转换（模式处理）</font></font></a></li>
+<li><a href="./DesktopAdvanced3AdvancedR+W/3.16.AdvancedDynamicSchemas.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">备用动态模式源</font></font></a></li>
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.Exercise5.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">练习：动态社区地图转换（基于表格）</font></font></a></li>
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.17.ModuleReview.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块回顾</font></font></a></li>
 <li><a href="./DesktopAdvanced3AdvancedR+W/3.18.QuestionAnswers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q + A答案</font></font></a></li>

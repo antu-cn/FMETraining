@@ -1,29 +1,30 @@
-# Introduction to FME Desktop
+# FME桌面简介
 
-## Overview
+## 概述
 
-This course introduces the essential components and capabilities of FME through hands-on problem-solving exercises. It is a condensed version of the more in-depth FME Desktop Basic training and is a great start to become an efficient user of FME.
+本课程通过动手解决问题的练习介绍FME的基本组件和功能。它是更深入的FME Desktop Basic培训的精简版本，是成为FME高效用户的良好开端。
 
-The course covers:
-- Format Translations
-- Transformation Tools
-- Common Workflows
+课程包括：
+- 格式转换
+- 转换工具
+- 常见的工作流
 
-## Learning Objectives
+## 学习目标
 
-- Learn what FME Desktop is and what it can do for you
-- Convert data from one format to another using FME Workbench
-- View and inspect data using the FME Data Inspector
-- Manipulate data structure and content with transformers
-- Work with multiple datasets in a single workspace
-- Apply best practices to workspaces
+- 了解FME桌面是什么以及它可以为您做些什么
+- 使用FME Workbench将数据从一种格式转换为另一种格式
+- 使用FME Data Inspector查看和检查数据
+- 使用变换器处理数据结构和内容
+- 在单个工作空间中处理多个数据集
+- 将最佳实践应用于工作空间
 
-## Prerequisites
+## 先决条件
 
-- None
+- 没有
 
-## Training Resources
+## 培训资源
 
-To complete this training, you need a licensed version of FME Desktop installed. You can request a [free trial](https://www.safe.com/fme/fme-desktop/trial-download/) or may be eligible for a [grant license](https://www.safe.com/free-fme-licenses/). The training material is produced using FME Desktop 2019.0, but many of the steps are applicable to older versions.
+要完成此培训，您需要安装许可版本的FME Desktop。您可以申请[免费试用](https://www.safe.com/fme/fme-desktop/trial-download/)或者可以申请[授权许可](https://www.safe.com/free-fme-licenses/)。培训材料使用FME Desktop 2019.0生成，但许多步骤适用于旧版本。
 
-You can download the data [here](https://s3.amazonaws.com/FMEData/FMEData2019.zip). After downloading, extract the data to C:\FMEData2019.
+您可以[这里](https://s3.amazonaws.com/FMEData/FMEData2019.zip)下载数据。下载后，将数据提取到C:\FMEData2019。
+

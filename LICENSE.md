@@ -1,38 +1,39 @@
-## Licensing and Warranty ##
+##许可和保修##
 
-Permission is hereby granted to use, modify and distribute the FME Tutorials and related data and documentation (collectively, the “Tutorials”), subject to the following restrictions:
+特此授予使用，修改和分发FME教程以及相关数据和文档（统称为“教程”）的权限，但受以下限制：
 
-1. The origin of the Tutorials and any associated FME® software must not be misrepresented.
+1.不得歪曲教程的起源和任何相关的FME®软件。
 
-2. Redistributions in original or modified form must include Safe Software’s copyright notice and any applicable Data Source(s) notices.
+2.再分发原创或修改的形式必须包括Safe Software的版权声明和任何适用的数据源的通知。
 
-3. You may not suggest that any modified version of the Tutorials is endorsed or approved by Safe Software Inc.
+3.您可能不建议任何修改版本的教程得到Safe Software Inc.的认可或批准。
 
-4. Redistributions in original or modified form must include a disclaimer similar to that below which: (a) states that the Tutorials are provided “as-is”; (b) disclaims any warranties; and (c) waives any liability claims.
+4.原始或修改形式的再分发必须包括类似于以下内容的免责声明：（a）声明教程是“按原样”提供的;（b）不承担任何保证;（c）放弃任何责任索赔。
 
-Safe Software Inc. makes no warranty either expressed or implied, including, but not limited to, any implied warranties of merchantability, non-infringement, or fitness for a particular purpose regarding these Tutorials, and makes such Tutorials available solely on an “as-is” basis. In no event shall Safe Software Inc. be liable to anyone for direct, indirect, special, collateral, incidental, or consequential damages in connection with or arising out of the use, modification or distribution of these Tutorials.
+Safe Software Inc.不做任何明示或暗示的保证，包括但不限于适销性，非侵权性或针对特定用途的适用于本教程的任何默示保证，并且仅在原样基础上提供此类教程。在任何情况下，Safe Software Inc.均不对任何人因使用，修改或分发这些教程而导致的直接，间接，特殊，抵押，偶然或后果性损害承担责任。
 
-This manual describes the functionality and use of the software at the time of publication. The software described herein, and the descriptions themselves, are subject to change without notice.
+本手册介绍了发布时软件的功能和用途。此处描述的软件及其描述本身如有更改，恕不另行通知。
 
-## Data Sources ##
+##数据源##
 
-### City of Vancouver ###
+###温哥华市###
 
-Unless otherwise stated, the data used here originates from open data made available by the [City of Vancouver](http://data.vancouver.ca "City of Vancouver, Open Data"), British Columbia. It contains information licensed under the Open Government License - Vancouver.
+除非另有说明，否则此处使用的数据源自[温哥华市](http://data.vancouver.ca "City of Vancouver, Open Data")，不列颠哥伦比亚省提供的开放数据。它包含根据开放政府许可证-温哥华许可的信息。
 
-### Others ###
+###其他###
 
-Forward Sortation Areas: Statistics Canada, 2011 Census Digital Boundary Files, 2013. Reproduced and distributed on an "as is" basis with the permission of Statistics Canada. © This data includes information copied with permission from Canada Post Corporation.
+转发分拣区域：加拿大统计局，2011年人口普查数字边界文件，2013年。经加拿大统计局许可，按“原样”转载和分发。©此数据包括经加拿大邮政公司许可复制的信息。
 
-Digital Elevation Model: GeoBase®
+数字高程模型：GeoBase®
 
-Fire Hall Data: Some attribute data adapted from content © 2013 by [Wikipedia](http://en.wikipedia.org/wiki/Vancouver_Fire_and_Rescue_Services), used under a Creative Commons Attribution-ShareAlike license
+消防厅数据：一些属性数据改编自内容©2013[维基百科](http://en.wikipedia.org/wiki/Vancouver_Fire_and_Rescue_Services)，在Creative Commons Attribution-ShareAlike许可下使用
 
-Stanley Park GPS Trail: Used with kind permission of [VancouverTrails.com](http://www.vancouvertrails.com/trails/stanley-park/).
+Stanley Park GPS Trail：获得[VancouverTrails.com](http://www.vancouvertrails.com/trails/stanley-park/)的许可。
 
-OpenStreetMap Datasets: [© OpenStreetMap contributors](http://www.openstreetmap.org/copyright).
+OpenStreetMap数据集：[©OpenStreetMap contributors](http://www.openstreetmap.org/copyright)。
 
-Contains information licensed under the [Open Government Licence – British Columbia](https://www2.gov.bc.ca/gov/content/data/open-data/open-government-license-bc)
+包含[开放政府许可证-不列颠哥伦比亚省]许可的信息(https://www2.gov.bc.ca/gov/content/data/open-data/open-government-license-bc)
 
-## Trademarks ##
-FME® is a registered trademark of Safe Software Inc. All brand or product names are trademarks or registered trademarks of their respective companies or organizations.
+##商标##
+FME®是Safe Software Inc.的注册商标。所有品牌或产品名称均为其各自公司或组织的商标或注册商标。
+

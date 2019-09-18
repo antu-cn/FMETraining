@@ -1,29 +1,37 @@
-# Introduction to FME Desktop
+# FME Desktop Basic Training Manual #
 
-## Overview
+This is the manual for the introductory-level training course for Safe Software’s FME Desktop application.
 
-This course introduces the essential components and capabilities of FME through hands-on problem-solving exercises. It is a condensed version of the more in-depth FME Desktop Basic training and is a great start to become an efficient user of FME.
+![](./DesktopBasic0Introduction/Images/Img0.0.FMEAboutScreen.png)
 
-The course covers:
-- Format Translations
-- Transformation Tools
-- Common Workflows
+The training will introduce basic concepts and terminology, help students become efficient users of FME, and direct you to resources to help apply the product to your own needs.
 
-## Learning Objectives
+## Course Structure ##
 
-- Learn what FME Desktop is and what it can do for you
-- Convert data from one format to another using FME Workbench
-- View and inspect data using the FME Data Inspector
-- Manipulate data structure and content with transformers
-- Work with multiple datasets in a single workspace
-- Apply best practices to workspaces
+The full course is made up of five sections. These sections are:
 
-## Prerequisites
+- Data Translation Basics
+- Data Transformation
+- Workspace Design
+- Practical Transformer Use
+- Best Practice
 
-- None
+## Current Status ##
 
-## Training Resources
+The current status of this manual is: **COMPLETE**: this manual **CAN** be used for training.
 
-To complete this training, you need a licensed version of FME Desktop installed. You can request a [free trial](https://www.safe.com/fme/fme-desktop/trial-download/) or may be eligible for a [grant license](https://www.safe.com/free-fme-licenses/). The training material is produced using FME Desktop 2019.0, but many of the steps are applicable to older versions.
+This manual applies to **FME2019.0**
 
-You can download the data [here](https://s3.amazonaws.com/FMEData/FMEData2019.zip). After downloading, extract the data to C:\FMEData2019.
+The status of each chapter is:
+
+- Chapter 0: Complete content. No exercises
+- Chapter 1: Complete content and exercises
+- Chapter 2: Complete content and exercises
+- Chapter 3: Complete content and exercises
+- Chapter 4: Complete content and exercises
+- Chapter 5: Complete content and exercises
+- Chapter 6: Complete content. No exercises
+- Slides: Complete
+- FMEData: Complete
+
+***Note:*** *Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement for further details.*

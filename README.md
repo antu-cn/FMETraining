@@ -1,37 +1,39 @@
-# FME Desktop Basic Training Manual #
+#桌面基础训练手册#
 
-This is the manual for the introductory-level training course for Safe Software’s FME Desktop application.
+这是安全软件FME桌面应用入门级培训课程的手册。
 
 ![](./DesktopBasic0Introduction/Images/Img0.0.FMEAboutScreen.png)
 
-The training will introduce basic concepts and terminology, help students become efficient users of FME, and direct you to resources to help apply the product to your own needs.
+培训将介绍基本概念和术语，帮助学生成为fme的高效用户，并指导您使用资源，帮助您将产品应用于自己的需求。
 
-## Course Structure ##
 
-The full course is made up of five sections. These sections are:
 
-- Data Translation Basics
-- Data Transformation
-- Workspace Design
-- Practical Transformer Use
-- Best Practice
+##课程结构##
 
-## Current Status ##
+整个课程由五个部分组成。这些部分是：
 
-The current status of this manual is: **COMPLETE**: this manual **CAN** be used for training.
+-数据翻译基础
+-数据转换
+-工作空间设计
+-实际变压器使用
+-最佳实践
 
-This manual applies to **FME2019.0**
+##现状##
 
-The status of each chapter is:
+本手册当前状态为：**完成**：本手册**可以**用于培训
 
-- Chapter 0: Complete content. No exercises
-- Chapter 1: Complete content and exercises
-- Chapter 2: Complete content and exercises
-- Chapter 3: Complete content and exercises
-- Chapter 4: Complete content and exercises
-- Chapter 5: Complete content and exercises
-- Chapter 6: Complete content. No exercises
-- Slides: Complete
-- FMEData: Complete
+本手册适用于**FME2019.0**
 
-***Note:*** *Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement for further details.*
+每一章的地位是：
+
+-第0章：完整内容。没有练习
+-第一章：完整的内容和练习
+-第二章：完整的内容和练习
+-第三章：完整的内容和练习
+-第四章：完整的内容和练习
+-第五章：完整的内容和练习
+-第六章：完整内容。没有练习
+-幻灯片：完成
+-FMEData:完成
+
+***注意：***即使是已完成的内容，SAFE Software Inc.也不对本文档中的任何错误及其后果承担任何责任，并保留对本文档进行改进和更改的权利，恕不另行通知。有关详细信息，请参阅完整的许可协议。*

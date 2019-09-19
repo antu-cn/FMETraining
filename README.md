@@ -1,6 +1,6 @@
 # 桌面基础训练手册 #
 
-这是安全软件FME桌面应用入门级培训课程的手册。
+这是Softwar的FME桌面应用入门级培训课程的手册。
 
 ![](./DesktopBasic0Introduction/Images/Img0.0.FMEAboutScreen.png)
 
@@ -8,7 +8,7 @@
 
 
 
-##课程结构##
+## 课程结构 ##
 
 整个课程由五个部分组成。这些部分是：
 

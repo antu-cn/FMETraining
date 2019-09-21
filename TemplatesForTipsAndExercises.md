@@ -33,7 +33,7 @@
 <tr>
 <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 这是一个在其中有截图的技巧。
-</font></font><br><br><a target="_blank" href="https://github.com/safesoftware/FMETraining/blob/Desktop-Basic-2018/DesktopBasic1Basics/Images/Img1.008.WorkbenchInterfaceMenuToolbar.png"><img src="./DesktopBasic1Basics/Images/Img1.008.WorkbenchInterfaceMenuToolbar.png" style="max-width:100%;"></a>
+</font></font><br><br><a target="_blank" href="https://github.com/safesoftware/FMETraining/blob/Desktop-Basic-2019/DesktopBasic1Basics/Images/Img1.013.WorkbenchInterfaceMenuToolbar.png"><img src="./DesktopBasic1Basics/Images/Img1.013.WorkbenchInterfaceMenuToolbar.png" style="max-width:100%;"></a>
 <br><br><font style="vertical-align: inherit;">注意使用br标签来创建间距。</font></td>
 </tr>
 </tbody></table>

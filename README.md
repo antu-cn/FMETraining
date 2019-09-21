@@ -1,6 +1,6 @@
 # FME Desktop基础培训手册 #
 
-这是Safe Software的FME Desktop应用入门级培训课程的手册。
+这是Safe Software的FME Desktop应用程序入门级培训课程的手册。
 
 ![](./DesktopBasic0Introduction/Images/Img0.0.FMEAboutScreen.png)
 

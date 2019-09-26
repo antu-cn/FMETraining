@@ -34,7 +34,7 @@
   * [用转换器转换](./DesktopBasic2Transformation/2.05.TransformationWithTransformers.md)
     * [练习：地面维护项目 - 结构转换](./DesktopBasic2Transformation/2.Exercise2.md)
   * [内容转换](./DesktopBasic2Transformation/2.06.ContentTransformation.md)
-    * [系列中的转换器](./DesktopBasic2Transformation/2.07.TransformersInSeries.md)
+    * [转换器串联](./DesktopBasic2Transformation/2.07.TransformersInSeries.md)
     * [练习：地面维护项目 - 计算统计](./DesktopBasic2Transformation/2.Exercise3.md)
     * [要素计数显示](./DesktopBasic2Transformation/2.08.FeatureCounts.md)
     * [并联转换器](./DesktopBasic2Transformation/2.09.TransformersInParallel.md)

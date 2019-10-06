@@ -20,7 +20,7 @@
 
 ![](../../.gitbook/assets/img4.038.filtertransformers.png)
 
-尽管Tester变换器是此类别中使用最多的变换器，但还有许多其他变换器，例如TestFilter, GeometryFilter, AttributeFilter, SpatialFilter, and Sampler。
+尽管Tester转换器是此类别中使用最多的转换器，但还有许多其他转换器，例如TestFilter, GeometryFilter, AttributeFilter, SpatialFilter, and Sampler。
 
 |  Vector小姐说... |
 | :--- |
